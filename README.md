@@ -1,24 +1,19 @@
 # 📊 Code Metrics Dashboard
 
-> **@your-username** · Updated: 2024-12-23 10:30 UTC
+> **@djok** · Updated: 2025-12-25 13:59 UTC
 
 | Period | Commits | Additions | Deletions | Net |
 |--------|---------|-----------|-----------|-----|
-| Today | 3 | +156 | -42 | 114 |
-| Week | 28 | +1.8K | -567 | 1.3K |
-| Month | 89 | +5.6K | -2.1K | 3.5K |
-| Year | 892 | +67.2K | -28.9K | 38.3K |
+| Today | 1 | +1.6K | -0 | 1.6K |
+| Week | 1 | +1.6K | -0 | 1.6K |
+| Month | 1 | +1.6K | -0 | 1.6K |
+| Year | 7 | +12.3K | -20 | 12.3K |
 
 ## Top Repositories
 
 | Repository | Commits | ++ | -- |
 |------------|---------|----|----|
-| [main-project](https://github.com/username/main-project) | 34 | +2.3K | -678 |
-| [api-service](https://github.com/username/api-service) | 21 | +1.2K | -456 |
-| [frontend-app](https://github.com/username/frontend-app) | 15 | +987 | -345 |
-| [utils-lib](https://github.com/username/utils-lib) | 8 | +567 | -234 |
-| [docs](https://github.com/username/docs) | 6 | +345 | -123 |
-| [scripts](https://github.com/username/scripts) | 5 | +154 | -98 |
+| [me](https://github.com/djok/me) | 1 | +1.6K | -0 |
 
 ---
 🔗 [View Dashboard](../../) · 🤖 Auto-updated daily
