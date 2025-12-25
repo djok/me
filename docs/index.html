@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="bg" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your-username · Code Metrics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --color-canvas-default: #ffffff;
+            --color-canvas-subtle: #f6f8fa;
+            --color-border-default: #d0d7de;
+            --color-border-muted: #d8dee4;
+            --color-fg-default: #1F2328;
+            --color-fg-muted: #656d76;
+            --color-fg-subtle: #6e7781;
+            --color-accent-fg: #0969da;
+            --color-success-fg: #1a7f37;
+            --color-success-emphasis: #1f883d;
+            --color-danger-fg: #d1242f;
+            --color-neutral-muted: rgba(175,184,193,0.2);
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-canvas-default: #0d1117;
+                --color-canvas-subtle: #161b22;
+                --color-border-default: #30363d;
+                --color-border-muted: #21262d;
+                --color-fg-default: #e6edf3;
+                --color-fg-muted: #8d96a0;
+                --color-fg-subtle: #6e7681;
+                --color-accent-fg: #58a6ff;
+                --color-success-fg: #3fb950;
+                --color-success-emphasis: #238636;
+                --color-danger-fg: #f85149;
+                --color-neutral-muted: rgba(110,118,129,0.4);
+            }
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            background: var(--color-canvas-default);
+            color: var(--color-fg-default);
+        }
+        
+        .container { max-width: 1280px; margin: 0 auto; padding: 24px 32px; }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--color-border-muted);
+        }
+        
+        .avatar {
+            width: 48px; height: 48px;
+            border-radius: 50%;
+            background: var(--color-canvas-subtle);
+            border: 1px solid var(--color-border-default);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 24px;
+        }
+        
+        .header-info h1 { font-size: 20px; font-weight: 600; }
+        .header-info .subtitle { font-size: 14px; color: var(--color-fg-muted); }
+        .header-info .updated { font-size: 12px; color: var(--color-fg-subtle); margin-top: 2px; }
+        
+        .nav-tabs {
+            display: flex; gap: 8px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--color-border-muted);
+        }
+        
+        .nav-tab {
+            padding: 8px 16px;
+            font-size: 14px; font-weight: 500;
+            color: var(--color-fg-muted);
+            background: none; border: none;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+            margin-bottom: -1px;
+        }
+        
+        .nav-tab:hover { color: var(--color-fg-default); }
+        .nav-tab.active { color: var(--color-fg-default); border-bottom-color: #fd8c73; }
+        
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        
+        .stat-box {
+            background: var(--color-canvas-subtle);
+            border: 1px solid var(--color-border-default);
+            border-radius: 6px;
+            padding: 16px;
+        }
+        
+        .stat-box .label {
+            font-size: 12px; font-weight: 500;
+            color: var(--color-fg-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+        
+        .stat-box .value { font-size: 32px; font-weight: 600; line-height: 1.2; }
+        .stat-box .value.additions { color: var(--color-success-fg); }
+        .stat-box .value.deletions { color: var(--color-danger-fg); }
+        .stat-box .value.commits { color: var(--color-accent-fg); }
+        .stat-box .change { font-size: 12px; color: var(--color-fg-muted); margin-top: 4px; }
+        
+        .card {
+            background: var(--color-canvas-subtle);
+            border: 1px solid var(--color-border-default);
+            border-radius: 6px;
+            margin-bottom: 16px;
+        }
+        
+        .card-header {
+            padding: 16px;
+            border-bottom: 1px solid var(--color-border-muted);
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        
+        .card-header h2 {
+            font-size: 14px; font-weight: 600;
+            display: flex; align-items: center; gap: 8px;
+        }
+        
+        .card-body { padding: 16px; }
+        .chart-container { position: relative; height: 220px; }
+        
+        .two-columns {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 16px;
+        }
+        
+        @media (max-width: 900px) {
+            .two-columns { grid-template-columns: 1fr; }
+        }
+        
+        table { width: 100%; border-collapse: collapse; }
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--color-border-muted);
+            font-size: 14px;
+        }
+        th { font-weight: 600; background: var(--color-canvas-subtle); }
+        tr:last-child td { border-bottom: none; }
+        tr:hover td { background: var(--color-canvas-default); }
+        
+        .repo-name a {
+            color: var(--color-accent-fg);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .repo-name a:hover { text-decoration: underline; }
+        
+        .text-success { color: var(--color-success-fg); }
+        .text-danger { color: var(--color-danger-fg); }
+        
+        .languages-bar {
+            height: 8px;
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            margin-bottom: 12px;
+        }
+        .lang-segment { height: 100%; }
+        
+        .languages-list { display: flex; flex-wrap: wrap; gap: 16px; }
+        .lang-item { display: flex; align-items: center; gap: 6px; font-size: 12px; }
+        .lang-dot { width: 10px; height: 10px; border-radius: 50%; }
+        .lang-name { font-weight: 500; }
+        .lang-percent { color: var(--color-fg-muted); }
+        
+        .footer {
+            text-align: center;
+            padding: 32px 16px;
+            font-size: 12px;
+            color: var(--color-fg-muted);
+            border-top: 1px solid var(--color-border-muted);
+            margin-top: 32px;
+        }
+        .footer a { color: var(--color-accent-fg); text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+        
+        .icon { width: 16px; height: 16px; fill: var(--color-fg-muted); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="avatar">📊</div>
+            <div class="header-info">
+                <h1>your-username</h1>
+                <div class="subtitle">Code Metrics Dashboard</div>
+                <div class="updated">Last updated: 2024-12-23 10:30 UTC</div>
+            </div>
+        </header>
+        
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-period="month">
+                <svg class="icon" viewBox="0 0 16 16"><path d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2H14a1 1 0 011 1v10a1 1 0 01-1 1H2a1 1 0 01-1-1V3a1 1 0 011-1h1.25V.75A.75.75 0 014.75 0zM2.5 5v7.5h11V5h-11z"></path></svg>
+                Month
+            </button>
+            <button class="nav-tab" data-period="week">Week</button>
+            <button class="nav-tab" data-period="today">Today</button>
+            <button class="nav-tab" data-period="quarter">Quarter</button>
+            <button class="nav-tab" data-period="year">Year</button>
+        </nav>
+        
+        <div class="stats-row">
+            <div class="stat-box">
+                <div class="label">Commits</div>
+                <div class="value commits" id="stat-commits">89</div>
+                <div class="change">code changes</div>
+            </div>
+            <div class="stat-box">
+                <div class="label">Additions</div>
+                <div class="value additions" id="stat-additions">+5.6K</div>
+                <div class="change">lines added</div>
+            </div>
+            <div class="stat-box">
+                <div class="label">Deletions</div>
+                <div class="value deletions" id="stat-deletions">-2.1K</div>
+                <div class="change">lines removed</div>
+            </div>
+            <div class="stat-box">
+                <div class="label">Net Change</div>
+                <div class="value" id="stat-net" style="color: var(--color-fg-default)">3.5K</div>
+                <div class="change">net lines</div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h2>
+                    <svg class="icon" viewBox="0 0 16 16"><path d="M1.5 1.75a.75.75 0 00-1.5 0v12.5c0 .414.336.75.75.75h14.5a.75.75 0 000-1.5H1.5V1.75zm14.28 2.53a.75.75 0 00-1.06-1.06L10 7.94 7.53 5.47a.75.75 0 00-1.06 0L3.22 8.72a.75.75 0 001.06 1.06L7 7.06l2.47 2.47a.75.75 0 001.06 0l5.25-5.25z"></path></svg>
+                    Contribution Activity
+                </h2>
+            </div>
+            <div class="card-body">
+                <div class="chart-container">
+                    <canvas id="activityChart"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <div class="two-columns">
+            <div class="card">
+                <div class="card-header">
+                    <h2>
+                        <svg class="icon" viewBox="0 0 16 16"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8z"></path></svg>
+                        Top Repositories
+                    </h2>
+                </div>
+                <div class="card-body" style="padding: 0;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Repository</th>
+                                <th>Commits</th>
+                                <th>++</th>
+                                <th>--</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="repo-name"><a href="https://github.com/username/main-project" target="_blank">main-project</a></td>
+                                <td>34</td>
+                                <td class="text-success">+2.3K</td>
+                                <td class="text-danger">-678</td>
+                            </tr>
+                            <tr>
+                                <td class="repo-name"><a href="https://github.com/username/api-service" target="_blank">api-service</a></td>
+                                <td>21</td>
+                                <td class="text-success">+1.2K</td>
+                                <td class="text-danger">-456</td>
+                            </tr>
+                            <tr>
+                                <td class="repo-name"><a href="https://github.com/username/frontend-app" target="_blank">frontend-app</a></td>
+                                <td>15</td>
+                                <td class="text-success">+987</td>
+                                <td class="text-danger">-345</td>
+                            </tr>
+                            <tr>
+                                <td class="repo-name"><a href="https://github.com/username/utils-lib" target="_blank">utils-lib</a></td>
+                                <td>8</td>
+                                <td class="text-success">+567</td>
+                                <td class="text-danger">-234</td>
+                            </tr>
+                            <tr>
+                                <td class="repo-name"><a href="https://github.com/username/docs" target="_blank">docs</a></td>
+                                <td>6</td>
+                                <td class="text-success">+345</td>
+                                <td class="text-danger">-123</td>
+                            </tr>
+                            <tr>
+                                <td class="repo-name"><a href="https://github.com/username/scripts" target="_blank">scripts</a></td>
+                                <td>5</td>
+                                <td class="text-success">+154</td>
+                                <td class="text-danger">-98</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h2>
+                        <svg class="icon" viewBox="0 0 16 16"><path d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
+                        Languages
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <div class="languages-bar">
+                        <div class="lang-segment" style="width: 30.5%; background: #3572A5;"></div>
+                        <div class="lang-segment" style="width: 23.5%; background: #f1e05a;"></div>
+                        <div class="lang-segment" style="width: 19.5%; background: #3178c6;"></div>
+                        <div class="lang-segment" style="width: 11.1%; background: #e34c26;"></div>
+                        <div class="lang-segment" style="width: 8.4%; background: #563d7c;"></div>
+                        <div class="lang-segment" style="width: 4.3%; background: #89e051;"></div>
+                    </div>
+                    <div class="languages-list">
+                        <div class="lang-item">
+                            <span class="lang-dot" style="background: #3572A5;"></span>
+                            <span class="lang-name">Python</span>
+                            <span class="lang-percent">30.5%</span>
+                        </div>
+                        <div class="lang-item">
+                            <span class="lang-dot" style="background: #f1e05a;"></span>
+                            <span class="lang-name">JavaScript</span>
+                            <span class="lang-percent">23.5%</span>
+                        </div>
+                        <div class="lang-item">
+                            <span class="lang-dot" style="background: #3178c6;"></span>
+                            <span class="lang-name">TypeScript</span>
+                            <span class="lang-percent">19.5%</span>
+                        </div>
+                        <div class="lang-item">
+                            <span class="lang-dot" style="background: #e34c26;"></span>
+                            <span class="lang-name">HTML</span>
+                            <span class="lang-percent">11.1%</span>
+                        </div>
+                        <div class="lang-item">
+                            <span class="lang-dot" style="background: #563d7c;"></span>
+                            <span class="lang-name">CSS</span>
+                            <span class="lang-percent">8.4%</span>
+                        </div>
+                        <div class="lang-item">
+                            <span class="lang-dot" style="background: #89e051;"></span>
+                            <span class="lang-name">Shell</span>
+                            <span class="lang-percent">4.3%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            Powered by <a href="https://github.com">GitHub API</a> · Auto-updated daily
+        </footer>
+    </div>
+    
+    <script>
+        const dates = ["2024-11-24", "2024-11-25", "2024-11-26", "2024-11-27", "2024-11-28", "2024-11-29", "2024-11-30", "2024-12-01", "2024-12-02", "2024-12-03", "2024-12-04", "2024-12-05", "2024-12-06", "2024-12-07", "2024-12-08", "2024-12-09", "2024-12-10", "2024-12-11", "2024-12-12", "2024-12-13", "2024-12-14", "2024-12-15", "2024-12-16", "2024-12-17", "2024-12-18", "2024-12-19", "2024-12-20", "2024-12-21", "2024-12-22", "2024-12-23"];
+        const commitsData = [0, 4, 3, 5, 2, 1, 0, 6, 4, 3, 5, 2, 0, 1, 4, 6, 3, 5, 2, 0, 1, 4, 7, 5, 3, 4, 2, 0, 5, 3];
+        const additionsData = [0, 289, 178, 456, 134, 45, 0, 534, 312, 189, 423, 156, 0, 67, 345, 567, 234, 456, 123, 0, 78, 289, 678, 456, 234, 345, 156, 0, 423, 156];
+        const deletionsData = [0, 123, 45, 89, 67, 12, 0, 234, 145, 78, 167, 89, 0, 23, 134, 234, 89, 178, 56, 0, 34, 123, 289, 178, 89, 145, 67, 0, 189, 42];
+        const periodData = {"today": {"commits": 3, "additions": 156, "deletions": 42, "files_changed": 8}, "yesterday": {"commits": 5, "additions": 234, "deletions": 89, "files_changed": 12}, "week": {"commits": 28, "additions": 1842, "deletions": 567, "files_changed": 45}, "month": {"commits": 89, "additions": 5632, "deletions": 2134, "files_changed": 156}, "quarter": {"commits": 245, "additions": 18450, "deletions": 7823, "files_changed": 423}, "year": {"commits": 892, "additions": 67234, "deletions": 28912, "files_changed": 1567}};
+        
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const gridColor = isDark ? '#30363d' : '#d0d7de';
+        const textColor = isDark ? '#8d96a0' : '#656d76';
+        const barColor = isDark ? '#238636' : '#1f883d';
+        
+        new Chart(document.getElementById('activityChart'), {
+            type: 'bar',
+            data: {
+                labels: dates.map(d => d.slice(5)),
+                datasets: [{
+                    label: 'Commits',
+                    data: commitsData,
+                    backgroundColor: barColor,
+                    borderRadius: 3,
+                    barPercentage: 0.7
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: isDark ? '#161b22' : '#fff',
+                        titleColor: isDark ? '#e6edf3' : '#1F2328',
+                        bodyColor: textColor,
+                        borderColor: gridColor,
+                        borderWidth: 1,
+                        padding: 12,
+                        displayColors: false,
+                        callbacks: {
+                            label: (ctx) => {
+                                const i = ctx.dataIndex;
+                                return [`Commits: ${commitsData[i]}`, `++${additionsData[i]}  --${deletionsData[i]}`];
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: { display: false },
+                        ticks: { color: textColor, maxRotation: 0, autoSkip: true, maxTicksLimit: 10 },
+                        border: { color: gridColor }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: gridColor },
+                        ticks: { color: textColor, stepSize: 1 },
+                        border: { display: false }
+                    }
+                }
+            }
+        });
+        
+        function fmt(n) {
+            if (n >= 1e6) return (n/1e6).toFixed(1)+'M';
+            if (n >= 1e3) return (n/1e3).toFixed(1)+'K';
+            return n;
+        }
+        
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.onclick = () => {
+                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                const d = periodData[tab.dataset.period];
+                document.getElementById('stat-commits').textContent = d.commits;
+                document.getElementById('stat-additions').textContent = '+' + fmt(d.additions);
+                document.getElementById('stat-deletions').textContent = '-' + fmt(d.deletions);
+                document.getElementById('stat-net').textContent = fmt(d.additions - d.deletions);
+            };
+        });
+    </script>
+</body>
+</html>

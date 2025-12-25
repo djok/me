@@ -1,0 +1,67 @@
+name: Update Code Metrics
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # Всеки ден в 6:00 UTC
+  workflow_dispatch:      # Ръчно стартиране
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  collect-metrics:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Install dependencies
+        run: pip install PyGithub requests
+        
+      - name: Collect metrics
+        env:
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GH_USERNAME: ${{ vars.GH_USERNAME }}
+          REPOS_TO_TRACK: ${{ vars.REPOS_TO_TRACK }}
+        run: python scripts/collect_metrics.py
+        
+      - name: Generate dashboard
+        run: python scripts/generate_dashboard.py
+        
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || git commit -m "📊 Update metrics $(date +'%Y-%m-%d %H:%M')"
+          git push
+
+  deploy-pages:
+    needs: collect-metrics
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './docs'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

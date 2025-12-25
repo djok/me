@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "updated_at": "2024-12-23T10:30:00",
+    "username": "your-username",
+    "generated_by": "GitHub Metrics Dashboard"
+  },
+  "summary": {
+    "today": {"commits": 3, "additions": 156, "deletions": 42, "files_changed": 8},
+    "yesterday": {"commits": 5, "additions": 234, "deletions": 89, "files_changed": 12},
+    "week": {"commits": 28, "additions": 1842, "deletions": 567, "files_changed": 45},
+    "month": {"commits": 89, "additions": 5632, "deletions": 2134, "files_changed": 156},
+    "quarter": {"commits": 245, "additions": 18450, "deletions": 7823, "files_changed": 423},
+    "year": {"commits": 892, "additions": 67234, "deletions": 28912, "files_changed": 1567}
+  },
+  "repos": {},
+  "daily": {
+    "2024-11-23": {"commits": 2, "additions": 145, "deletions": 34},
+    "2024-11-24": {"commits": 0, "additions": 0, "deletions": 0},
+    "2024-11-25": {"commits": 4, "additions": 289, "deletions": 123},
+    "2024-11-26": {"commits": 3, "additions": 178, "deletions": 45},
+    "2024-11-27": {"commits": 5, "additions": 456, "deletions": 89},
+    "2024-11-28": {"commits": 2, "additions": 134, "deletions": 67},
+    "2024-11-29": {"commits": 1, "additions": 45, "deletions": 12},
+    "2024-11-30": {"commits": 0, "additions": 0, "deletions": 0},
+    "2024-12-01": {"commits": 6, "additions": 534, "deletions": 234},
+    "2024-12-02": {"commits": 4, "additions": 312, "deletions": 145},
+    "2024-12-03": {"commits": 3, "additions": 189, "deletions": 78},
+    "2024-12-04": {"commits": 5, "additions": 423, "deletions": 167},
+    "2024-12-05": {"commits": 2, "additions": 156, "deletions": 89},
+    "2024-12-06": {"commits": 0, "additions": 0, "deletions": 0},
+    "2024-12-07": {"commits": 1, "additions": 67, "deletions": 23},
+    "2024-12-08": {"commits": 4, "additions": 345, "deletions": 134},
+    "2024-12-09": {"commits": 6, "additions": 567, "deletions": 234},
+    "2024-12-10": {"commits": 3, "additions": 234, "deletions": 89},
+    "2024-12-11": {"commits": 5, "additions": 456, "deletions": 178},
+    "2024-12-12": {"commits": 2, "additions": 123, "deletions": 56},
+    "2024-12-13": {"commits": 0, "additions": 0, "deletions": 0},
+    "2024-12-14": {"commits": 1, "additions": 78, "deletions": 34},
+    "2024-12-15": {"commits": 4, "additions": 289, "deletions": 123},
+    "2024-12-16": {"commits": 7, "additions": 678, "deletions": 289},
+    "2024-12-17": {"commits": 5, "additions": 456, "deletions": 178},
+    "2024-12-18": {"commits": 3, "additions": 234, "deletions": 89},
+    "2024-12-19": {"commits": 4, "additions": 345, "deletions": 145},
+    "2024-12-20": {"commits": 2, "additions": 156, "deletions": 67},
+    "2024-12-21": {"commits": 0, "additions": 0, "deletions": 0},
+    "2024-12-22": {"commits": 5, "additions": 423, "deletions": 189},
+    "2024-12-23": {"commits": 3, "additions": 156, "deletions": 42}
+  },
+  "languages": {
+    "Python": 245678,
+    "JavaScript": 189234,
+    "TypeScript": 156789,
+    "HTML": 89456,
+    "CSS": 67234,
+    "Shell": 34567,
+    "Dockerfile": 12345,
+    "YAML": 8934
+  },
+  "top_repos": [
+    {"name": "username/main-project", "url": "https://github.com/username/main-project", "commits": 34, "additions": 2345, "deletions": 678},
+    {"name": "username/api-service", "url": "https://github.com/username/api-service", "commits": 21, "additions": 1234, "deletions": 456},
+    {"name": "username/frontend-app", "url": "https://github.com/username/frontend-app", "commits": 15, "additions": 987, "deletions": 345},
+    {"name": "username/utils-lib", "url": "https://github.com/username/utils-lib", "commits": 8, "additions": 567, "deletions": 234},
+    {"name": "username/docs", "url": "https://github.com/username/docs", "commits": 6, "additions": 345, "deletions": 123},
+    {"name": "username/scripts", "url": "https://github.com/username/scripts", "commits": 5, "additions": 154, "deletions": 98}
+  ]
+}
