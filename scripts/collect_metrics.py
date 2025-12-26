@@ -191,7 +191,7 @@ def collect_all_metrics():
     results['daily'] = dict(results['daily'])
     results['languages'] = dict(results['languages'])
     
-    # Топ репота по commits тази година (показва повече активност)
+    # Топ репота по additions тази година (показва повече продуктивност)
     results['top_repos'] = sorted(
         [
             {
@@ -204,7 +204,7 @@ def collect_all_metrics():
             for name, data in results['repos'].items()
             if data['periods']['year']['commits'] > 0
         ],
-        key=lambda x: x['commits'],
+        key=lambda x: x['additions'],
         reverse=True
     )[:10]
     

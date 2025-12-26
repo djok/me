@@ -296,12 +296,26 @@ def generate_html_dashboard(metrics):
             <div class="card-header">
                 <h2>
                     <svg class="icon" viewBox="0 0 16 16"><path d="M1.5 1.75a.75.75 0 00-1.5 0v12.5c0 .414.336.75.75.75h14.5a.75.75 0 000-1.5H1.5V1.75zm14.28 2.53a.75.75 0 00-1.06-1.06L10 7.94 7.53 5.47a.75.75 0 00-1.06 0L3.22 8.72a.75.75 0 001.06 1.06L7 7.06l2.47 2.47a.75.75 0 001.06 0l5.25-5.25z"></path></svg>
-                    Contribution Activity
+                    Commits Activity
                 </h2>
             </div>
             <div class="card-body">
                 <div class="chart-container">
-                    <canvas id="activityChart"></canvas>
+                    <canvas id="commitsChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>
+                    <svg class="icon" viewBox="0 0 16 16"><path d="M8 0a8 8 0 110 16A8 8 0 018 0zM1.5 8a6.5 6.5 0 1013 0 6.5 6.5 0 00-13 0z"></path></svg>
+                    Lines of Code
+                </h2>
+            </div>
+            <div class="card-body">
+                <div class="chart-container" style="height: 250px;">
+                    <canvas id="linesChart"></canvas>
                 </div>
             </div>
         </div>
@@ -381,24 +395,49 @@ def generate_html_dashboard(metrics):
     </div>
     
     <script>
-        const dates = {json.dumps(dates)};
-        const commitsData = {json.dumps(commits_data)};
-        const additionsData = {json.dumps(additions_data)};
-        const deletionsData = {json.dumps(deletions_data)};
+        const allDates = {json.dumps(dates)};
+        const allCommits = {json.dumps(commits_data)};
+        const allAdditions = {json.dumps(additions_data)};
+        const allDeletions = {json.dumps(deletions_data)};
         const periodData = {json.dumps(summary)};
-        
+
         const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         const gridColor = isDark ? '#30363d' : '#d0d7de';
         const textColor = isDark ? '#8d96a0' : '#656d76';
         const barColor = isDark ? '#238636' : '#1f883d';
-        
-        new Chart(document.getElementById('activityChart'), {{
+        const addColor = isDark ? '#3fb950' : '#1a7f37';
+        const delColor = isDark ? '#f85149' : '#d1242f';
+
+        // Period days mapping
+        const periodDays = {{ today: 1, week: 7, month: 30, quarter: 90, year: 365 }};
+        let currentPeriod = 'month';
+
+        function getDataForPeriod(period) {{
+            const days = Math.min(periodDays[period], allDates.length);
+            const start = allDates.length - days;
+            return {{
+                dates: allDates.slice(start),
+                commits: allCommits.slice(start),
+                additions: allAdditions.slice(start),
+                deletions: allDeletions.slice(start)
+            }};
+        }}
+
+        function fmt(n) {{
+            if (n >= 1e6) return (n/1e6).toFixed(1)+'M';
+            if (n >= 1e3) return (n/1e3).toFixed(1)+'K';
+            return n;
+        }}
+
+        // Commits Bar Chart
+        const commitsCtx = document.getElementById('commitsChart');
+        let commitsChart = new Chart(commitsCtx, {{
             type: 'bar',
             data: {{
-                labels: dates.map(d => d.slice(5)),
+                labels: [],
                 datasets: [{{
                     label: 'Commits',
-                    data: commitsData,
+                    data: [],
                     backgroundColor: barColor,
                     borderRadius: 3,
                     barPercentage: 0.7
@@ -416,19 +455,13 @@ def generate_html_dashboard(metrics):
                         borderColor: gridColor,
                         borderWidth: 1,
                         padding: 12,
-                        displayColors: false,
-                        callbacks: {{
-                            label: (ctx) => {{
-                                const i = ctx.dataIndex;
-                                return [`Commits: ${{commitsData[i]}}`, `++${{additionsData[i]}}  --${{deletionsData[i]}}`];
-                            }}
-                        }}
+                        displayColors: false
                     }}
                 }},
                 scales: {{
                     x: {{
                         grid: {{ display: false }},
-                        ticks: {{ color: textColor, maxRotation: 0, autoSkip: true, maxTicksLimit: 10 }},
+                        ticks: {{ color: textColor, maxRotation: 0, autoSkip: true, maxTicksLimit: 12 }},
                         border: {{ color: gridColor }}
                     }},
                     y: {{
@@ -440,22 +473,139 @@ def generate_html_dashboard(metrics):
                 }}
             }}
         }});
-        
-        function fmt(n) {{
-            if (n >= 1e6) return (n/1e6).toFixed(1)+'M';
-            if (n >= 1e3) return (n/1e3).toFixed(1)+'K';
-            return n;
+
+        // Lines of Code Chart (dual Y axis)
+        const linesCtx = document.getElementById('linesChart');
+        let linesChart = new Chart(linesCtx, {{
+            type: 'line',
+            data: {{
+                labels: [],
+                datasets: [
+                    {{
+                        label: 'Additions',
+                        data: [],
+                        borderColor: addColor,
+                        backgroundColor: addColor + '20',
+                        fill: true,
+                        tension: 0.3,
+                        pointRadius: 0,
+                        pointHoverRadius: 4,
+                        yAxisID: 'y'
+                    }},
+                    {{
+                        label: 'Deletions',
+                        data: [],
+                        borderColor: delColor,
+                        backgroundColor: delColor + '20',
+                        fill: true,
+                        tension: 0.3,
+                        pointRadius: 0,
+                        pointHoverRadius: 4,
+                        yAxisID: 'y1'
+                    }}
+                ]
+            }},
+            options: {{
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {{ mode: 'index', intersect: false }},
+                plugins: {{
+                    legend: {{
+                        display: true,
+                        position: 'top',
+                        labels: {{ color: textColor, boxWidth: 12, padding: 16 }}
+                    }},
+                    tooltip: {{
+                        backgroundColor: isDark ? '#161b22' : '#fff',
+                        titleColor: isDark ? '#e6edf3' : '#1F2328',
+                        bodyColor: textColor,
+                        borderColor: gridColor,
+                        borderWidth: 1,
+                        padding: 12,
+                        callbacks: {{
+                            label: (ctx) => ctx.dataset.label + ': ' + fmt(ctx.raw)
+                        }}
+                    }}
+                }},
+                scales: {{
+                    x: {{
+                        grid: {{ display: false }},
+                        ticks: {{ color: textColor, maxRotation: 0, autoSkip: true, maxTicksLimit: 12 }},
+                        border: {{ color: gridColor }}
+                    }},
+                    y: {{
+                        type: 'linear',
+                        display: true,
+                        position: 'left',
+                        beginAtZero: true,
+                        grid: {{ color: gridColor }},
+                        ticks: {{
+                            color: addColor,
+                            callback: (v) => fmt(v)
+                        }},
+                        title: {{
+                            display: true,
+                            text: 'Additions',
+                            color: addColor
+                        }},
+                        border: {{ display: false }}
+                    }},
+                    y1: {{
+                        type: 'linear',
+                        display: true,
+                        position: 'right',
+                        beginAtZero: true,
+                        grid: {{ drawOnChartArea: false }},
+                        ticks: {{
+                            color: delColor,
+                            callback: (v) => fmt(v)
+                        }},
+                        title: {{
+                            display: true,
+                            text: 'Deletions',
+                            color: delColor
+                        }},
+                        border: {{ display: false }}
+                    }}
+                }}
+            }}
+        }});
+
+        function updateCharts(period) {{
+            const data = getDataForPeriod(period);
+            const labels = data.dates.map(d => d.slice(5));
+
+            // Update commits chart
+            commitsChart.data.labels = labels;
+            commitsChart.data.datasets[0].data = data.commits;
+            commitsChart.update();
+
+            // Update lines chart
+            linesChart.data.labels = labels;
+            linesChart.data.datasets[0].data = data.additions;
+            linesChart.data.datasets[1].data = data.deletions;
+            linesChart.update();
         }}
-        
+
+        // Initialize with month data
+        updateCharts('month');
+
         document.querySelectorAll('.nav-tab').forEach(tab => {{
             tab.onclick = () => {{
                 document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
                 tab.classList.add('active');
-                const d = periodData[tab.dataset.period];
+                const period = tab.dataset.period;
+                currentPeriod = period;
+
+                // Update stats
+                const d = periodData[period];
                 document.getElementById('stat-commits').textContent = d.commits;
                 document.getElementById('stat-additions').textContent = '+' + fmt(d.additions);
                 document.getElementById('stat-deletions').textContent = '-' + fmt(d.deletions);
                 document.getElementById('stat-net').textContent = fmt(d.additions - d.deletions);
+
+                // Update charts
+                updateCharts(period);
             }};
         }});
     </script>
