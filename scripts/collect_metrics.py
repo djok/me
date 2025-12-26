@@ -33,10 +33,10 @@ def get_repos_to_track(g, user):
                     print(f"Warning: Could not access {repo_name}: {e}")
         return repos
     
-    # Иначе взимаме всички достъпни репота
+    # Иначе взимаме всички достъпни репота (включително forks)
     try:
-        # Собствени репота
-        for repo in user.get_repos():
+        # Собствени репота (type='all' включва forks)
+        for repo in user.get_repos(type='all'):
             if repo.full_name not in seen:
                 repos.append(repo)
                 seen.add(repo.full_name)
