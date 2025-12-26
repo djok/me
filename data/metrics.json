@@ -1,48 +1,600 @@
 {
   "meta": {
-    "updated_at": "2025-12-26T10:56:03.219396",
+    "updated_at": "2025-12-26T11:09:51.863258",
     "username": "djok",
     "generated_by": "GitHub Metrics Dashboard"
   },
   "summary": {
     "today": {
       "commits": 1,
-      "additions": 3,
-      "deletions": 3,
+      "additions": 8,
+      "deletions": 5,
       "files_changed": 0
     },
     "yesterday": {
-      "commits": 1,
-      "additions": 1590,
-      "deletions": 0,
+      "commits": 4,
+      "additions": 61337,
+      "deletions": 8,
       "files_changed": 0
     },
     "week": {
-      "commits": 1,
-      "additions": 3,
-      "deletions": 3,
+      "commits": 4,
+      "additions": 59755,
+      "deletions": 13,
       "files_changed": 0
     },
     "month": {
-      "commits": 1,
-      "additions": 3,
-      "deletions": 3,
+      "commits": 7,
+      "additions": 76653,
+      "deletions": 73,
       "files_changed": 0
     },
     "quarter": {
-      "commits": 2,
-      "additions": 11,
-      "deletions": 3,
+      "commits": 11,
+      "additions": 135044,
+      "deletions": 287,
       "files_changed": 0
     },
     "year": {
-      "commits": 7,
-      "additions": 10714,
-      "deletions": 23,
+      "commits": 35,
+      "additions": 156577,
+      "deletions": 619,
       "files_changed": 0
     }
   },
   "repos": {
+    "djok/backup-vyos-bgp1": {
+      "name": "backup-vyos-bgp1",
+      "full_name": "djok/backup-vyos-bgp1",
+      "url": "https://github.com/djok/backup-vyos-bgp1",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 120,
+          "deletions": 1,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/backup-vyos-bgp2": {
+      "name": "backup-vyos-bgp2",
+      "full_name": "djok/backup-vyos-bgp2",
+      "url": "https://github.com/djok/backup-vyos-bgp2",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/backup-vyos-cgnat1": {
+      "name": "backup-vyos-cgnat1",
+      "full_name": "djok/backup-vyos-cgnat1",
+      "url": "https://github.com/djok/backup-vyos-cgnat1",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 2,
+          "deletions": 2,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/browser-use-ai": {
+      "name": "browser-use-ai",
+      "full_name": "djok/browser-use-ai",
+      "url": "https://github.com/djok/browser-use-ai",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/club-admin": {
+      "name": "club-admin",
+      "full_name": "djok/club-admin",
+      "url": "https://github.com/djok/club-admin",
+      "description": "Club Admin",
+      "stars": 1,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 58,
+          "deletions": 45,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/delicts.tollbg": {
+      "name": "delicts.tollbg",
+      "full_name": "djok/delicts.tollbg",
+      "url": "https://github.com/djok/delicts.tollbg",
+      "description": null,
+      "stars": 0,
+      "forks": 1,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 1,
+          "additions": 184,
+          "deletions": 28,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 1,
+          "additions": 184,
+          "deletions": 28,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 184,
+          "deletions": 28,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/donationhub": {
+      "name": "donationhub",
+      "full_name": "djok/donationhub",
+      "url": "https://github.com/djok/donationhub",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/els-eRetail-setup": {
+      "name": "els-eRetail-setup",
+      "full_name": "djok/els-eRetail-setup",
+      "url": "https://github.com/djok/els-eRetail-setup",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/fiber-bg-ia-noc": {
+      "name": "fiber-bg-ia-noc",
+      "full_name": "djok/fiber-bg-ia-noc",
+      "url": "https://github.com/djok/fiber-bg-ia-noc",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 172,
+          "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/fiber-bg-www": {
+      "name": "fiber-bg-www",
+      "full_name": "djok/fiber-bg-www",
+      "url": "https://github.com/djok/fiber-bg-www",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 1,
+          "additions": 15902,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 1,
+          "additions": 15902,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 15902,
+          "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/FIBER.BG-HR": {
+      "name": "FIBER.BG-HR",
+      "full_name": "djok/FIBER.BG-HR",
+      "url": "https://github.com/djok/FIBER.BG-HR",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 2477,
+          "deletions": 89,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/function_app_TeamsCallFunction": {
+      "name": "function_app_TeamsCallFunction",
+      "full_name": "djok/function_app_TeamsCallFunction",
+      "url": "https://github.com/djok/function_app_TeamsCallFunction",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 53,
+          "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
     "djok/grafana-pinger": {
       "name": "grafana-pinger",
       "full_name": "djok/grafana-pinger",
@@ -89,6 +641,52 @@
         }
       }
     },
+    "djok/mcp-oss": {
+      "name": "mcp-oss",
+      "full_name": "djok/mcp-oss",
+      "url": "https://github.com/djok/mcp-oss",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 150,
+          "deletions": 71,
+          "files_changed": 0
+        }
+      }
+    },
     "djok/me": {
       "name": "me",
       "full_name": "djok/me",
@@ -99,8 +697,8 @@
       "periods": {
         "today": {
           "commits": 1,
-          "additions": 3,
-          "deletions": 3,
+          "additions": 8,
+          "deletions": 5,
           "files_changed": 0
         },
         "yesterday": {
@@ -111,26 +709,164 @@
         },
         "week": {
           "commits": 1,
-          "additions": 3,
-          "deletions": 3,
+          "additions": 8,
+          "deletions": 5,
           "files_changed": 0
         },
         "month": {
           "commits": 1,
-          "additions": 3,
-          "deletions": 3,
+          "additions": 8,
+          "deletions": 5,
           "files_changed": 0
         },
         "quarter": {
           "commits": 1,
-          "additions": 3,
-          "deletions": 3,
+          "additions": 8,
+          "deletions": 5,
           "files_changed": 0
         },
         "year": {
           "commits": 1,
-          "additions": 3,
-          "deletions": 3,
+          "additions": 8,
+          "deletions": 5,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/obvt-toolbox": {
+      "name": "obvt-toolbox",
+      "full_name": "djok/obvt-toolbox",
+      "url": "https://github.com/djok/obvt-toolbox",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 1,
+          "additions": 812,
+          "deletions": 32,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 1,
+          "additions": 812,
+          "deletions": 32,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 812,
+          "deletions": 32,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/otdr-toolbox": {
+      "name": "otdr-toolbox",
+      "full_name": "djok/otdr-toolbox",
+      "url": "https://github.com/djok/otdr-toolbox",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 1,
+          "additions": 515,
+          "deletions": 210,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 515,
+          "deletions": 210,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/smokeping-docker": {
+      "name": "smokeping-docker",
+      "full_name": "djok/smokeping-docker",
+      "url": "https://github.com/djok/smokeping-docker",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 1,
+          "additions": 4,
+          "deletions": 4,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 4,
+          "deletions": 4,
           "files_changed": 0
         }
       }
@@ -227,6 +963,98 @@
         }
       }
     },
+    "djok/tacacs4keycloak": {
+      "name": "tacacs4keycloak",
+      "full_name": "djok/tacacs4keycloak",
+      "url": "https://github.com/djok/tacacs4keycloak",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 6237,
+          "deletions": 1,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/tacacs4usip": {
+      "name": "tacacs4usip",
+      "full_name": "djok/tacacs4usip",
+      "url": "https://github.com/djok/tacacs4usip",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
     "djok/tacacs4zitadel": {
       "name": "tacacs4zitadel",
       "full_name": "djok/tacacs4zitadel",
@@ -269,6 +1097,52 @@
           "commits": 1,
           "additions": 400,
           "deletions": 10,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/telcong.oss": {
+      "name": "telcong.oss",
+      "full_name": "djok/telcong.oss",
+      "url": "https://github.com/djok/telcong.oss",
+      "description": "TelcoNG OSS",
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 1,
+          "additions": 14957,
+          "deletions": 8,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 1,
+          "additions": 14957,
+          "deletions": 8,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 1,
+          "additions": 14957,
+          "deletions": 8,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 1,
+          "additions": 14957,
+          "deletions": 8,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 14957,
+          "deletions": 8,
           "files_changed": 0
         }
       }
@@ -319,6 +1193,52 @@
         }
       }
     },
+    "djok/TSBC2MSTEAMS": {
+      "name": "TSBC2MSTEAMS",
+      "full_name": "djok/TSBC2MSTEAMS",
+      "url": "https://github.com/djok/TSBC2MSTEAMS",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
     "djok/UCRM-plugins": {
       "name": "UCRM-plugins",
       "full_name": "djok/UCRM-plugins",
@@ -361,6 +1281,374 @@
           "commits": 1,
           "additions": 1564,
           "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/uisp": {
+      "name": "uisp",
+      "full_name": "djok/uisp",
+      "url": "https://github.com/djok/uisp",
+      "description": "Comprehensive O&M Management of Fiber.bg via the UISP Platform",
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 1491,
+          "deletions": 1,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/uisp-bgn2eur-migration": {
+      "name": "uisp-bgn2eur-migration",
+      "full_name": "djok/uisp-bgn2eur-migration",
+      "url": "https://github.com/djok/uisp-bgn2eur-migration",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 1,
+          "additions": 4379,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 1,
+          "additions": 4379,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 1,
+          "additions": 4379,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 1,
+          "additions": 4379,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 4379,
+          "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/venci-ws": {
+      "name": "venci-ws",
+      "full_name": "djok/venci-ws",
+      "url": "https://github.com/djok/venci-ws",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 1,
+          "additions": 57864,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 57864,
+          "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/vibe_trade": {
+      "name": "vibe_trade",
+      "full_name": "djok/vibe_trade",
+      "url": "https://github.com/djok/vibe_trade",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 1,
+          "additions": 40411,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 1,
+          "additions": 40411,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 1,
+          "additions": 40411,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 1,
+          "additions": 40411,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 40411,
+          "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/www-fiber-bg-on-azure": {
+      "name": "www-fiber-bg-on-azure",
+      "full_name": "djok/www-fiber-bg-on-azure",
+      "url": "https://github.com/djok/www-fiber-bg-on-azure",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/xftbots": {
+      "name": "xftbots",
+      "full_name": "djok/xftbots",
+      "url": "https://github.com/djok/xftbots",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 0,
+          "deletions": 55,
+          "files_changed": 0
+        }
+      }
+    },
+    "mgenov/club-admin": {
+      "name": "club-admin",
+      "full_name": "mgenov/club-admin",
+      "url": "https://github.com/mgenov/club-admin",
+      "description": "Club Admin",
+      "stars": 0,
+      "forks": 1,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 58,
+          "deletions": 45,
+          "files_changed": 0
+        }
+      }
+    },
+    "mgenov/delicts.tollbg": {
+      "name": "delicts.tollbg",
+      "full_name": "mgenov/delicts.tollbg",
+      "url": "https://github.com/mgenov/delicts.tollbg",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "yesterday": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 5,
+          "deletions": 2,
           "files_changed": 0
         }
       }
@@ -408,9 +1696,9 @@
       "deletions": 0
     },
     "2025-10-05": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
+      "commits": 1,
+      "additions": 2591,
+      "deletions": 896
     },
     "2025-10-06": {
       "commits": 0,
@@ -453,18 +1741,18 @@
       "deletions": 0
     },
     "2025-10-14": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
+      "commits": 1,
+      "additions": 158,
+      "deletions": 102
     },
     "2025-10-15": {
-      "commits": 0,
-      "additions": 0,
+      "commits": 1,
+      "additions": 92,
       "deletions": 0
     },
     "2025-10-16": {
-      "commits": 0,
-      "additions": 0,
+      "commits": 1,
+      "additions": 57864,
       "deletions": 0
     },
     "2025-10-17": {
@@ -498,9 +1786,9 @@
       "deletions": 0
     },
     "2025-10-23": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
+      "commits": 1,
+      "additions": 1124,
+      "deletions": 1
     },
     "2025-10-24": {
       "commits": 0,
@@ -513,8 +1801,8 @@
       "deletions": 0
     },
     "2025-10-26": {
-      "commits": 0,
-      "additions": 0,
+      "commits": 1,
+      "additions": 592,
       "deletions": 0
     },
     "2025-10-27": {
@@ -523,9 +1811,9 @@
       "deletions": 0
     },
     "2025-10-28": {
-      "commits": 1,
-      "additions": 8,
-      "deletions": 0
+      "commits": 2,
+      "additions": 12,
+      "deletions": 4
     },
     "2025-10-29": {
       "commits": 0,
@@ -533,9 +1821,9 @@
       "deletions": 0
     },
     "2025-10-30": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
+      "commits": 1,
+      "additions": 2,
+      "deletions": 1
     },
     "2025-10-31": {
       "commits": 0,
@@ -543,9 +1831,9 @@
       "deletions": 0
     },
     "2025-11-01": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
+      "commits": 1,
+      "additions": 515,
+      "deletions": 210
     },
     "2025-11-02": {
       "commits": 0,
@@ -713,13 +2001,13 @@
       "deletions": 0
     },
     "2025-12-05": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
+      "commits": 1,
+      "additions": 184,
+      "deletions": 28
     },
     "2025-12-06": {
-      "commits": 0,
-      "additions": 0,
+      "commits": 1,
+      "additions": 15902,
       "deletions": 0
     },
     "2025-12-07": {
@@ -728,8 +2016,8 @@
       "deletions": 0
     },
     "2025-12-08": {
-      "commits": 0,
-      "additions": 0,
+      "commits": 1,
+      "additions": 10444,
       "deletions": 0
     },
     "2025-12-09": {
@@ -738,9 +2026,9 @@
       "deletions": 0
     },
     "2025-12-10": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
+      "commits": 1,
+      "additions": 812,
+      "deletions": 32
     },
     "2025-12-11": {
       "commits": 0,
@@ -813,87 +2101,135 @@
       "deletions": 0
     },
     "2025-12-25": {
-      "commits": 1,
-      "additions": 1590,
-      "deletions": 0
+      "commits": 4,
+      "additions": 61337,
+      "deletions": 8
     },
     "2025-12-26": {
       "commits": 1,
-      "additions": 3,
-      "deletions": 3
+      "additions": 8,
+      "deletions": 5
     }
   },
   "languages": {
-    "JavaScript": 4472302,
+    "TypeScript": 23475654,
+    "HTML": 12487320,
+    "Go": 46115747,
+    "JavaScript": 50051075,
+    "CSS": 1482375,
+    "Makefile": 100495,
+    "Kotlin": 38158143,
+    "Java": 48826226,
+    "Smarty": 60940,
+    "Shell": 349478,
+    "Starlark": 3974703,
+    "SCSS": 83947,
+    "Mustache": 73150,
+    "XSLT": 57525,
+    "Processing": 9200,
+    "C++": 92920,
+    "Arduino": 2616,
+    "Batchfile": 13534,
+    "Dockerfile": 67510,
+    "Less": 170159,
+    "Python": 44490288,
+    "Ruby": 20968,
+    "Objective-C": 48046,
+    "Swift": 6413,
+    "Objective-C++": 5446,
+    "C": 93867,
+    "PHP": 3311853,
+    "Roff": 283135878,
+    "Perl": 18247,
     "Vue": 32694,
-    "HTML": 3722344,
-    "Java": 693279,
-    "Kotlin": 263551,
-    "Python": 3702971,
-    "Dockerfile": 15403,
-    "Shell": 65243,
-    "Go": 5485380,
-    "CSS": 773734,
+    "Clojure": 6245,
+    "PowerShell": 177581,
+    "Bicep": 8066,
     "QML": 909999,
-    "PHP": 336329,
+    "Jupyter Notebook": 1728928,
     "C#": 27740,
     "ASP.NET": 16899,
-    "SCSS": 13711,
-    "Smarty": 392,
-    "Makefile": 3868,
     "Awk": 8236,
-    "API Blueprint": 548660,
-    "TypeScript": 1736647,
-    "Batchfile": 3091
+    "API Blueprint": 822995,
+    "Cython": 65338,
+    "TeX": 8242,
+    "PLSQL": 3838,
+    "Classic ASP": 2194,
+    "VBScript": 941,
+    "SuperCollider": 7969,
+    "Inno Setup": 5157,
+    "Rust": 7360,
+    "PLpgSQL": 98885
   },
   "top_repos": [
     {
-      "name": "djok/grafana-pinger",
-      "url": "https://github.com/djok/grafana-pinger",
+      "name": "djok/backup-vyos-bgp1",
+      "url": "https://github.com/djok/backup-vyos-bgp1",
       "commits": 1,
-      "additions": 8,
+      "additions": 120,
+      "deletions": 1
+    },
+    {
+      "name": "djok/backup-vyos-bgp2",
+      "url": "https://github.com/djok/backup-vyos-bgp2",
+      "commits": 1,
+      "additions": 1,
       "deletions": 0
     },
     {
-      "name": "djok/me",
-      "url": "https://github.com/djok/me",
+      "name": "djok/backup-vyos-cgnat1",
+      "url": "https://github.com/djok/backup-vyos-cgnat1",
       "commits": 1,
-      "additions": 3,
-      "deletions": 3
+      "additions": 2,
+      "deletions": 2
     },
     {
-      "name": "djok/static",
-      "url": "https://github.com/djok/static",
+      "name": "djok/browser-use-ai",
+      "url": "https://github.com/djok/browser-use-ai",
       "commits": 1,
-      "additions": 8716,
+      "additions": 1,
       "deletions": 0
     },
     {
-      "name": "djok/tacacs-plus4uisp",
-      "url": "https://github.com/djok/tacacs-plus4uisp",
+      "name": "djok/club-admin",
+      "url": "https://github.com/djok/club-admin",
       "commits": 1,
-      "additions": 15,
-      "deletions": 10
+      "additions": 58,
+      "deletions": 45
     },
     {
-      "name": "djok/tacacs4zitadel",
-      "url": "https://github.com/djok/tacacs4zitadel",
+      "name": "djok/delicts.tollbg",
+      "url": "https://github.com/djok/delicts.tollbg",
       "commits": 1,
-      "additions": 400,
-      "deletions": 10
+      "additions": 184,
+      "deletions": 28
     },
     {
-      "name": "djok/trinavis",
-      "url": "https://github.com/djok/trinavis",
+      "name": "djok/donationhub",
+      "url": "https://github.com/djok/donationhub",
       "commits": 1,
-      "additions": 8,
+      "additions": 1,
       "deletions": 0
     },
     {
-      "name": "djok/UCRM-plugins",
-      "url": "https://github.com/djok/UCRM-plugins",
+      "name": "djok/els-eRetail-setup",
+      "url": "https://github.com/djok/els-eRetail-setup",
       "commits": 1,
-      "additions": 1564,
+      "additions": 1,
+      "deletions": 0
+    },
+    {
+      "name": "djok/fiber-bg-ia-noc",
+      "url": "https://github.com/djok/fiber-bg-ia-noc",
+      "commits": 1,
+      "additions": 172,
+      "deletions": 0
+    },
+    {
+      "name": "djok/fiber-bg-www",
+      "url": "https://github.com/djok/fiber-bg-www",
+      "commits": 1,
+      "additions": 15902,
       "deletions": 0
     }
   ]
