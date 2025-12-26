@@ -1,14 +1,14 @@
 {
   "meta": {
-    "updated_at": "2025-12-26T06:01:18.612263",
+    "updated_at": "2025-12-26T10:06:40.812625",
     "username": "djok",
     "generated_by": "GitHub Metrics Dashboard"
   },
   "summary": {
     "today": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0,
+      "commits": 1,
+      "additions": 7,
+      "deletions": 7,
       "files_changed": 0
     },
     "yesterday": {
@@ -19,26 +19,26 @@
     },
     "week": {
       "commits": 1,
-      "additions": 1590,
-      "deletions": 0,
+      "additions": 7,
+      "deletions": 7,
       "files_changed": 0
     },
     "month": {
       "commits": 1,
-      "additions": 1590,
-      "deletions": 0,
+      "additions": 7,
+      "deletions": 7,
       "files_changed": 0
     },
     "quarter": {
       "commits": 2,
-      "additions": 1598,
-      "deletions": 0,
+      "additions": 15,
+      "deletions": 7,
       "files_changed": 0
     },
     "year": {
       "commits": 7,
-      "additions": 12301,
-      "deletions": 20,
+      "additions": 10718,
+      "deletions": 27,
       "files_changed": 0
     }
   },
@@ -98,9 +98,9 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
+          "commits": 1,
+          "additions": 7,
+          "deletions": 7,
           "files_changed": 0
         },
         "yesterday": {
@@ -111,26 +111,26 @@
         },
         "week": {
           "commits": 1,
-          "additions": 1590,
-          "deletions": 0,
+          "additions": 7,
+          "deletions": 7,
           "files_changed": 0
         },
         "month": {
           "commits": 1,
-          "additions": 1590,
-          "deletions": 0,
+          "additions": 7,
+          "deletions": 7,
           "files_changed": 0
         },
         "quarter": {
           "commits": 1,
-          "additions": 1590,
-          "deletions": 0,
+          "additions": 7,
+          "deletions": 7,
           "files_changed": 0
         },
         "year": {
           "commits": 1,
-          "additions": 1590,
-          "deletions": 0,
+          "additions": 7,
+          "deletions": 7,
           "files_changed": 0
         }
       }
@@ -367,6 +367,306 @@
     }
   },
   "daily": {
+    "2025-09-27": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-09-28": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-09-29": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-09-30": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-01": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-02": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-03": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-04": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-05": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-06": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-07": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-08": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-09": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-10": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-11": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-12": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-13": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-14": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-15": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-16": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-17": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-18": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-19": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-20": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-21": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-22": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-23": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-24": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-25": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-26": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-27": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-28": {
+      "commits": 1,
+      "additions": 8,
+      "deletions": 0
+    },
+    "2025-10-29": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-30": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-10-31": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-01": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-02": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-03": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-04": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-05": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-06": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-07": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-08": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-09": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-10": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-11": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-12": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-13": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-14": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-15": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-16": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-17": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-18": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-19": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-20": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-21": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-22": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-23": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-24": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2025-11-25": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
     "2025-11-26": {
       "commits": 0,
       "additions": 0,
@@ -518,9 +818,9 @@
       "deletions": 0
     },
     "2025-12-26": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
+      "commits": 1,
+      "additions": 7,
+      "deletions": 7
     }
   },
   "languages": {
@@ -529,7 +829,7 @@
     "HTML": 3722344,
     "Java": 693279,
     "Kotlin": 263551,
-    "Python": 3702849,
+    "Python": 3702896,
     "Dockerfile": 15403,
     "Shell": 65243,
     "Go": 5485380,
@@ -548,10 +848,52 @@
   },
   "top_repos": [
     {
+      "name": "djok/grafana-pinger",
+      "url": "https://github.com/djok/grafana-pinger",
+      "commits": 1,
+      "additions": 8,
+      "deletions": 0
+    },
+    {
       "name": "djok/me",
       "url": "https://github.com/djok/me",
       "commits": 1,
-      "additions": 1590,
+      "additions": 7,
+      "deletions": 7
+    },
+    {
+      "name": "djok/static",
+      "url": "https://github.com/djok/static",
+      "commits": 1,
+      "additions": 8716,
+      "deletions": 0
+    },
+    {
+      "name": "djok/tacacs-plus4uisp",
+      "url": "https://github.com/djok/tacacs-plus4uisp",
+      "commits": 1,
+      "additions": 15,
+      "deletions": 10
+    },
+    {
+      "name": "djok/tacacs4zitadel",
+      "url": "https://github.com/djok/tacacs4zitadel",
+      "commits": 1,
+      "additions": 400,
+      "deletions": 10
+    },
+    {
+      "name": "djok/trinavis",
+      "url": "https://github.com/djok/trinavis",
+      "commits": 1,
+      "additions": 8,
+      "deletions": 0
+    },
+    {
+      "name": "djok/UCRM-plugins",
+      "url": "https://github.com/djok/UCRM-plugins",
+      "commits": 1,
+      "additions": 1564,
       "deletions": 0
     }
   ]
