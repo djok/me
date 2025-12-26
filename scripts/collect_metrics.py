@@ -20,7 +20,7 @@ def get_repos_to_track(g, user):
     """Връща списък с репозиторита за проследяване"""
     repos = []
     seen = set()
-    
+
     # Ако са зададени конкретни репота
     if REPOS_TO_TRACK:
         for repo_name in REPOS_TO_TRACK.split(','):
@@ -32,14 +32,17 @@ def get_repos_to_track(g, user):
                 except Exception as e:
                     print(f"Warning: Could not access {repo_name}: {e}")
         return repos
-    
-    # Иначе взимаме всички достъпни репота (включително forks)
+
+    # Взимаме всички репота на authenticated user (включително private и forks)
     try:
-        # Собствени репота (type='all' включва forks)
-        for repo in user.get_repos(type='all'):
+        # g.get_user() без аргумент връща authenticated user с пълен достъп
+        auth_user = g.get_user()
+        # affiliation='owner,collaborator,organization_member' взима всички репота
+        for repo in auth_user.get_repos(affiliation='owner,collaborator,organization_member'):
             if repo.full_name not in seen:
                 repos.append(repo)
                 seen.add(repo.full_name)
+                print(f"    Found: {repo.full_name} (fork={repo.fork})")
     except Exception as e:
         print(f"Warning: Could not fetch user repos: {e}")
     
