@@ -1,14 +1,14 @@
 {
   "meta": {
-    "updated_at": "2025-12-26T11:09:51.863258",
+    "updated_at": "2025-12-26T14:26:49.655803",
     "username": "djok",
     "generated_by": "GitHub Metrics Dashboard"
   },
   "summary": {
     "today": {
-      "commits": 1,
-      "additions": 8,
-      "deletions": 5,
+      "commits": 2,
+      "additions": 1046,
+      "deletions": 56,
       "files_changed": 0
     },
     "yesterday": {
@@ -19,26 +19,26 @@
     },
     "week": {
       "commits": 4,
-      "additions": 59755,
-      "deletions": 13,
+      "additions": 20382,
+      "deletions": 64,
       "files_changed": 0
     },
     "month": {
       "commits": 7,
-      "additions": 76653,
-      "deletions": 73,
+      "additions": 37280,
+      "deletions": 124,
       "files_changed": 0
     },
     "quarter": {
       "commits": 11,
-      "additions": 135044,
-      "deletions": 287,
+      "additions": 95671,
+      "deletions": 338,
       "files_changed": 0
     },
     "year": {
       "commits": 35,
-      "additions": 156577,
-      "deletions": 619,
+      "additions": 117204,
+      "deletions": 670,
       "files_changed": 0
     }
   },
@@ -697,8 +697,8 @@
       "periods": {
         "today": {
           "commits": 1,
-          "additions": 8,
-          "deletions": 5,
+          "additions": 352,
+          "deletions": 52,
           "files_changed": 0
         },
         "yesterday": {
@@ -709,26 +709,26 @@
         },
         "week": {
           "commits": 1,
-          "additions": 8,
-          "deletions": 5,
+          "additions": 352,
+          "deletions": 52,
           "files_changed": 0
         },
         "month": {
           "commits": 1,
-          "additions": 8,
-          "deletions": 5,
+          "additions": 352,
+          "deletions": 52,
           "files_changed": 0
         },
         "quarter": {
           "commits": 1,
-          "additions": 8,
-          "deletions": 5,
+          "additions": 352,
+          "deletions": 52,
           "files_changed": 0
         },
         "year": {
           "commits": 1,
-          "additions": 8,
-          "deletions": 5,
+          "additions": 352,
+          "deletions": 52,
           "files_changed": 0
         }
       }
@@ -1432,9 +1432,9 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
+          "commits": 1,
+          "additions": 694,
+          "deletions": 4,
           "files_changed": 0
         },
         "yesterday": {
@@ -1445,26 +1445,26 @@
         },
         "week": {
           "commits": 1,
-          "additions": 40411,
-          "deletions": 0,
+          "additions": 694,
+          "deletions": 4,
           "files_changed": 0
         },
         "month": {
           "commits": 1,
-          "additions": 40411,
-          "deletions": 0,
+          "additions": 694,
+          "deletions": 4,
           "files_changed": 0
         },
         "quarter": {
           "commits": 1,
-          "additions": 40411,
-          "deletions": 0,
+          "additions": 694,
+          "deletions": 4,
           "files_changed": 0
         },
         "year": {
           "commits": 1,
-          "additions": 40411,
-          "deletions": 0,
+          "additions": 694,
+          "deletions": 4,
           "files_changed": 0
         }
       }
@@ -2106,9 +2106,9 @@
       "deletions": 8
     },
     "2025-12-26": {
-      "commits": 1,
-      "additions": 8,
-      "deletions": 5
+      "commits": 2,
+      "additions": 1446,
+      "deletions": 52
     }
   },
   "languages": {
@@ -2121,7 +2121,7 @@
     "Kotlin": 38158143,
     "Java": 48826226,
     "Smarty": 60940,
-    "Shell": 349478,
+    "Shell": 372030,
     "Starlark": 3974703,
     "SCSS": 83947,
     "Mustache": 73150,
@@ -2132,7 +2132,7 @@
     "Batchfile": 13534,
     "Dockerfile": 67510,
     "Less": 170159,
-    "Python": 44490288,
+    "Python": 44532172,
     "Ruby": 20968,
     "Objective-C": 48046,
     "Swift": 6413,
@@ -2163,66 +2163,10 @@
   },
   "top_repos": [
     {
-      "name": "djok/backup-vyos-bgp1",
-      "url": "https://github.com/djok/backup-vyos-bgp1",
+      "name": "djok/venci-ws",
+      "url": "https://github.com/djok/venci-ws",
       "commits": 1,
-      "additions": 120,
-      "deletions": 1
-    },
-    {
-      "name": "djok/backup-vyos-bgp2",
-      "url": "https://github.com/djok/backup-vyos-bgp2",
-      "commits": 1,
-      "additions": 1,
-      "deletions": 0
-    },
-    {
-      "name": "djok/backup-vyos-cgnat1",
-      "url": "https://github.com/djok/backup-vyos-cgnat1",
-      "commits": 1,
-      "additions": 2,
-      "deletions": 2
-    },
-    {
-      "name": "djok/browser-use-ai",
-      "url": "https://github.com/djok/browser-use-ai",
-      "commits": 1,
-      "additions": 1,
-      "deletions": 0
-    },
-    {
-      "name": "djok/club-admin",
-      "url": "https://github.com/djok/club-admin",
-      "commits": 1,
-      "additions": 58,
-      "deletions": 45
-    },
-    {
-      "name": "djok/delicts.tollbg",
-      "url": "https://github.com/djok/delicts.tollbg",
-      "commits": 1,
-      "additions": 184,
-      "deletions": 28
-    },
-    {
-      "name": "djok/donationhub",
-      "url": "https://github.com/djok/donationhub",
-      "commits": 1,
-      "additions": 1,
-      "deletions": 0
-    },
-    {
-      "name": "djok/els-eRetail-setup",
-      "url": "https://github.com/djok/els-eRetail-setup",
-      "commits": 1,
-      "additions": 1,
-      "deletions": 0
-    },
-    {
-      "name": "djok/fiber-bg-ia-noc",
-      "url": "https://github.com/djok/fiber-bg-ia-noc",
-      "commits": 1,
-      "additions": 172,
+      "additions": 57864,
       "deletions": 0
     },
     {
@@ -2231,6 +2175,62 @@
       "commits": 1,
       "additions": 15902,
       "deletions": 0
+    },
+    {
+      "name": "djok/telcong.oss",
+      "url": "https://github.com/djok/telcong.oss",
+      "commits": 1,
+      "additions": 14957,
+      "deletions": 8
+    },
+    {
+      "name": "djok/static",
+      "url": "https://github.com/djok/static",
+      "commits": 1,
+      "additions": 8716,
+      "deletions": 0
+    },
+    {
+      "name": "djok/tacacs4keycloak",
+      "url": "https://github.com/djok/tacacs4keycloak",
+      "commits": 1,
+      "additions": 6237,
+      "deletions": 1
+    },
+    {
+      "name": "djok/uisp-bgn2eur-migration",
+      "url": "https://github.com/djok/uisp-bgn2eur-migration",
+      "commits": 1,
+      "additions": 4379,
+      "deletions": 0
+    },
+    {
+      "name": "djok/FIBER.BG-HR",
+      "url": "https://github.com/djok/FIBER.BG-HR",
+      "commits": 1,
+      "additions": 2477,
+      "deletions": 89
+    },
+    {
+      "name": "djok/UCRM-plugins",
+      "url": "https://github.com/djok/UCRM-plugins",
+      "commits": 1,
+      "additions": 1564,
+      "deletions": 0
+    },
+    {
+      "name": "djok/uisp",
+      "url": "https://github.com/djok/uisp",
+      "commits": 1,
+      "additions": 1491,
+      "deletions": 1
+    },
+    {
+      "name": "djok/obvt-toolbox",
+      "url": "https://github.com/djok/obvt-toolbox",
+      "commits": 1,
+      "additions": 812,
+      "deletions": 32
     }
   ]
 }
