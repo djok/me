@@ -27,7 +27,7 @@ def generate_html_dashboard(metrics):
     updated_at = metrics['meta']['updated_at'][:16].replace('T', ' ')
     username = metrics['meta']['username']
     
-    dates = sorted(daily.keys())[-30:]
+    dates = sorted(daily.keys())[-90:]
     commits_data = [daily.get(d, {}).get('commits', 0) for d in dates]
     additions_data = [daily.get(d, {}).get('additions', 0) for d in dates]
     deletions_data = [daily.get(d, {}).get('deletions', 0) for d in dates]

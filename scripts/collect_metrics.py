@@ -168,7 +168,7 @@ def collect_all_metrics():
         
         # Дневни статистики за графики (само за активни репота)
         if has_activity:
-            daily = get_daily_stats(repo, GH_USERNAME, days=30)
+            daily = get_daily_stats(repo, GH_USERNAME, days=90)
             for day in daily:
                 date = day['date']
                 results['daily'][date]['commits'] += day['commits']
@@ -188,18 +188,18 @@ def collect_all_metrics():
     results['daily'] = dict(results['daily'])
     results['languages'] = dict(results['languages'])
     
-    # Топ репота по commits този месец
+    # Топ репота по commits тази година (показва повече активност)
     results['top_repos'] = sorted(
         [
             {
                 'name': data['full_name'],
                 'url': data['url'],
-                'commits': data['periods']['month']['commits'],
-                'additions': data['periods']['month']['additions'],
-                'deletions': data['periods']['month']['deletions']
+                'commits': data['periods']['year']['commits'],
+                'additions': data['periods']['year']['additions'],
+                'deletions': data['periods']['year']['deletions']
             }
             for name, data in results['repos'].items()
-            if data['periods']['month']['commits'] > 0
+            if data['periods']['year']['commits'] > 0
         ],
         key=lambda x: x['commits'],
         reverse=True
