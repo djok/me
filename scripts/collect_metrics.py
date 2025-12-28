@@ -114,12 +114,9 @@ def collect_all_metrics():
     now = datetime.now()
     
     # Периоди за анализ
+    # "today" всъщност е днес + вчера (последните 2 дни), защото скриптът се изпълнява в 23:00 UTC
     periods = {
-        'today': (now.replace(hour=0, minute=0, second=0, microsecond=0), now),
-        'yesterday': (
-            (now - timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0),
-            now.replace(hour=0, minute=0, second=0, microsecond=0)
-        ),
+        'today': ((now - timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0), now),
         'week': (now - timedelta(days=7), now),
         'month': (now - timedelta(days=30), now),
         'quarter': (now - timedelta(days=90), now),
