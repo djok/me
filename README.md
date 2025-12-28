@@ -1,18 +1,19 @@
 # 📊 Code Metrics Dashboard
 
-> **@djok** · Updated: 2025-12-28 06:01 UTC
+> **@djok** · Updated: 2025-12-28 18:33 UTC
 
 | Period | Commits | Additions | Deletions | Net |
 |--------|---------|-----------|-----------|-----|
-| Today | 0 | +0 | -0 | 0 |
-| Week | 4 | +19.8K | -82 | 19.7K |
-| Month | 7 | +36.7K | -142 | 36.5K |
-| Year | 35 | +116.6K | -688 | 115.9K |
+| Today | 2 | +2.0M | -6 | 2.0M |
+| Week | 5 | +2.0M | -36 | 2.0M |
+| Month | 8 | +2.0M | -96 | 2.0M |
+| Year | 36 | +2.1M | -642 | 2.1M |
 
 ## Top Repositories
 
 | Repository | Commits | ++ | -- |
 |------------|---------|----|----|
+| [uisp_etl](https://github.com/djok/uisp_etl) | 1 | +2.0M | -0 |
 | [venci-ws](https://github.com/djok/venci-ws) | 1 | +57.9K | -0 |
 | [fiber-bg-www](https://github.com/djok/fiber-bg-www) | 1 | +15.9K | -0 |
 | [telcong.oss](https://github.com/djok/telcong.oss) | 1 | +15.0K | -8 |
@@ -22,7 +23,6 @@
 | [FIBER.BG-HR](https://github.com/djok/FIBER.BG-HR) | 1 | +2.5K | -89 |
 | [UCRM-plugins](https://github.com/djok/UCRM-plugins) | 1 | +1.6K | -0 |
 | [uisp](https://github.com/djok/uisp) | 1 | +1.5K | -1 |
-| [obvt-toolbox](https://github.com/djok/obvt-toolbox) | 1 | +812 | -32 |
 
 ---
 🔗 [View Dashboard](../../) · 🤖 Auto-updated daily

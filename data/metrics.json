@@ -1,44 +1,38 @@
 {
   "meta": {
-    "updated_at": "2025-12-28T06:01:21.801960",
+    "updated_at": "2025-12-28T18:33:09.540137",
     "username": "djok",
     "generated_by": "GitHub Metrics Dashboard"
   },
   "summary": {
     "today": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0,
-      "files_changed": 0
-    },
-    "yesterday": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0,
+      "commits": 2,
+      "additions": 2002712,
+      "deletions": 6,
       "files_changed": 0
     },
     "week": {
-      "commits": 4,
-      "additions": 19757,
-      "deletions": 82,
+      "commits": 5,
+      "additions": 2022117,
+      "deletions": 36,
       "files_changed": 0
     },
     "month": {
-      "commits": 7,
-      "additions": 36655,
-      "deletions": 142,
+      "commits": 8,
+      "additions": 2039015,
+      "deletions": 96,
       "files_changed": 0
     },
     "quarter": {
-      "commits": 11,
-      "additions": 95046,
-      "deletions": 356,
+      "commits": 12,
+      "additions": 2097406,
+      "deletions": 310,
       "files_changed": 0
     },
     "year": {
-      "commits": 35,
-      "additions": 116579,
-      "deletions": 688,
+      "commits": 36,
+      "additions": 2118939,
+      "deletions": 642,
       "files_changed": 0
     }
   },
@@ -52,12 +46,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -103,12 +91,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 0,
           "additions": 0,
@@ -144,12 +126,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -195,12 +171,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 0,
           "additions": 0,
@@ -236,12 +206,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -287,12 +251,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 0,
           "additions": 0,
@@ -328,12 +286,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -379,12 +331,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 0,
           "additions": 0,
@@ -420,12 +366,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -471,12 +411,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 0,
           "additions": 0,
@@ -512,12 +446,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -563,12 +491,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 0,
           "additions": 0,
@@ -604,12 +526,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -655,12 +571,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 0,
           "additions": 0,
@@ -696,39 +606,33 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
+          "commits": 1,
+          "additions": 3,
+          "deletions": 6,
           "files_changed": 0
         },
         "week": {
           "commits": 1,
-          "additions": 352,
-          "deletions": 52,
+          "additions": 3,
+          "deletions": 6,
           "files_changed": 0
         },
         "month": {
           "commits": 1,
-          "additions": 352,
-          "deletions": 52,
+          "additions": 3,
+          "deletions": 6,
           "files_changed": 0
         },
         "quarter": {
           "commits": 1,
-          "additions": 352,
-          "deletions": 52,
+          "additions": 3,
+          "deletions": 6,
           "files_changed": 0
         },
         "year": {
           "commits": 1,
-          "additions": 352,
-          "deletions": 52,
+          "additions": 3,
+          "deletions": 6,
           "files_changed": 0
         }
       }
@@ -742,12 +646,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -793,12 +691,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 0,
           "additions": 0,
@@ -834,12 +726,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -885,12 +771,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 0,
           "additions": 0,
@@ -926,12 +806,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -977,12 +851,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 0,
           "additions": 0,
@@ -1018,12 +886,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -1069,12 +931,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 0,
           "additions": 0,
@@ -1110,12 +966,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -1161,12 +1011,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 0,
           "additions": 0,
@@ -1202,12 +1046,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -1253,12 +1091,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 0,
           "additions": 0,
@@ -1294,12 +1126,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -1345,12 +1171,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 1,
           "additions": 4379,
@@ -1377,6 +1197,46 @@
         }
       }
     },
+    "djok/uisp_etl": {
+      "name": "uisp_etl",
+      "full_name": "djok/uisp_etl",
+      "url": "https://github.com/djok/uisp_etl",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 1,
+          "additions": 2002709,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 1,
+          "additions": 2002709,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 1,
+          "additions": 2002709,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 1,
+          "additions": 2002709,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 2002709,
+          "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
     "djok/venci-ws": {
       "name": "venci-ws",
       "full_name": "djok/venci-ws",
@@ -1386,12 +1246,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -1437,12 +1291,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 1,
           "additions": 69,
@@ -1478,12 +1326,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -1529,12 +1371,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 0,
           "additions": 0,
@@ -1575,12 +1411,6 @@
           "deletions": 0,
           "files_changed": 0
         },
-        "yesterday": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
         "week": {
           "commits": 0,
           "additions": 0,
@@ -1616,12 +1446,6 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "yesterday": {
           "commits": 0,
           "additions": 0,
           "deletions": 0,
@@ -2106,17 +1930,17 @@
       "deletions": 0
     },
     "2025-12-28": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
+      "commits": 2,
+      "additions": 2002712,
+      "deletions": 6
     }
   },
   "languages": {
-    "TypeScript": 23475654,
-    "HTML": 12487320,
-    "Go": 46115747,
-    "JavaScript": 50051075,
-    "CSS": 1482375,
+    "TypeScript": 23594473,
+    "HTML": 12487692,
+    "Go": 46306508,
+    "JavaScript": 50051337,
+    "CSS": 1483097,
     "Makefile": 100495,
     "Kotlin": 38158143,
     "Java": 48826226,
@@ -2130,9 +1954,9 @@
     "C++": 92920,
     "Arduino": 2616,
     "Batchfile": 13534,
-    "Dockerfile": 67510,
+    "Dockerfile": 67987,
     "Less": 170159,
-    "Python": 44606491,
+    "Python": 44606478,
     "Ruby": 20968,
     "Objective-C": 48046,
     "Swift": 6413,
@@ -2150,7 +1974,7 @@
     "C#": 27740,
     "ASP.NET": 16899,
     "Awk": 8236,
-    "API Blueprint": 822995,
+    "API Blueprint": 1095380,
     "Cython": 65338,
     "TeX": 8242,
     "PLSQL": 3838,
@@ -2162,6 +1986,13 @@
     "PLpgSQL": 98885
   },
   "top_repos": [
+    {
+      "name": "djok/uisp_etl",
+      "url": "https://github.com/djok/uisp_etl",
+      "commits": 1,
+      "additions": 2002709,
+      "deletions": 0
+    },
     {
       "name": "djok/venci-ws",
       "url": "https://github.com/djok/venci-ws",
@@ -2224,13 +2055,6 @@
       "commits": 1,
       "additions": 1491,
       "deletions": 1
-    },
-    {
-      "name": "djok/obvt-toolbox",
-      "url": "https://github.com/djok/obvt-toolbox",
-      "commits": 1,
-      "additions": 812,
-      "deletions": 32
     }
   ]
 }
