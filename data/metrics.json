@@ -1,38 +1,38 @@
 {
   "meta": {
-    "updated_at": "2025-12-28T23:03:59.855736",
+    "updated_at": "2025-12-29T23:04:10.696947",
     "username": "djok",
     "generated_by": "GitHub Metrics Dashboard"
   },
   "summary": {
     "today": {
-      "commits": 2,
-      "additions": 2002712,
-      "deletions": 6,
+      "commits": 5,
+      "additions": 117502,
+      "deletions": 870,
       "files_changed": 0
     },
     "week": {
-      "commits": 5,
-      "additions": 2022117,
-      "deletions": 36,
+      "commits": 7,
+      "additions": 136838,
+      "deletions": 878,
       "files_changed": 0
     },
     "month": {
-      "commits": 8,
-      "additions": 2039015,
-      "deletions": 96,
+      "commits": 10,
+      "additions": 153736,
+      "deletions": 938,
       "files_changed": 0
     },
     "quarter": {
-      "commits": 12,
-      "additions": 2097406,
-      "deletions": 310,
+      "commits": 14,
+      "additions": 212127,
+      "deletions": 1152,
       "files_changed": 0
     },
     "year": {
-      "commits": 36,
-      "additions": 2118939,
-      "deletions": 642,
+      "commits": 38,
+      "additions": 233660,
+      "deletions": 1484,
       "files_changed": 0
     }
   },
@@ -717,6 +717,46 @@
         }
       }
     },
+    "djok/pos-print-go": {
+      "name": "pos-print-go",
+      "full_name": "djok/pos-print-go",
+      "url": "https://github.com/djok/pos-print-go",
+      "description": "POS Print Service - Go implementation for FP705 fiscal printers",
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 1,
+          "additions": 5381,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 1,
+          "additions": 5381,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 1,
+          "additions": 5381,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 1,
+          "additions": 5381,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 5381,
+          "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
     "djok/smokeping-docker": {
       "name": "smokeping-docker",
       "full_name": "djok/smokeping-docker",
@@ -997,6 +1037,46 @@
         }
       }
     },
+    "djok/telcong.oss-middleware": {
+      "name": "telcong.oss-middleware",
+      "full_name": "djok/telcong.oss-middleware",
+      "url": "https://github.com/djok/telcong.oss-middleware",
+      "description": "OSS Middleware for BSS integration - AAA, ACS, DHCP, Monitoring, ServiceBroker",
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 1,
+          "additions": 25676,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 1,
+          "additions": 25676,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 1,
+          "additions": 25676,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 1,
+          "additions": 25676,
+          "deletions": 0,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 25676,
+          "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
     "djok/trinavis": {
       "name": "trinavis",
       "full_name": "djok/trinavis",
@@ -1207,32 +1287,32 @@
       "periods": {
         "today": {
           "commits": 1,
-          "additions": 2002709,
-          "deletions": 0,
+          "additions": 86422,
+          "deletions": 816,
           "files_changed": 0
         },
         "week": {
           "commits": 1,
-          "additions": 2002709,
-          "deletions": 0,
+          "additions": 86422,
+          "deletions": 816,
           "files_changed": 0
         },
         "month": {
           "commits": 1,
-          "additions": 2002709,
-          "deletions": 0,
+          "additions": 86422,
+          "deletions": 816,
           "files_changed": 0
         },
         "quarter": {
           "commits": 1,
-          "additions": 2002709,
-          "deletions": 0,
+          "additions": 86422,
+          "deletions": 816,
           "files_changed": 0
         },
         "year": {
           "commits": 1,
-          "additions": 2002709,
-          "deletions": 0,
+          "additions": 86422,
+          "deletions": 816,
           "files_changed": 0
         }
       }
@@ -1286,33 +1366,33 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
+          "commits": 1,
+          "additions": 20,
+          "deletions": 48,
           "files_changed": 0
         },
         "week": {
           "commits": 1,
-          "additions": 69,
-          "deletions": 22,
+          "additions": 20,
+          "deletions": 48,
           "files_changed": 0
         },
         "month": {
           "commits": 1,
-          "additions": 69,
-          "deletions": 22,
+          "additions": 20,
+          "deletions": 48,
           "files_changed": 0
         },
         "quarter": {
           "commits": 1,
-          "additions": 69,
-          "deletions": 22,
+          "additions": 20,
+          "deletions": 48,
           "files_changed": 0
         },
         "year": {
           "commits": 1,
-          "additions": 69,
-          "deletions": 22,
+          "additions": 20,
+          "deletions": 48,
           "files_changed": 0
         }
       }
@@ -1479,11 +1559,6 @@
     }
   },
   "daily": {
-    "2025-09-29": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
-    },
     "2025-09-30": {
       "commits": 0,
       "additions": 0,
@@ -1933,20 +2008,25 @@
       "commits": 2,
       "additions": 2002712,
       "deletions": 6
+    },
+    "2025-12-29": {
+      "commits": 4,
+      "additions": 117499,
+      "deletions": 864
     }
   },
   "languages": {
-    "TypeScript": 23594473,
+    "TypeScript": 23699675,
     "HTML": 12487692,
-    "Go": 46306508,
-    "JavaScript": 50051337,
+    "Go": 46841983,
+    "JavaScript": 50041267,
     "CSS": 1483097,
-    "Makefile": 100495,
-    "Kotlin": 38158143,
+    "Makefile": 103596,
+    "Kotlin": 38164495,
     "Java": 48826226,
     "Smarty": 60940,
-    "Shell": 372311,
-    "Starlark": 3974703,
+    "Shell": 393165,
+    "Starlark": 3975311,
     "SCSS": 83947,
     "Mustache": 73150,
     "XSLT": 57525,
@@ -1954,9 +2034,9 @@
     "C++": 92920,
     "Arduino": 2616,
     "Batchfile": 13534,
-    "Dockerfile": 67987,
+    "Dockerfile": 71440,
     "Less": 170159,
-    "Python": 44606478,
+    "Python": 44604977,
     "Ruby": 20968,
     "Objective-C": 48046,
     "Swift": 6413,
@@ -1990,14 +2070,21 @@
       "name": "djok/uisp_etl",
       "url": "https://github.com/djok/uisp_etl",
       "commits": 1,
-      "additions": 2002709,
-      "deletions": 0
+      "additions": 86422,
+      "deletions": 816
     },
     {
       "name": "djok/venci-ws",
       "url": "https://github.com/djok/venci-ws",
       "commits": 1,
       "additions": 57864,
+      "deletions": 0
+    },
+    {
+      "name": "djok/telcong.oss-middleware",
+      "url": "https://github.com/djok/telcong.oss-middleware",
+      "commits": 1,
+      "additions": 25676,
       "deletions": 0
     },
     {
@@ -2029,6 +2116,13 @@
       "deletions": 1
     },
     {
+      "name": "djok/pos-print-go",
+      "url": "https://github.com/djok/pos-print-go",
+      "commits": 1,
+      "additions": 5381,
+      "deletions": 0
+    },
+    {
       "name": "djok/uisp-bgn2eur-migration",
       "url": "https://github.com/djok/uisp-bgn2eur-migration",
       "commits": 1,
@@ -2041,20 +2135,6 @@
       "commits": 1,
       "additions": 2477,
       "deletions": 89
-    },
-    {
-      "name": "djok/UCRM-plugins",
-      "url": "https://github.com/djok/UCRM-plugins",
-      "commits": 1,
-      "additions": 1564,
-      "deletions": 0
-    },
-    {
-      "name": "djok/uisp",
-      "url": "https://github.com/djok/uisp",
-      "commits": 1,
-      "additions": 1491,
-      "deletions": 1
     }
   ]
 }
