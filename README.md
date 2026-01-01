@@ -1,13 +1,13 @@
 # 📊 Code Metrics Dashboard
 
-> **@djok** · Updated: 2025-12-31 23:04 UTC
+> **@djok** · Updated: 2026-01-01 23:04 UTC
 
 | Period | Commits | Additions | Deletions | Net |
 |--------|---------|-----------|-----------|-----|
-| Today | 1 | +1.0K | -58 | 957 |
-| Week | 7 | +137.8K | -888 | 136.9K |
-| Month | 10 | +154.7K | -948 | 153.8K |
-| Year | 38 | +234.7K | -1.5K | 233.2K |
+| Today | 1 | +34.2K | -5.5K | 28.6K |
+| Week | 6 | +152.7K | -6.4K | 146.3K |
+| Month | 10 | +173.0K | -6.5K | 166.5K |
+| Year | 38 | +252.9K | -7.0K | 245.9K |
 
 ## Top Repositories
 
@@ -15,8 +15,8 @@
 |------------|---------|----|----|
 | [uisp_etl](https://github.com/djok/uisp_etl) | 1 | +86.4K | -816 |
 | [venci-ws](https://github.com/djok/venci-ws) | 1 | +57.9K | -0 |
+| [fiber-bg-www](https://github.com/djok/fiber-bg-www) | 1 | +34.2K | -5.5K |
 | [telcong.oss-middleware](https://github.com/djok/telcong.oss-middleware) | 1 | +25.7K | -0 |
-| [fiber-bg-www](https://github.com/djok/fiber-bg-www) | 1 | +15.9K | -0 |
 | [telcong.oss](https://github.com/djok/telcong.oss) | 1 | +15.0K | -8 |
 | [static](https://github.com/djok/static) | 1 | +8.7K | -0 |
 | [tacacs4keycloak](https://github.com/djok/tacacs4keycloak) | 1 | +6.2K | -1 |
