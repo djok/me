@@ -1,37 +1,37 @@
 {
   "meta": {
-    "updated_at": "2026-01-04T23:04:04.775961",
+    "updated_at": "2026-01-05T23:04:07.887709",
     "username": "djok",
     "generated_by": "GitHub Metrics Dashboard"
   },
   "summary": {
     "today": {
-      "commits": 0,
-      "additions": 0,
+      "commits": 1,
+      "additions": 19,
       "deletions": 0,
       "files_changed": 0
     },
     "week": {
-      "commits": 5,
-      "additions": 152649,
-      "deletions": 6384,
+      "commits": 3,
+      "additions": 35189,
+      "deletions": 5568,
       "files_changed": 0
     },
     "month": {
       "commits": 9,
-      "additions": 172800,
+      "additions": 167438,
       "deletions": 6430,
       "files_changed": 0
     },
     "quarter": {
       "commits": 14,
-      "additions": 231375,
+      "additions": 226013,
       "deletions": 6672,
       "files_changed": 0
     },
     "year": {
       "commits": 38,
-      "additions": 252908,
+      "additions": 247546,
       "deletions": 7004,
       "files_changed": 0
     }
@@ -726,32 +726,32 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 0,
-          "additions": 0,
+          "commits": 1,
+          "additions": 19,
           "deletions": 0,
           "files_changed": 0
         },
         "week": {
           "commits": 1,
-          "additions": 5381,
+          "additions": 19,
           "deletions": 0,
           "files_changed": 0
         },
         "month": {
           "commits": 1,
-          "additions": 5381,
+          "additions": 19,
           "deletions": 0,
           "files_changed": 0
         },
         "quarter": {
           "commits": 1,
-          "additions": 5381,
+          "additions": 19,
           "deletions": 0,
           "files_changed": 0
         },
         "year": {
           "commits": 1,
-          "additions": 5381,
+          "additions": 19,
           "deletions": 0,
           "files_changed": 0
         }
@@ -1052,8 +1052,8 @@
           "files_changed": 0
         },
         "week": {
-          "commits": 1,
-          "additions": 25676,
+          "commits": 0,
+          "additions": 0,
           "deletions": 0,
           "files_changed": 0
         },
@@ -1292,9 +1292,9 @@
           "files_changed": 0
         },
         "week": {
-          "commits": 1,
-          "additions": 86422,
-          "deletions": 816,
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
           "files_changed": 0
         },
         "month": {
@@ -1559,11 +1559,6 @@
     }
   },
   "daily": {
-    "2025-10-06": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
-    },
     "2025-10-07": {
       "commits": 0,
       "additions": 0,
@@ -1981,7 +1976,7 @@
     },
     "2025-12-29": {
       "commits": 4,
-      "additions": 117499,
+      "additions": 113881,
       "deletions": 864
     },
     "2025-12-30": {
@@ -2013,20 +2008,25 @@
       "commits": 0,
       "additions": 0,
       "deletions": 0
+    },
+    "2026-01-05": {
+      "commits": 1,
+      "additions": 19,
+      "deletions": 0
     }
   },
   "languages": {
-    "TypeScript": 24109442,
+    "TypeScript": 24127182,
     "HTML": 12487692,
-    "Go": 46847894,
-    "JavaScript": 50037556,
+    "Go": 46848068,
+    "JavaScript": 50030487,
     "CSS": 1490485,
     "Makefile": 103596,
-    "Kotlin": 38200254,
+    "Kotlin": 38199843,
     "Java": 48826226,
     "Smarty": 60940,
-    "Shell": 393956,
-    "Starlark": 3975466,
+    "Shell": 394518,
+    "Starlark": 3975339,
     "SCSS": 83947,
     "Mustache": 73150,
     "XSLT": 57525,
@@ -2042,7 +2042,7 @@
     "Swift": 6413,
     "Objective-C++": 5446,
     "C": 93867,
-    "PHP": 3373751,
+    "PHP": 3417766,
     "Roff": 283135878,
     "Perl": 18247,
     "Vue": 32694,
@@ -2116,13 +2116,6 @@
       "deletions": 1
     },
     {
-      "name": "djok/pos-print-go",
-      "url": "https://github.com/djok/pos-print-go",
-      "commits": 1,
-      "additions": 5381,
-      "deletions": 0
-    },
-    {
       "name": "djok/uisp-bgn2eur-migration",
       "url": "https://github.com/djok/uisp-bgn2eur-migration",
       "commits": 1,
@@ -2135,6 +2128,13 @@
       "commits": 1,
       "additions": 2477,
       "deletions": 89
+    },
+    {
+      "name": "djok/UCRM-plugins",
+      "url": "https://github.com/djok/UCRM-plugins",
+      "commits": 1,
+      "additions": 1564,
+      "deletions": 0
     }
   ]
 }

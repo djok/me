@@ -1,13 +1,13 @@
 # 📊 Code Metrics Dashboard
 
-> **@djok** · Updated: 2026-01-04 23:04 UTC
+> **@djok** · Updated: 2026-01-05 23:04 UTC
 
 | Period | Commits | Additions | Deletions | Net |
 |--------|---------|-----------|-----------|-----|
-| Today | 0 | +0 | -0 | 0 |
-| Week | 5 | +152.6K | -6.4K | 146.3K |
-| Month | 9 | +172.8K | -6.4K | 166.4K |
-| Year | 38 | +252.9K | -7.0K | 245.9K |
+| Today | 1 | +19 | -0 | 19 |
+| Week | 3 | +35.2K | -5.6K | 29.6K |
+| Month | 9 | +167.4K | -6.4K | 161.0K |
+| Year | 38 | +247.5K | -7.0K | 240.5K |
 
 ## Top Repositories
 
@@ -20,9 +20,9 @@
 | [telcong.oss](https://github.com/djok/telcong.oss) | 1 | +15.0K | -8 |
 | [static](https://github.com/djok/static) | 1 | +8.7K | -0 |
 | [tacacs4keycloak](https://github.com/djok/tacacs4keycloak) | 1 | +6.2K | -1 |
-| [pos-print-go](https://github.com/djok/pos-print-go) | 1 | +5.4K | -0 |
 | [uisp-bgn2eur-migration](https://github.com/djok/uisp-bgn2eur-migration) | 1 | +4.4K | -0 |
 | [FIBER.BG-HR](https://github.com/djok/FIBER.BG-HR) | 1 | +2.5K | -89 |
+| [UCRM-plugins](https://github.com/djok/UCRM-plugins) | 1 | +1.6K | -0 |
 
 ---
 🔗 [View Dashboard](../../) · 🤖 Auto-updated daily
