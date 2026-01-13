@@ -1,38 +1,38 @@
 {
   "meta": {
-    "updated_at": "2026-01-12T23:03:51.867082",
+    "updated_at": "2026-01-13T23:04:17.868766",
     "username": "djok",
     "generated_by": "GitHub Metrics Dashboard"
   },
   "summary": {
     "today": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0,
+      "commits": 1,
+      "additions": 1,
+      "deletions": 1,
       "files_changed": 0
     },
     "week": {
-      "commits": 1,
-      "additions": 463,
-      "deletions": 106,
+      "commits": 2,
+      "additions": 464,
+      "deletions": 107,
       "files_changed": 0
     },
     "month": {
-      "commits": 9,
-      "additions": 167089,
-      "deletions": 6504,
+      "commits": 10,
+      "additions": 167090,
+      "deletions": 6505,
       "files_changed": 0
     },
     "quarter": {
-      "commits": 15,
-      "additions": 226476,
-      "deletions": 6778,
+      "commits": 16,
+      "additions": 226477,
+      "deletions": 6779,
       "files_changed": 0
     },
     "year": {
       "commits": 39,
-      "additions": 248009,
-      "deletions": 7110,
+      "additions": 248005,
+      "deletions": 7109,
       "files_changed": 0
     }
   },
@@ -1197,6 +1197,46 @@
         }
       }
     },
+    "djok/ubb_statement_extractor": {
+      "name": "ubb_statement_extractor",
+      "full_name": "djok/ubb_statement_extractor",
+      "url": "https://github.com/djok/ubb_statement_extractor",
+      "description": "Инструмент за автоматизирана обработка на pdf извлачения на ОББ",
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 1,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 1,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 1,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 1,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 1,
+          "files_changed": 0
+        }
+      }
+    },
     "djok/UCRM-plugins": {
       "name": "UCRM-plugins",
       "full_name": "djok/UCRM-plugins",
@@ -1556,54 +1596,9 @@
           "files_changed": 0
         }
       }
-    },
-    "mgenov/delicts.tollbg": {
-      "name": "delicts.tollbg",
-      "full_name": "mgenov/delicts.tollbg",
-      "url": "https://github.com/mgenov/delicts.tollbg",
-      "description": null,
-      "stars": 0,
-      "forks": 0,
-      "periods": {
-        "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "week": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "month": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "quarter": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "year": {
-          "commits": 1,
-          "additions": 5,
-          "deletions": 2,
-          "files_changed": 0
-        }
-      }
     }
   },
   "daily": {
-    "2025-10-14": {
-      "commits": 1,
-      "additions": 158,
-      "deletions": 102
-    },
     "2025-10-15": {
       "commits": 1,
       "additions": 92,
@@ -2053,20 +2048,25 @@
       "commits": 0,
       "additions": 0,
       "deletions": 0
+    },
+    "2026-01-13": {
+      "commits": 1,
+      "additions": 1,
+      "deletions": 1
     }
   },
   "languages": {
-    "TypeScript": 24139030,
+    "TypeScript": 24139656,
     "HTML": 12489616,
     "Go": 46900608,
-    "JavaScript": 50031341,
+    "JavaScript": 50035060,
     "CSS": 1490485,
     "Makefile": 103596,
-    "Kotlin": 38200324,
+    "Kotlin": 38200356,
     "Java": 48826226,
     "Smarty": 60940,
     "Shell": 395748,
-    "Starlark": 3976809,
+    "Starlark": 3976810,
     "SCSS": 83947,
     "Mustache": 73150,
     "XSLT": 57525,
@@ -2074,9 +2074,9 @@
     "C++": 92920,
     "Arduino": 2616,
     "Batchfile": 13534,
-    "Dockerfile": 72471,
+    "Dockerfile": 73033,
     "Less": 170159,
-    "Python": 44638674,
+    "Python": 44847794,
     "Ruby": 20968,
     "Objective-C": 48046,
     "Swift": 6413,
