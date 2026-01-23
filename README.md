@@ -1,18 +1,19 @@
 # 📊 Code Metrics Dashboard
 
-> **@djok** · Updated: 2026-01-22 23:04 UTC
+> **@djok** · Updated: 2026-01-23 23:04 UTC
 
 | Period | Commits | Additions | Deletions | Net |
 |--------|---------|-----------|-----------|-----|
-| Today | 0 | +0 | -0 | 0 |
-| Week | 0 | +0 | -0 | 0 |
-| Month | 10 | +167.1K | -6.5K | 160.6K |
-| Year | 39 | +248.0K | -7.1K | 240.9K |
+| Today | 1 | +642.2K | -48 | 642.2K |
+| Week | 1 | +642.2K | -48 | 642.2K |
+| Month | 11 | +809.3K | -6.6K | 802.8K |
+| Year | 39 | +889.4K | -7.1K | 882.3K |
 
 ## Top Repositories
 
 | Repository | Commits | ++ | -- |
 |------------|---------|----|----|
+| [obvt-toolbox](https://github.com/djok/obvt-toolbox) | 1 | +642.2K | -48 |
 | [uisp_etl](https://github.com/djok/uisp_etl) | 1 | +86.4K | -816 |
 | [venci-ws](https://github.com/djok/venci-ws) | 1 | +57.9K | -0 |
 | [fiber-bg-www](https://github.com/djok/fiber-bg-www) | 1 | +34.2K | -5.5K |
@@ -22,7 +23,6 @@
 | [tacacs4keycloak](https://github.com/djok/tacacs4keycloak) | 1 | +6.2K | -1 |
 | [uisp-bgn2eur-migration](https://github.com/djok/uisp-bgn2eur-migration) | 1 | +4.4K | -0 |
 | [FIBER.BG-HR](https://github.com/djok/FIBER.BG-HR) | 1 | +2.5K | -89 |
-| [UCRM-plugins](https://github.com/djok/UCRM-plugins) | 1 | +1.6K | -0 |
 
 ---
 🔗 [View Dashboard](../../) · 🤖 Auto-updated daily
