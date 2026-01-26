@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-01-25T23:04:07.511466",
+    "updated_at": "2026-01-26T23:04:18.420570",
     "username": "djok",
     "generated_by": "GitHub Metrics Dashboard"
   },
@@ -24,14 +24,14 @@
       "files_changed": 0
     },
     "quarter": {
-      "commits": 16,
-      "additions": 812692,
-      "deletions": 6790,
+      "commits": 14,
+      "additions": 812680,
+      "deletions": 6786,
       "files_changed": 0
     },
     "year": {
-      "commits": 40,
-      "additions": 892084,
+      "commits": 39,
+      "additions": 890520,
       "deletions": 7120,
       "files_changed": 0
     }
@@ -584,8 +584,8 @@
           "files_changed": 0
         },
         "quarter": {
-          "commits": 1,
-          "additions": 8,
+          "commits": 0,
+          "additions": 0,
           "deletions": 0,
           "files_changed": 0
         },
@@ -824,9 +824,9 @@
           "files_changed": 0
         },
         "quarter": {
-          "commits": 1,
-          "additions": 4,
-          "deletions": 4,
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
           "files_changed": 0
         },
         "year": {
@@ -1237,46 +1237,6 @@
         }
       }
     },
-    "djok/UCRM-plugins": {
-      "name": "UCRM-plugins",
-      "full_name": "djok/UCRM-plugins",
-      "url": "https://github.com/djok/UCRM-plugins",
-      "description": "Plugins for UCRM - Complete WISP Management Platform",
-      "stars": 0,
-      "forks": 0,
-      "periods": {
-        "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "week": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "month": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "quarter": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "year": {
-          "commits": 1,
-          "additions": 1564,
-          "deletions": 0,
-          "files_changed": 0
-        }
-      }
-    },
     "djok/uisp": {
       "name": "uisp",
       "full_name": "djok/uisp",
@@ -1639,11 +1599,6 @@
     }
   },
   "daily": {
-    "2025-10-27": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
-    },
     "2025-10-28": {
       "commits": 2,
       "additions": 12,
@@ -2093,12 +2048,17 @@
       "commits": 2,
       "additions": 2829,
       "deletions": 23
+    },
+    "2026-01-26": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
     }
   },
   "languages": {
     "TypeScript": 24282806,
     "HTML": 12489616,
-    "Go": 47331071,
+    "Go": 47562726,
     "JavaScript": 49961123,
     "CSS": 1506479,
     "Makefile": 103596,
@@ -2106,7 +2066,7 @@
     "Java": 48826226,
     "Smarty": 33134,
     "Shell": 398975,
-    "Starlark": 3989098,
+    "Starlark": 3996653,
     "SCSS": 83947,
     "Mustache": 73150,
     "XSLT": 57525,
