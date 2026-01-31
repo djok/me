@@ -1,13 +1,13 @@
 # 📊 Code Metrics Dashboard
 
-> **@djok** · Updated: 2026-01-30 23:06 UTC
+> **@djok** · Updated: 2026-01-31 23:04 UTC
 
 | Period | Commits | Additions | Deletions | Net |
 |--------|---------|-----------|-----------|-----|
-| Today | 0 | +0 | -0 | 0 |
-| Week | 3 | +2.9K | -43 | 2.8K |
-| Month | 8 | +679.7K | -5.7K | 674.0K |
-| Year | 39 | +889.1K | -7.1K | 881.9K |
+| Today | 1 | +2.8K | -0 | 2.8K |
+| Week | 4 | +5.7K | -43 | 5.7K |
+| Month | 8 | +648.4K | -198 | 648.2K |
+| Year | 40 | +891.9K | -7.1K | 884.8K |
 
 ## Top Repositories
 
@@ -22,7 +22,7 @@
 | [static](https://github.com/djok/static) | 1 | +8.7K | -0 |
 | [tacacs4keycloak](https://github.com/djok/tacacs4keycloak) | 1 | +6.2K | -1 |
 | [uisp-bgn2eur-migration](https://github.com/djok/uisp-bgn2eur-migration) | 1 | +4.4K | -0 |
-| [FIBER.BG-HR](https://github.com/djok/FIBER.BG-HR) | 1 | +2.5K | -89 |
+| [facecraft](https://github.com/djok/facecraft) | 1 | +2.8K | -0 |
 
 ---
 🔗 [View Dashboard](../../) · 🤖 Auto-updated daily
