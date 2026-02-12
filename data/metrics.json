@@ -1,38 +1,38 @@
 {
   "meta": {
-    "updated_at": "2026-02-11T23:09:08.974889",
+    "updated_at": "2026-02-12T23:07:18.232934",
     "username": "djok",
     "generated_by": "GitHub Metrics Dashboard"
   },
   "summary": {
     "today": {
-      "commits": 2,
-      "additions": 44219,
-      "deletions": 13,
+      "commits": 3,
+      "additions": 44188,
+      "deletions": 9,
       "files_changed": 0
     },
     "week": {
-      "commits": 2,
-      "additions": 44219,
-      "deletions": 13,
+      "commits": 3,
+      "additions": 44188,
+      "deletions": 9,
       "files_changed": 0
     },
     "month": {
       "commits": 7,
-      "additions": 691365,
-      "deletions": 63,
+      "additions": 691333,
+      "deletions": 58,
       "files_changed": 0
     },
     "quarter": {
-      "commits": 16,
-      "additions": 858454,
-      "deletions": 6567,
+      "commits": 17,
+      "additions": 858423,
+      "deletions": 6563,
       "files_changed": 0
     },
     "year": {
-      "commits": 41,
-      "additions": 935318,
-      "deletions": 7110,
+      "commits": 42,
+      "additions": 935287,
+      "deletions": 7106,
       "files_changed": 0
     }
   },
@@ -1298,9 +1298,9 @@
           "files_changed": 0
         },
         "month": {
-          "commits": 1,
-          "additions": 1,
-          "deletions": 1,
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
           "files_changed": 0
         },
         "quarter": {
@@ -1327,32 +1327,32 @@
       "periods": {
         "today": {
           "commits": 1,
-          "additions": 56,
-          "deletions": 13,
+          "additions": 24,
+          "deletions": 8,
           "files_changed": 0
         },
         "week": {
           "commits": 1,
-          "additions": 56,
-          "deletions": 13,
+          "additions": 24,
+          "deletions": 8,
           "files_changed": 0
         },
         "month": {
           "commits": 1,
-          "additions": 56,
-          "deletions": 13,
+          "additions": 24,
+          "deletions": 8,
           "files_changed": 0
         },
         "quarter": {
           "commits": 1,
-          "additions": 56,
-          "deletions": 13,
+          "additions": 24,
+          "deletions": 8,
           "files_changed": 0
         },
         "year": {
           "commits": 1,
-          "additions": 56,
-          "deletions": 13,
+          "additions": 24,
+          "deletions": 8,
           "files_changed": 0
         }
       }
@@ -1393,6 +1393,46 @@
           "commits": 1,
           "additions": 4379,
           "deletions": 0,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/uisp-bng": {
+      "name": "uisp-bng",
+      "full_name": "djok/uisp-bng",
+      "url": "https://github.com/djok/uisp-bng",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 1,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 1,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 1,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 1,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 1,
+          "deletions": 1,
           "files_changed": 0
         }
       }
@@ -1679,11 +1719,6 @@
     }
   },
   "daily": {
-    "2025-11-13": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
-    },
     "2025-11-14": {
       "commits": 0,
       "additions": 0,
@@ -2133,21 +2168,26 @@
       "commits": 1,
       "additions": 44163,
       "deletions": 0
+    },
+    "2026-02-12": {
+      "commits": 2,
+      "additions": 25,
+      "deletions": 9
     }
   },
   "languages": {
-    "TypeScript": 24318412,
-    "HTML": 12489616,
-    "Go": 48101561,
-    "JavaScript": 49958751,
-    "CSS": 1512908,
-    "Makefile": 103596,
-    "Kotlin": 38244132,
+    "TypeScript": 24411037,
+    "HTML": 12507690,
+    "Go": 49270250,
+    "JavaScript": 49956065,
+    "CSS": 1516294,
+    "Makefile": 105848,
+    "Kotlin": 38250306,
     "Java": 48826226,
     "Smarty": 29794,
-    "Shell": 401517,
-    "Starlark": 4024245,
-    "Go Template": 311525,
+    "Shell": 475190,
+    "Starlark": 4057065,
+    "Go Template": 311562,
     "SCSS": 83947,
     "Mustache": 73150,
     "XSLT": 57525,
@@ -2155,15 +2195,15 @@
     "C++": 178900,
     "Arduino": 2616,
     "Batchfile": 15227,
-    "Dockerfile": 74284,
-    "Less": 170159,
-    "Python": 62597630,
+    "Dockerfile": 80018,
+    "Less": 155842,
+    "Python": 63129018,
     "Ruby": 20968,
     "Objective-C": 48046,
     "Swift": 6413,
     "Objective-C++": 5446,
     "C": 464696,
-    "PHP": 3526527,
+    "PHP": 3531976,
     "Roff": 283135878,
     "Perl": 18247,
     "Vue": 32694,
