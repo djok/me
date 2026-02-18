@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated_at": "2026-02-17T23:07:33.627426",
+    "updated_at": "2026-02-18T23:08:15.088508",
     "username": "djok",
     "generated_by": "GitHub Metrics Dashboard"
   },
@@ -12,8 +12,8 @@
       "files_changed": 0
     },
     "week": {
-      "commits": 4,
-      "additions": 44348,
+      "commits": 3,
+      "additions": 185,
       "deletions": 31,
       "files_changed": 0
     },
@@ -30,93 +30,13 @@
       "files_changed": 0
     },
     "year": {
-      "commits": 43,
-      "additions": 935447,
-      "deletions": 7128,
+      "commits": 41,
+      "additions": 935326,
+      "deletions": 7127,
       "files_changed": 0
     }
   },
   "repos": {
-    "djok/backup-vyos-bgp1": {
-      "name": "backup-vyos-bgp1",
-      "full_name": "djok/backup-vyos-bgp1",
-      "url": "https://github.com/djok/backup-vyos-bgp1",
-      "description": null,
-      "stars": 0,
-      "forks": 0,
-      "periods": {
-        "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "week": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "month": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "quarter": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "year": {
-          "commits": 1,
-          "additions": 120,
-          "deletions": 1,
-          "files_changed": 0
-        }
-      }
-    },
-    "djok/backup-vyos-bgp2": {
-      "name": "backup-vyos-bgp2",
-      "full_name": "djok/backup-vyos-bgp2",
-      "url": "https://github.com/djok/backup-vyos-bgp2",
-      "description": null,
-      "stars": 0,
-      "forks": 0,
-      "periods": {
-        "today": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "week": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "month": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "quarter": {
-          "commits": 0,
-          "additions": 0,
-          "deletions": 0,
-          "files_changed": 0
-        },
-        "year": {
-          "commits": 1,
-          "additions": 1,
-          "deletions": 0,
-          "files_changed": 0
-        }
-      }
-    },
     "djok/backup-vyos-cgnat1": {
       "name": "backup-vyos-cgnat1",
       "full_name": "djok/backup-vyos-cgnat1",
@@ -532,8 +452,8 @@
           "files_changed": 0
         },
         "week": {
-          "commits": 1,
-          "additions": 44163,
+          "commits": 0,
+          "additions": 0,
           "deletions": 0,
           "files_changed": 0
         },
@@ -1759,11 +1679,6 @@
     }
   },
   "daily": {
-    "2025-11-19": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
-    },
     "2025-11-20": {
       "commits": 0,
       "additions": 0,
@@ -2210,6 +2125,11 @@
       "deletions": 0
     },
     "2026-02-17": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
+    },
+    "2026-02-18": {
       "commits": 0,
       "additions": 0,
       "deletions": 0
