@@ -1,14 +1,14 @@
 {
   "meta": {
-    "updated_at": "2026-02-22T23:05:52.402298",
+    "updated_at": "2026-02-23T23:13:14.131004",
     "username": "djok",
     "generated_by": "GitHub Metrics Dashboard"
   },
   "summary": {
     "today": {
-      "commits": 1,
-      "additions": 2,
-      "deletions": 3,
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0,
       "files_changed": 0
     },
     "week": {
@@ -446,9 +446,9 @@
       "forks": 0,
       "periods": {
         "today": {
-          "commits": 1,
-          "additions": 2,
-          "deletions": 3,
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
           "files_changed": 0
         },
         "week": {
@@ -1682,7 +1682,7 @@
       "full_name": "mgenov/club-admin",
       "url": "https://github.com/mgenov/club-admin",
       "description": "Club Admin",
-      "stars": 0,
+      "stars": 1,
       "forks": 1,
       "periods": {
         "today": {
@@ -1719,11 +1719,6 @@
     }
   },
   "daily": {
-    "2025-11-24": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
-    },
     "2025-11-25": {
       "commits": 0,
       "additions": 0,
@@ -2173,12 +2168,17 @@
       "commits": 0,
       "additions": 0,
       "deletions": 0
+    },
+    "2026-02-23": {
+      "commits": 0,
+      "additions": 0,
+      "deletions": 0
     }
   },
   "languages": {
     "TypeScript": 25239134,
-    "HTML": 12700351,
-    "Go": 49339685,
+    "HTML": 12700336,
+    "Go": 49482546,
     "JavaScript": 50013045,
     "CSS": 1588268,
     "Makefile": 122687,
@@ -2186,7 +2186,7 @@
     "Java": 48826226,
     "Smarty": 29794,
     "Shell": 702321,
-    "Starlark": 4062861,
+    "Starlark": 4068053,
     "Go Template": 311562,
     "SCSS": 83947,
     "Mustache": 73150,
