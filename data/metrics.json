@@ -1,38 +1,38 @@
 {
   "meta": {
-    "updated_at": "2026-02-24T23:08:51.700324",
+    "updated_at": "2026-02-25T23:09:16.092235",
     "username": "djok",
     "generated_by": "GitHub Metrics Dashboard"
   },
   "summary": {
     "today": {
-      "commits": 1,
-      "additions": 473,
-      "deletions": 25,
+      "commits": 2,
+      "additions": 1912,
+      "deletions": 11430,
       "files_changed": 0
     },
     "week": {
       "commits": 3,
-      "additions": 638,
-      "deletions": 123,
+      "additions": 1914,
+      "deletions": 11433,
       "files_changed": 0
     },
     "month": {
-      "commits": 8,
-      "additions": 44987,
-      "deletions": 155,
+      "commits": 9,
+      "additions": 46426,
+      "deletions": 11560,
       "files_changed": 0
     },
     "quarter": {
-      "commits": 20,
-      "additions": 856373,
-      "deletions": 6708,
+      "commits": 21,
+      "additions": 857812,
+      "deletions": 18113,
       "files_changed": 0
     },
     "year": {
-      "commits": 43,
-      "additions": 933116,
-      "deletions": 7250,
+      "commits": 44,
+      "additions": 934555,
+      "deletions": 18655,
       "files_changed": 0
     }
   },
@@ -153,6 +153,46 @@
           "commits": 1,
           "additions": 58,
           "deletions": 45,
+          "files_changed": 0
+        }
+      }
+    },
+    "djok/club-admin-app": {
+      "name": "club-admin-app",
+      "full_name": "djok/club-admin-app",
+      "url": "https://github.com/djok/club-admin-app",
+      "description": "Club administration system — Supabase + Vercel",
+      "stars": 0,
+      "forks": 0,
+      "periods": {
+        "today": {
+          "commits": 1,
+          "additions": 1904,
+          "deletions": 11427,
+          "files_changed": 0
+        },
+        "week": {
+          "commits": 1,
+          "additions": 1904,
+          "deletions": 11427,
+          "files_changed": 0
+        },
+        "month": {
+          "commits": 1,
+          "additions": 1904,
+          "deletions": 11427,
+          "files_changed": 0
+        },
+        "quarter": {
+          "commits": 1,
+          "additions": 1904,
+          "deletions": 11427,
+          "files_changed": 0
+        },
+        "year": {
+          "commits": 1,
+          "additions": 1904,
+          "deletions": 11427,
           "files_changed": 0
         }
       }
@@ -292,9 +332,9 @@
           "files_changed": 0
         },
         "week": {
-          "commits": 1,
-          "additions": 163,
-          "deletions": 95,
+          "commits": 0,
+          "additions": 0,
+          "deletions": 0,
           "files_changed": 0
         },
         "month": {
@@ -1687,32 +1727,32 @@
       "periods": {
         "today": {
           "commits": 1,
-          "additions": 473,
-          "deletions": 25,
+          "additions": 8,
+          "deletions": 3,
           "files_changed": 0
         },
         "week": {
           "commits": 1,
-          "additions": 473,
-          "deletions": 25,
+          "additions": 8,
+          "deletions": 3,
           "files_changed": 0
         },
         "month": {
           "commits": 1,
-          "additions": 473,
-          "deletions": 25,
+          "additions": 8,
+          "deletions": 3,
           "files_changed": 0
         },
         "quarter": {
           "commits": 1,
-          "additions": 473,
-          "deletions": 25,
+          "additions": 8,
+          "deletions": 3,
           "files_changed": 0
         },
         "year": {
           "commits": 1,
-          "additions": 473,
-          "deletions": 25,
+          "additions": 8,
+          "deletions": 3,
           "files_changed": 0
         }
       }
@@ -1759,11 +1799,6 @@
     }
   },
   "daily": {
-    "2025-11-26": {
-      "commits": 0,
-      "additions": 0,
-      "deletions": 0
-    },
     "2025-11-27": {
       "commits": 0,
       "additions": 0,
@@ -2210,22 +2245,27 @@
       "deletions": 0
     },
     "2026-02-24": {
-      "commits": 1,
-      "additions": 473,
+      "commits": 2,
+      "additions": 1906,
       "deletions": 25
+    },
+    "2026-02-25": {
+      "commits": 2,
+      "additions": 1912,
+      "deletions": 11430
     }
   },
   "languages": {
-    "TypeScript": 25542755,
-    "HTML": 12700336,
-    "Go": 49482546,
-    "JavaScript": 50013650,
-    "CSS": 1593595,
-    "Makefile": 122687,
+    "TypeScript": 27637444,
+    "HTML": 12865237,
+    "Go": 49629406,
+    "JavaScript": 50019187,
+    "CSS": 1597258,
+    "Makefile": 124375,
     "Kotlin": 38257308,
     "Java": 48826226,
     "Smarty": 29794,
-    "Shell": 702321,
+    "Shell": 702581,
     "Starlark": 4068053,
     "Go Template": 311562,
     "SCSS": 83947,
