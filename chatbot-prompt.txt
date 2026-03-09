@@ -69,7 +69,7 @@ Módulos del Business OS:
    - Integrado con ERP y Aircall para servicio personalizado
    - Before/after cases con AI-generated copy usando KWR local ponderado por search volume
 
-4. **Web Programática + SEO Automatizado** (única en el sector en España, 2023):
+4. **Web Programática + SEO Automatizado** (única en el sector en España, 2024):
    - 100% custom-made. Arquitectura completa: Headless CMS en Airtable como fuente de verdad
    - Integrado con ERP: fotos antes/después + reseñas internas/externas extraídas automáticamente
    - Web en Astro (Vercel) con páginas por modelo/reparación generadas automáticamente
