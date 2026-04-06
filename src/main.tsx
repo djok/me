@@ -77,8 +77,6 @@ Object.defineProperty(window, '__rosen', {
 })
 
 function NotFound() {
-  const { pathname } = useLocation()
-
   useEffect(() => {
     let robots = document.querySelector('meta[name="robots"]') as HTMLMetaElement
     if (!robots) { robots = document.createElement('meta'); robots.name = 'robots'; document.head.appendChild(robots) }

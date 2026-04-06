@@ -94,7 +94,6 @@ export function ArticleHeader({
   authorUrl,
   authorBio,
   avatarSrc = '/me/avatar.png',
-  lang,
 }: ArticleHeaderProps) {
   const resolvedAuthorUrl = authorUrl ?? ('/about')
   return (

@@ -49,7 +49,7 @@ export interface ArticleSeoOpts {
 export function useArticleSeo(opts: ArticleSeoOpts) {
   useEffect(() => {
     const {
-      lang, slug, title, description, image,
+      slug, title, description, image,
       publishedTime, modifiedTime, articleTags, jsonLd,
     } = opts
 
