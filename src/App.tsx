@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo, useReducer, useRef } from 'react'
 import { useLocation, Link } from 'react-router-dom'
-import { Mail, ExternalLink, Briefcase, GraduationCap, Award, Code, Users, Globe, Bot, Zap, Database, Layout, BadgeCheck, FolderGit2, Sparkles, Download, Github, Package, MessageSquare, Receipt, CalendarCheck, FileText, GitBranch, Lock, Network, Calendar, Percent, UserCheck, Image, TrendingUp, Timer, SkipForward, ThumbsUp, MessageCircle, Share2, ChevronRight, List, ArrowUp } from 'lucide-react'
+import { Mail, ExternalLink, Briefcase, GraduationCap, Award, Code, Users, Globe, Bot, Zap, Database, Layout, BadgeCheck, FolderGit2, Sparkles, Download, Github, Package, FileText, GitBranch, Lock, Network, Calendar, Percent, UserCheck, Image, TrendingUp, Timer, SkipForward, ThumbsUp, MessageCircle, Share2, ChevronRight, List, ArrowUp } from 'lucide-react'
 import { translations, seo, type Lang } from './i18n'
 import { useHomeSeo } from './articles/use-article-seo'
 import { getTechIcon } from './tech-icons'
@@ -1505,58 +1505,7 @@ function App() {
             </div>
           </AnimatedSection>
 
-          {/* Business OS - Full Width Hero Card */}
-          <AnimatedSection delay={0.1} className="mb-8">
-            <div className="p-8 rounded-2xl bg-gradient-to-br from-gold/15 via-gold/5 to-transparent border border-gold/30 hover:border-gold/50 transition-colors duration-200 group">
-              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
-                <div className="flex-1 flex flex-col">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="w-12 h-12 rounded-xl bg-gold/20 flex items-center justify-center shrink-0">
-                      <svg viewBox="0 0 200 170" className="w-6 h-6" aria-hidden="true">
-                        <path fill="#FCB400" d="M90.039 12.368 24.079 39.66c-3.667 1.519-3.63 6.729.062 8.192l66.235 26.266a24.58 24.58 0 0 0 18.12 0l66.236-26.266c3.69-1.463 3.729-6.673.062-8.192l-65.96-27.292a24.58 24.58 0 0 0-18.795 0"/>
-                        <path fill="#18BFFF" d="M105.312 88.46v65.617c0 3.12 3.147 5.258 6.048 4.108l73.806-28.648a4.42 4.42 0 0 0 2.79-4.108V59.813c0-3.121-3.147-5.258-6.048-4.108l-73.806 28.648a4.42 4.42 0 0 0-2.79 4.108"/>
-                        <path fill="#F82B60" d="m88.078 91.846-21.904 10.576-2.224 1.075-46.238 22.155c-2.93 1.414-6.672-.722-6.672-3.978V60.088c0-1.178.604-2.195 1.414-2.96a5 5 0 0 1 1.12-.84c1.104-.663 2.68-.84 4.02-.31L87.71 83.76c3.564 1.414 3.844 6.408.368 8.087"/>
-                      </svg>
-                    </div>
-                    <span className="badge px-3 py-1 bg-gold/20 text-gold">Source of Truth</span>
-                  </div>
-                  <h4 className="font-display text-2xl font-bold mb-4">{t.experience.dictaro.businessOS.title}</h4>
-                  <p className="text-muted-foreground mb-6">{t.experience.dictaro.businessOS.desc}</p>
-                  <ul className="text-sm text-muted-foreground space-y-2">
-                    {t.experience.dictaro.businessOS.modules.map((item, i) => {
-                      const icons: Record<string, React.ReactNode> = {
-                        database: <Database className="w-4 h-4" />,
-                        users: <Users className="w-4 h-4" />,
-                        layout: <Layout className="w-4 h-4" />,
-                        package: <Package className="w-4 h-4" />,
-                        messageSquare: <MessageSquare className="w-4 h-4" />,
-                        receipt: <Receipt className="w-4 h-4" />,
-                        calendarCheck: <CalendarCheck className="w-4 h-4" />
-                      }
-                      return (
-                        <li key={i} className="flex items-start gap-3">
-                          <span className="text-gold mt-0.5">{icons[item.icon]}</span>
-                          <span>{item.text}</span>
-                        </li>
-                      )
-                    })}
-                  </ul>
-                  <Link to={t.experience.dictaro.caseStudyUrl} className="inline-flex items-center gap-2 mt-auto pt-6 text-sm font-medium text-gold hover:text-gold/80 transition-colors duration-200 group/cta">
-                    <span className="px-4 py-2 rounded-lg bg-gold/10 border border-gold/30 group-hover/cta:bg-gold/20 group-hover/cta:border-gold/50 transition-all duration-200">{t.experience.dictaro.businessOS.footer}</span>
-                    <ChevronRight className="w-4 h-4 group-hover/cta:translate-x-0.5 transition-transform duration-200" />
-                  </Link>
-                </div>
-                <div className="grid grid-cols-3 lg:flex lg:flex-col gap-2 lg:gap-3 mt-4 lg:mt-0">
-                  {t.experience.dictaro.businessOS.metrics.map((metric, i) => (
-                    <div key={i} className="text-center p-2 lg:p-4 rounded-xl bg-background/50 border border-gold/20">
-                      <div className="font-display text-lg lg:text-2xl font-bold text-gold">{metric.value}</div>
-                      <div className="text-[10px] lg:text-xs text-muted-foreground leading-tight">{metric.label}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </AnimatedSection>
+          {/* Distributed Architecture removed */}
 
           {/* Bento Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
