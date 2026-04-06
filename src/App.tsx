@@ -1412,8 +1412,8 @@ function CertLogo({ logo }: { logo: string }) {
 }
 
 function App() {
-  const location = useLocation()
-  const lang: Lang = location.pathname === '/en' ? 'en' : 'es'
+  useLocation()
+  const lang: Lang = 'en'
   const t = translations[lang]
   const hydrated = useHydrated()
   useHeroStyles()
@@ -1481,25 +1481,15 @@ function App() {
               className="text-center md:text-left"
             >
               <p className="text-lg text-muted-foreground mb-2">
-                {lang === 'es' ? 'Hola, soy' : "Hi, I'm"} <Link to={lang === 'es' ? '/sobre-mi' : '/about'} className="text-gradient-theme font-semibold hover:opacity-80 transition-opacity">@santifer</Link>,
+                Hi, I'm <Link to="/about" className="text-gradient-theme font-semibold hover:opacity-80 transition-opacity">@rosen</Link>,
               </p>
               <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 leading-tight">
                 <span className="text-gradient-theme">{hydrated ? roleText : t.greetingRoles[0]}</span>
                 {hydrated && <span className="inline-block w-[3px] h-[0.85em] bg-primary ml-1 rounded-sm translate-y-[2px]" style={{ animation: 'blink 1s step-end infinite' }} />}
                 <br />
-                {lang === 'es' ? (
-                  <>
-                    {t.greeting}
-                    <br />
-                    LLMOps que se <BeamPill>curan solos.</BeamPill>
-                  </>
-                ) : (
-                  <>
-                    {t.greeting} <BeamPill>self-healing</BeamPill>
-                    <br />
-                    {t.role}
-                  </>
-                )}
+                {t.greeting} <BeamPill>self-healing</BeamPill>
+                <br />
+                {t.role}
               </h1>
 
               <div className="flex flex-wrap justify-center md:justify-start gap-3">
@@ -2779,10 +2769,10 @@ function App() {
             </div>
           </AnimatedSection>
           <p className="mt-12 text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Santiago Fernández de Valderrama
+            &copy; {new Date().getFullYear()} Rosen Velikov
             <span className="mx-2 text-border">|</span>
-            <Link to={lang === 'es' ? '/privacidad' : '/privacy'} className="hover:text-primary transition-colors">
-              {lang === 'es' ? 'Privacidad' : 'Privacy'}
+            <Link to="/privacy" className="hover:text-primary transition-colors">
+              Privacy
             </Link>
           </p>
         </div>
