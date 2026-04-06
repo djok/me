@@ -1558,14 +1558,14 @@ function App() {
                   <div className="w-10 h-10 rounded-xl overflow-hidden bg-[#888] shrink-0 flex items-center justify-center text-white font-bold text-lg">
                     D
                   </div>
-                  <h3 className="font-display text-2xl font-bold">{t.experience.santifer.company}</h3>
+                  <h3 className="font-display text-2xl font-bold">{t.experience.dictaro.company}</h3>
                 </div>
-                <span className="text-sm text-muted-foreground">{t.experience.santifer.location}</span>
+                <span className="text-sm text-muted-foreground">{t.experience.dictaro.location}</span>
               </div>
-              <p className="text-primary font-medium mb-1">{t.experience.santifer.role}</p>
-              <p className="text-sm text-muted-foreground mb-4">{t.experience.santifer.period}</p>
+              <p className="text-primary font-medium mb-1">{t.experience.dictaro.role}</p>
+              <p className="text-sm text-muted-foreground mb-4">{t.experience.dictaro.period}</p>
               <ul className="text-sm text-muted-foreground space-y-1 mb-6">
-                {t.experience.santifer.highlights.map((h, i) => (
+                {t.experience.dictaro.highlights.map((h, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
                     <span>{h}</span>
@@ -1575,9 +1575,9 @@ function App() {
 
               {/* Trusted By - Corporate Logos */}
               <div className="pt-4 border-t border-border/50">
-                <p className="text-xs text-muted-foreground/60 uppercase tracking-wider mb-4">{t.experience.santifer.trustedBy.label}</p>
+                <p className="text-xs text-muted-foreground/60 uppercase tracking-wider mb-4">{t.experience.dictaro.trustedBy.label}</p>
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-3 md:gap-x-8">
-                  {t.experience.santifer.trustedBy.logos.map((logo, i) => (
+                  {t.experience.dictaro.trustedBy.logos.map((logo, i) => (
                     <div key={i} className="flex items-center gap-2 hover:opacity-90 transition-opacity duration-200">
                       {'src' in logo ? (
                         <img src={logo.src} alt={logo.name} className="h-5 w-auto shrink-0 invert opacity-60 hover:opacity-80 dark:invert-0 dark:opacity-70 dark:hover:opacity-90" loading="lazy" width={20} height={20} />
@@ -1591,8 +1591,8 @@ function App() {
               </div>
 
               {/* Deep dive CTA */}
-              <Link to={t.experience.santifer.caseStudyUrl} className="inline-flex items-center gap-2 mt-6 text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-200 group/cta">
-                <span className="px-4 py-2 rounded-lg bg-primary/10 border border-primary/30 group-hover/cta:bg-primary/20 group-hover/cta:border-primary/50 transition-all duration-200">{t.experience.santifer.caseStudyLabel}</span>
+              <Link to={t.experience.dictaro.caseStudyUrl} className="inline-flex items-center gap-2 mt-6 text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-200 group/cta">
+                <span className="px-4 py-2 rounded-lg bg-primary/10 border border-primary/30 group-hover/cta:bg-primary/20 group-hover/cta:border-primary/50 transition-all duration-200">{t.experience.dictaro.caseStudyLabel}</span>
               </Link>
             </div>
           </AnimatedSection>
@@ -1612,10 +1612,10 @@ function App() {
                     </div>
                     <span className="badge px-3 py-1 bg-gold/20 text-gold">Source of Truth</span>
                   </div>
-                  <h4 className="font-display text-2xl font-bold mb-4">{t.experience.santifer.businessOS.title}</h4>
-                  <p className="text-muted-foreground mb-6">{t.experience.santifer.businessOS.desc}</p>
+                  <h4 className="font-display text-2xl font-bold mb-4">{t.experience.dictaro.businessOS.title}</h4>
+                  <p className="text-muted-foreground mb-6">{t.experience.dictaro.businessOS.desc}</p>
                   <ul className="text-sm text-muted-foreground space-y-2">
-                    {t.experience.santifer.businessOS.modules.map((item, i) => {
+                    {t.experience.dictaro.businessOS.modules.map((item, i) => {
                       const icons: Record<string, React.ReactNode> = {
                         database: <Database className="w-4 h-4" />,
                         users: <Users className="w-4 h-4" />,
@@ -1633,13 +1633,13 @@ function App() {
                       )
                     })}
                   </ul>
-                  <Link to={t.experience.santifer.caseStudyUrl} className="inline-flex items-center gap-2 mt-auto pt-6 text-sm font-medium text-gold hover:text-gold/80 transition-colors duration-200 group/cta">
-                    <span className="px-4 py-2 rounded-lg bg-gold/10 border border-gold/30 group-hover/cta:bg-gold/20 group-hover/cta:border-gold/50 transition-all duration-200">{t.experience.santifer.businessOS.footer}</span>
+                  <Link to={t.experience.dictaro.caseStudyUrl} className="inline-flex items-center gap-2 mt-auto pt-6 text-sm font-medium text-gold hover:text-gold/80 transition-colors duration-200 group/cta">
+                    <span className="px-4 py-2 rounded-lg bg-gold/10 border border-gold/30 group-hover/cta:bg-gold/20 group-hover/cta:border-gold/50 transition-all duration-200">{t.experience.dictaro.businessOS.footer}</span>
                     <ChevronRight className="w-4 h-4 group-hover/cta:translate-x-0.5 transition-transform duration-200" />
                   </Link>
                 </div>
                 <div className="grid grid-cols-3 lg:flex lg:flex-col gap-2 lg:gap-3 mt-4 lg:mt-0">
-                  {t.experience.santifer.businessOS.metrics.map((metric, i) => (
+                  {t.experience.dictaro.businessOS.metrics.map((metric, i) => (
                     <div key={i} className="text-center p-2 lg:p-4 rounded-xl bg-background/50 border border-gold/20">
                       <div className="font-display text-lg lg:text-2xl font-bold text-gold">{metric.value}</div>
                       <div className="text-[10px] lg:text-xs text-muted-foreground leading-tight">{metric.label}</div>
@@ -1659,12 +1659,12 @@ function App() {
                   <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center">
                     <Bot className="w-6 h-6 text-primary" />
                   </div>
-                  <span className="badge px-3 py-1 bg-primary/10 text-primary">{t.experience.santifer.jacobo.badge}</span>
+                  <span className="badge px-3 py-1 bg-primary/10 text-primary">{t.experience.dictaro.jacobo.badge}</span>
                 </div>
-                <h4 className="font-display text-xl font-bold mb-2 group-hover:text-primary transition-colors">{t.experience.santifer.jacobo.title}</h4>
-                <p className="text-muted-foreground text-sm mb-4">{t.experience.santifer.jacobo.desc}</p>
+                <h4 className="font-display text-xl font-bold mb-2 group-hover:text-primary transition-colors">{t.experience.dictaro.jacobo.title}</h4>
+                <p className="text-muted-foreground text-sm mb-4">{t.experience.dictaro.jacobo.desc}</p>
                 <ul className="text-sm text-muted-foreground space-y-2">
-                  {t.experience.santifer.jacobo.items.map((item, i) => {
+                  {t.experience.dictaro.jacobo.items.map((item, i) => {
                     const icons: Record<string, React.ReactNode> = {
                       network: <Network className="w-4 h-4" />,
                       calendar: <Calendar className="w-4 h-4" />,
@@ -1680,8 +1680,8 @@ function App() {
                     )
                   })}
                 </ul>
-                <Link to={t.experience.santifer.jacobo.caseStudyUrl} className="inline-flex items-center gap-2 mt-auto pt-4 text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-200 group/cta">
-                  <span className="px-4 py-2 rounded-lg bg-primary/10 border border-primary/30 group-hover/cta:bg-primary/20 group-hover/cta:border-primary/50 transition-all duration-200">{t.experience.santifer.jacobo.soldWith}</span>
+                <Link to={t.experience.dictaro.jacobo.caseStudyUrl} className="inline-flex items-center gap-2 mt-auto pt-4 text-sm font-medium text-primary hover:text-primary/80 transition-colors duration-200 group/cta">
+                  <span className="px-4 py-2 rounded-lg bg-primary/10 border border-primary/30 group-hover/cta:bg-primary/20 group-hover/cta:border-primary/50 transition-all duration-200">{t.experience.dictaro.jacobo.soldWith}</span>
                   <ChevronRight className="w-4 h-4 group-hover/cta:translate-x-0.5 transition-transform duration-200" />
                 </Link>
               </div>
@@ -1694,12 +1694,12 @@ function App() {
                   <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center">
                     <Layout className="w-6 h-6 text-accent" />
                   </div>
-                  <span className="badge px-3 py-1 bg-accent/10 text-accent">{t.experience.santifer.webSeo.badge}</span>
+                  <span className="badge px-3 py-1 bg-accent/10 text-accent">{t.experience.dictaro.webSeo.badge}</span>
                 </div>
-                <h4 className="font-display text-xl font-bold mb-2 group-hover:text-accent transition-colors">{t.experience.santifer.webSeo.title}</h4>
-                <p className="text-muted-foreground text-sm mb-4">{t.experience.santifer.webSeo.desc}</p>
+                <h4 className="font-display text-xl font-bold mb-2 group-hover:text-accent transition-colors">{t.experience.dictaro.webSeo.title}</h4>
+                <p className="text-muted-foreground text-sm mb-4">{t.experience.dictaro.webSeo.desc}</p>
                 <ul className="text-sm text-muted-foreground space-y-2">
-                  {t.experience.santifer.webSeo.items.map((item, i) => {
+                  {t.experience.dictaro.webSeo.items.map((item, i) => {
                     const icons: Record<string, React.ReactNode> = {
                       fileText: <FileText className="w-4 h-4" />,
                       image: <Image className="w-4 h-4" />,
@@ -1715,8 +1715,8 @@ function App() {
                     )
                   })}
                 </ul>
-                <Link to={t.experience.santifer.webSeo.caseStudyUrl} className="inline-flex items-center gap-2 mt-auto pt-4 text-sm font-medium text-accent hover:text-accent/80 transition-colors duration-200 group/cta">
-                  <span className="px-4 py-2 rounded-lg bg-accent/10 border border-accent/30 group-hover/cta:bg-accent/20 group-hover/cta:border-accent/50 transition-all duration-200">{t.experience.santifer.webSeo.codeAvailable}</span>
+                <Link to={t.experience.dictaro.webSeo.caseStudyUrl} className="inline-flex items-center gap-2 mt-auto pt-4 text-sm font-medium text-accent hover:text-accent/80 transition-colors duration-200 group/cta">
+                  <span className="px-4 py-2 rounded-lg bg-accent/10 border border-accent/30 group-hover/cta:bg-accent/20 group-hover/cta:border-accent/50 transition-all duration-200">{t.experience.dictaro.webSeo.codeAvailable}</span>
                   <ChevronRight className="w-4 h-4 group-hover/cta:translate-x-0.5 transition-transform duration-200" />
                 </Link>
               </div>
@@ -1727,20 +1727,20 @@ function App() {
               <div className="h-full p-5 rounded-2xl bg-gradient-to-r from-success/10 to-success/5 border border-success/30 hover:border-success/50 transition-colors duration-200">
                 <div className="flex items-center gap-3 mb-2">
                   <Zap className="w-5 h-5 text-success" />
-                  <span className="font-display font-bold text-success">{t.experience.santifer.exit}</span>
+                  <span className="font-display font-bold text-success">{t.experience.dictaro.exit}</span>
                 </div>
-                <p className="text-sm text-muted-foreground">{t.experience.santifer.exitDesc}</p>
+                <p className="text-sm text-muted-foreground">{t.experience.dictaro.exitDesc}</p>
               </div>
             </AnimatedSection>
 
             {/* ERP card */}
             <AnimatedSection delay={0.3}>
-              <Link to={t.experience.santifer.erp.caseStudyUrl} className="block h-full p-5 rounded-2xl bg-card border border-border hover:border-primary/30 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 flex flex-col group/card">
+              <Link to={t.experience.dictaro.erp.caseStudyUrl} className="block h-full p-5 rounded-2xl bg-card border border-border hover:border-primary/30 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 flex flex-col group/card">
                 <Database className="w-5 h-5 text-primary mb-3" />
-                <p className="font-medium text-sm mb-1">{t.experience.santifer.erp.title}</p>
-                <p className="text-sm text-muted-foreground">{t.experience.santifer.erp.desc}</p>
+                <p className="font-medium text-sm mb-1">{t.experience.dictaro.erp.title}</p>
+                <p className="text-sm text-muted-foreground">{t.experience.dictaro.erp.desc}</p>
                 <div className="flex items-center justify-between mt-auto pt-3">
-                  <span className="text-xs font-medium text-primary">{t.experience.santifer.erp.metric}</span>
+                  <span className="text-xs font-medium text-primary">{t.experience.dictaro.erp.metric}</span>
                   <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/0 group-hover/card:text-primary group-hover/card:translate-x-0.5 transition-all duration-200" />
                 </div>
               </Link>
@@ -1748,12 +1748,12 @@ function App() {
 
             {/* GPTs card */}
             <AnimatedSection delay={0.35}>
-              <Link to={t.experience.santifer.gpts.caseStudyUrl} className="block h-full p-5 rounded-2xl bg-card border border-border hover:border-primary/30 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 flex flex-col group/card">
+              <Link to={t.experience.dictaro.gpts.caseStudyUrl} className="block h-full p-5 rounded-2xl bg-card border border-border hover:border-primary/30 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 flex flex-col group/card">
                 <Bot className="w-5 h-5 text-accent mb-3" />
-                <p className="font-medium text-sm mb-1">{t.experience.santifer.gpts.title}</p>
-                <p className="text-sm text-muted-foreground">{t.experience.santifer.gpts.desc}</p>
+                <p className="font-medium text-sm mb-1">{t.experience.dictaro.gpts.title}</p>
+                <p className="text-sm text-muted-foreground">{t.experience.dictaro.gpts.desc}</p>
                 <div className="flex items-center justify-between mt-auto pt-3">
-                  <span className="text-xs font-medium text-primary">{t.experience.santifer.gpts.metric}</span>
+                  <span className="text-xs font-medium text-primary">{t.experience.dictaro.gpts.metric}</span>
                   <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/0 group-hover/card:text-primary group-hover/card:translate-x-0.5 transition-all duration-200" />
                 </div>
               </Link>
@@ -1761,12 +1761,12 @@ function App() {
 
             {/* Reservas card */}
             <AnimatedSection delay={0.4}>
-              <Link to={t.experience.santifer.reservas.caseStudyUrl} className="block h-full p-5 rounded-2xl bg-card border border-border hover:border-primary/30 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 flex flex-col group/card">
+              <Link to={t.experience.dictaro.reservas.caseStudyUrl} className="block h-full p-5 rounded-2xl bg-card border border-border hover:border-primary/30 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 flex flex-col group/card">
                 <Timer className="w-5 h-5 text-primary mb-3" />
-                <p className="font-medium text-sm mb-1">{t.experience.santifer.reservas.title}</p>
-                <p className="text-sm text-muted-foreground">{t.experience.santifer.reservas.desc}</p>
+                <p className="font-medium text-sm mb-1">{t.experience.dictaro.reservas.title}</p>
+                <p className="text-sm text-muted-foreground">{t.experience.dictaro.reservas.desc}</p>
                 <div className="flex items-center justify-between mt-auto pt-3">
-                  <span className="text-xs font-medium text-accent">{t.experience.santifer.reservas.metric}</span>
+                  <span className="text-xs font-medium text-accent">{t.experience.dictaro.reservas.metric}</span>
                   <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/0 group-hover/card:text-primary group-hover/card:translate-x-0.5 transition-all duration-200" />
                 </div>
               </Link>
@@ -1774,12 +1774,12 @@ function App() {
 
             {/* CRM card */}
             <AnimatedSection delay={0.45}>
-              <Link to={t.experience.santifer.crm.caseStudyUrl} className="block h-full p-5 rounded-2xl bg-card border border-border hover:border-primary/30 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 flex flex-col group/card">
+              <Link to={t.experience.dictaro.crm.caseStudyUrl} className="block h-full p-5 rounded-2xl bg-card border border-border hover:border-primary/30 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 flex flex-col group/card">
                 <Users className="w-5 h-5 text-accent mb-3" />
-                <p className="font-medium text-sm mb-1">{t.experience.santifer.crm.title}</p>
-                <p className="text-sm text-muted-foreground">{t.experience.santifer.crm.desc}</p>
+                <p className="font-medium text-sm mb-1">{t.experience.dictaro.crm.title}</p>
+                <p className="text-sm text-muted-foreground">{t.experience.dictaro.crm.desc}</p>
                 <div className="flex items-center justify-between mt-auto pt-3">
-                  <span className="text-xs font-medium text-primary">{t.experience.santifer.crm.metric}</span>
+                  <span className="text-xs font-medium text-primary">{t.experience.dictaro.crm.metric}</span>
                   <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/0 group-hover/card:text-primary group-hover/card:translate-x-0.5 transition-all duration-200" />
                 </div>
               </Link>
@@ -1787,12 +1787,12 @@ function App() {
 
             {/* GenAI Marketing card */}
             <AnimatedSection delay={0.5}>
-              <Link to={t.experience.santifer.genAI.caseStudyUrl} className="block h-full p-5 rounded-2xl bg-card border border-border hover:border-primary/30 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 flex flex-col group/card">
+              <Link to={t.experience.dictaro.genAI.caseStudyUrl} className="block h-full p-5 rounded-2xl bg-card border border-border hover:border-primary/30 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 flex flex-col group/card">
                 <Sparkles className="w-5 h-5 text-primary mb-3" />
-                <p className="font-medium text-sm mb-1">{t.experience.santifer.genAI.title}</p>
-                <p className="text-sm text-muted-foreground">{t.experience.santifer.genAI.desc}</p>
+                <p className="font-medium text-sm mb-1">{t.experience.dictaro.genAI.title}</p>
+                <p className="text-sm text-muted-foreground">{t.experience.dictaro.genAI.desc}</p>
                 <div className="flex items-center justify-between mt-auto pt-3">
-                  <span className="text-xs font-medium text-accent">{t.experience.santifer.genAI.metric}</span>
+                  <span className="text-xs font-medium text-accent">{t.experience.dictaro.genAI.metric}</span>
                   <ChevronRight className="w-3.5 h-3.5 text-muted-foreground/0 group-hover/card:text-primary group-hover/card:translate-x-0.5 transition-all duration-200" />
                 </div>
               </Link>
@@ -1996,12 +1996,12 @@ function App() {
             const contentDigest = allProjects.find(p => p.title === 'Content Digest')!
             const lifeOS = allProjects.find(p => p.title === 'Life OS')!
             const careerOps = allProjects.find(p => p.title === 'Career Ops')!
-            const santiferIo = allProjects.find(p => p.title === 'Portfolio')!
+            const portfolioCard = allProjects.find(p => p.title === 'Portfolio')!
             const selfHealingChatbot = allProjects.find(p => p.title === 'Self-Healing Chatbot')!
-            // Tools que dependen de santifer.io
+            // Tools that depend on the portfolio
             const claudeEye = allProjects.find(p => p.title === 'Claude Eye')!
             const claudeable = allProjects.find(p => p.title === 'Claudeable')!
-            // Fila 4: Claude Pulse + ProjectOS Predict
+            // Row 4: Claude Pulse + ProjectOS Predict
             const claudePulse = allProjects.find(p => p.title === 'Claude Pulse')!
             const projectOSPredict = allProjects.find(p => p.title === 'ProjectOS Predict')!
 
@@ -2018,7 +2018,7 @@ function App() {
               contentDigest: useRef<HTMLDivElement>(null),
               lifeOS: useRef<HTMLDivElement>(null),
               careerOps: useRef<HTMLDivElement>(null),
-              santiferIo: useRef<HTMLDivElement>(null),
+              portfolioCard: useRef<HTMLDivElement>(null),
               selfHealingChatbot: useRef<HTMLDivElement>(null),
               claudeEye: useRef<HTMLDivElement>(null),
               claudeable: useRef<HTMLDivElement>(null),
@@ -2066,8 +2066,8 @@ function App() {
                 const connections: Connection[] = isMobile ? [
                   // Móvil: flujo vertical simple
                   { from: cardRefs.lifeOS, fromEdge: 'bottom', to: cardRefs.careerOps, toEdge: 'top' },
-                  { from: cardRefs.careerOps, fromEdge: 'bottom', to: cardRefs.santiferIo, toEdge: 'top' },
-                  { from: cardRefs.santiferIo, fromEdge: 'bottom', to: cardRefs.selfHealingChatbot, toEdge: 'top' },
+                  { from: cardRefs.careerOps, fromEdge: 'bottom', to: cardRefs.portfolioCard, toEdge: 'top' },
+                  { from: cardRefs.portfolioCard, fromEdge: 'bottom', to: cardRefs.selfHealingChatbot, toEdge: 'top' },
                   { from: cardRefs.selfHealingChatbot, fromEdge: 'bottom', to: cardRefs.claudeEye, toEdge: 'top' },
                   { from: cardRefs.claudeEye, fromEdge: 'bottom', to: cardRefs.claudeable, toEdge: 'top' },
                   { from: cardRefs.claudeable, fromEdge: 'bottom', to: cardRefs.claudePulse, toEdge: 'top' },
@@ -2075,20 +2075,20 @@ function App() {
                   { from: cardRefs.contentDigest, fromEdge: 'bottom', to: cardRefs.projectOSPredict, toEdge: 'top' },
                 ] : [
                   // Desktop: grafo complejo
-                  // Fila 1: Life OS ↔ Career Ops (horizontal)
+                  // Row 1: Life OS ↔ Career Ops (horizontal)
                   { from: cardRefs.lifeOS, fromEdge: 'right', to: cardRefs.careerOps, toEdge: 'left' },
-                  // Fila 1 → Fila 2: diagonales hacia santifer.io + chatbot
-                  { from: cardRefs.lifeOS, fromEdge: 'bottom', to: cardRefs.santiferIo, toEdge: 'top' },
+                  // Row 1 -> Row 2: diagonals to portfolio + chatbot
+                  { from: cardRefs.lifeOS, fromEdge: 'bottom', to: cardRefs.portfolioCard, toEdge: 'top' },
                   { from: cardRefs.careerOps, fromEdge: 'bottom', to: cardRefs.selfHealingChatbot, toEdge: 'top' },
-                  // Fila 2: santifer.io ↔ chatbot (horizontal)
-                  { from: cardRefs.santiferIo, fromEdge: 'right', to: cardRefs.selfHealingChatbot, toEdge: 'left' },
-                  // Fila 2 → Fila 3: hacia tools
-                  { from: cardRefs.santiferIo, fromEdge: 'bottom', to: cardRefs.claudeEye, toEdge: 'top' },
+                  // Row 2: portfolio <-> chatbot (horizontal)
+                  { from: cardRefs.portfolioCard, fromEdge: 'right', to: cardRefs.selfHealingChatbot, toEdge: 'left' },
+                  // Row 2 → Row 3: hacia tools
+                  { from: cardRefs.portfolioCard, fromEdge: 'bottom', to: cardRefs.claudeEye, toEdge: 'top' },
                   { from: cardRefs.selfHealingChatbot, fromEdge: 'bottom', to: cardRefs.claudeable, toEdge: 'top' },
-                  // Fila 3 → Fila 4
+                  // Row 3 → Row 4
                   { from: cardRefs.claudeEye, fromEdge: 'bottom', to: cardRefs.claudePulse, toEdge: 'top' },
                   { from: cardRefs.claudeable, fromEdge: 'bottom', to: cardRefs.contentDigest, toEdge: 'top' },
-                  // Fila 4 → Fila 5: diagonales hacia ProjectOS
+                  // Row 4 → Row 5: diagonales hacia ProjectOS
                   { from: cardRefs.claudePulse, fromEdge: 'bottom', to: cardRefs.projectOSPredict, toEdge: 'top', toRatio: 0.25 },
                   { from: cardRefs.contentDigest, fromEdge: 'bottom', to: cardRefs.projectOSPredict, toEdge: 'top', toRatio: 0.75 },
                 ]
@@ -2251,7 +2251,7 @@ function App() {
                   ))}
                 </svg>
 
-                {/* Fila 1: Life OS + Career Ops */}
+                {/* Row 1: Life OS + Career Ops */}
                 <div className="grid md:grid-cols-2 gap-6 mb-6 relative z-10">
                   <AnimatedSection delay={0.1}>
                     <ProjectCard project={lifeOS} cardRef={cardRefs.lifeOS} />
@@ -2261,17 +2261,17 @@ function App() {
                   </AnimatedSection>
                 </div>
 
-                {/* Fila 2: santifer.io + Self-Healing Chatbot (highlight) */}
+                {/* Row 2: Portfolio + clouWay OSS/BSS (highlight) */}
                 <div className="grid md:grid-cols-2 gap-6 mb-6 relative z-10">
                   <AnimatedSection delay={0.2}>
-                    <ProjectCard project={santiferIo} variant="highlight" cardRef={cardRefs.santiferIo} />
+                    <ProjectCard project={portfolioCard} variant="highlight" cardRef={cardRefs.portfolioCard} />
                   </AnimatedSection>
                   <AnimatedSection delay={0.25}>
                     <ProjectCard project={selfHealingChatbot} variant="highlight" cardRef={cardRefs.selfHealingChatbot} />
                   </AnimatedSection>
                 </div>
 
-                {/* Fila 3: Claude Eye + Claudeable — tools */}
+                {/* Row 3: Claude Eye + Claudeable — tools */}
                 <div className="grid md:grid-cols-2 gap-6 mb-6 relative z-10">
                   <AnimatedSection delay={0.25}>
                     <ProjectCard project={claudeEye} variant="tool-static" cardRef={cardRefs.claudeEye} />
@@ -2281,7 +2281,7 @@ function App() {
                   </AnimatedSection>
                 </div>
 
-                {/* Fila 4: Claude Pulse + Content Digest */}
+                {/* Row 4: Claude Pulse + Content Digest */}
                 <div className="grid md:grid-cols-2 gap-6 mb-6 relative z-10">
                   <AnimatedSection delay={0.35}>
                     <ProjectCard project={claudePulse} variant="tool-static" cardRef={cardRefs.claudePulse} />
@@ -2291,7 +2291,7 @@ function App() {
                   </AnimatedSection>
                 </div>
 
-                {/* Fila 5: ProjectOS Predict (full width) */}
+                {/* Row 5: ProjectOS Predict (full width) */}
                 <div className="relative z-10">
                   <AnimatedSection delay={0.45}>
                     <ProjectCard project={projectOSPredict} cardRef={cardRefs.projectOSPredict} />

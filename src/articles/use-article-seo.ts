@@ -26,8 +26,10 @@ function upsertLink(rel: string, href: string) {
   el.href = href
 }
 
+const SITE_URL = 'https://djok.github.io/me'
+
 // ---------------------------------------------------------------------------
-// useArticleSeo — full meta/OG/Twitter/hreflang/JSON-LD for articles
+// useArticleSeo — full meta/OG/Twitter/JSON-LD for articles
 // ---------------------------------------------------------------------------
 
 export interface ArticleSeoOpts {
@@ -41,27 +43,23 @@ export interface ArticleSeoOpts {
   modifiedTime?: string
   articleTags: string
   jsonLd: object
-  /** ES slug used as x-default hreflang (defaults to slug when lang=es) */
   xDefaultSlug?: string
 }
 
 export function useArticleSeo(opts: ArticleSeoOpts) {
   useEffect(() => {
     const {
-      lang, slug, altSlug, title, description, image,
-      publishedTime, modifiedTime, articleTags, jsonLd, xDefaultSlug,
+      lang, slug, title, description, image,
+      publishedTime, modifiedTime, articleTags, jsonLd,
     } = opts
 
-    const url = `https://santifer.io/${slug}`
-    const altUrl = `https://santifer.io/${altSlug}`
-    const altLang = lang === 'es' ? 'en' : 'es'
-    const defaultSlug = xDefaultSlug ?? (lang === 'es' ? slug : altSlug)
+    const url = `${SITE_URL}/${slug}`
 
     document.title = title
 
     // Standard meta
     upsertMeta('name', 'description', description)
-    upsertMeta('name', 'author', 'Santiago Fernández de Valderrama')
+    upsertMeta('name', 'author', 'Rosen Velikov')
     upsertMeta('name', 'robots', 'index, follow')
 
     // Open Graph
@@ -69,12 +67,11 @@ export function useArticleSeo(opts: ArticleSeoOpts) {
     upsertMeta('property', 'og:url', url)
     upsertMeta('property', 'og:title', title)
     upsertMeta('property', 'og:description', description)
-    upsertMeta('property', 'og:site_name', 'santifer.io')
-    upsertMeta('property', 'og:locale', lang === 'es' ? 'es_ES' : 'en_US')
-    upsertMeta('property', 'og:locale:alternate', lang === 'es' ? 'en_US' : 'es_ES')
+    upsertMeta('property', 'og:site_name', 'Rosen Velikov Portfolio')
+    upsertMeta('property', 'og:locale', 'en_US')
     upsertMeta('property', 'article:published_time', publishedTime)
     if (modifiedTime) upsertMeta('property', 'article:modified_time', modifiedTime)
-    upsertMeta('property', 'article:author', 'https://www.linkedin.com/in/santifer')
+    upsertMeta('property', 'article:author', 'https://www.linkedin.com/in/rosenvelikov')
     upsertMeta('property', 'article:tag', articleTags)
     if (image) upsertMeta('property', 'og:image', image)
 
@@ -87,22 +84,7 @@ export function useArticleSeo(opts: ArticleSeoOpts) {
     // Canonical
     upsertLink('canonical', url)
 
-    // Hreflang
-    const createdLinks: HTMLLinkElement[] = []
-    for (const { hreflang, href } of [
-      { hreflang: lang, href: url },
-      { hreflang: altLang, href: altUrl },
-      { hreflang: 'x-default', href: `https://santifer.io/${defaultSlug}` },
-    ]) {
-      const link = document.createElement('link')
-      link.rel = 'alternate'
-      link.hreflang = hreflang
-      link.href = href
-      document.head.appendChild(link)
-      createdLinks.push(link)
-    }
-
-    // JSON-LD — remove any pre-existing (from prerender) before adding
+    // JSON-LD
     const existing = document.querySelector('script[type="application/ld+json"]')
     if (existing) existing.remove()
 
@@ -113,7 +95,6 @@ export function useArticleSeo(opts: ArticleSeoOpts) {
 
     return () => {
       script.remove()
-      createdLinks.forEach(l => l.remove())
     }
   }, [opts.lang, opts.slug, opts.title])
 }
@@ -131,9 +112,9 @@ export function useHomeSeo({ lang, title, description }: { lang: string; title: 
 
     document.querySelector('meta[property="og:title"]')?.setAttribute('content', title)
     document.querySelector('meta[property="og:description"]')?.setAttribute('content', description)
-    document.querySelector('meta[property="og:locale"]')?.setAttribute('content', lang === 'en' ? 'en_US' : 'es_ES')
+    document.querySelector('meta[property="og:locale"]')?.setAttribute('content', 'en_US')
 
-    const canonical = lang === 'en' ? 'https://santifer.io/en' : 'https://santifer.io/'
+    const canonical = `${SITE_URL}/`
     document.querySelector('link[rel="canonical"]')?.setAttribute('href', canonical)
     document.querySelector('meta[property="og:url"]')?.setAttribute('content', canonical)
 

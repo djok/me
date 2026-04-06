@@ -253,7 +253,7 @@ export const translations = {
     },
     experience: {
       title: 'Work Experience',
-      santifer: {
+      dictaro: {
         company: 'Dictaro',
         location: 'Remote',
         role: 'Founder & Lead Engineer',
