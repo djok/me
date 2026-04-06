@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build:pages": "tsc -b && vite build",
     "rag:export": "npx tsx --tsconfig tsconfig.app.json scripts/export-chunks.ts",
     "rag:ingest": "npx tsx --tsconfig tsconfig.app.json scripts/ingest-rag.ts",
     "rag:sync": "npm run rag:export && npm run rag:ingest",
