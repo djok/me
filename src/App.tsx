@@ -1461,7 +1461,7 @@ function App() {
                 </div>
                 {/* Photo — sits above the ring */}
                 <div className="absolute inset-[3px] rounded-full overflow-hidden">
-                  <img src="/avatar.png" alt="Rosen Velikov" className="w-full h-full object-cover" width={192} height={192} fetchPriority="high" />
+                  <img src={`${import.meta.env.BASE_URL}avatar.png`} alt="Rosen Velikov" className="w-full h-full object-cover" width={192} height={192} fetchPriority="high" />
                 </div>
               </div>
               <motion.div
@@ -2431,7 +2431,7 @@ function App() {
                   className="flex flex-col p-5 rounded-2xl bg-card border border-border/50 border-t-2 border-t-[#FF4500] hover:border-border transition-colors group"
                 >
                   <div className="flex gap-3">
-                    <img src="/avatar.png" alt="" role="presentation" width={384} height={384} className="w-10 h-10 rounded-full shrink-0 mt-0.5" />
+                    <img src={`${import.meta.env.BASE_URL}avatar.png`} alt="" role="presentation" width={384} height={384} className="w-10 h-10 rounded-full shrink-0 mt-0.5" />
                     <div className="flex-1 min-w-0">
                       <div className="flex justify-between items-start gap-2">
                         <p className="text-sm text-foreground leading-relaxed">{rp.hook}<span className="text-muted-foreground">...</span> <span className="text-[#FF4500] group-hover:text-[#FF4500] transition-colors">ver más</span></p>
@@ -2472,7 +2472,7 @@ function App() {
                   className="flex flex-col p-5 rounded-2xl bg-card border border-border/50 border-t-2 border-t-[hsl(var(--linkedin))] hover:border-border transition-colors group h-full"
                 >
                   <div className="flex gap-3 flex-1">
-                    <img src="/avatar.png" alt="" role="presentation" width={384} height={384} className="w-10 h-10 rounded-full shrink-0 mt-0.5" />
+                    <img src={`${import.meta.env.BASE_URL}avatar.png`} alt="" role="presentation" width={384} height={384} className="w-10 h-10 rounded-full shrink-0 mt-0.5" />
                     <div className="flex-1 min-w-0">
                       <div className="flex justify-between items-start gap-2">
                         <p className="text-sm text-foreground leading-relaxed">{post.hook}<span className="text-muted-foreground">...</span> <span className="text-[hsl(var(--linkedin))] group-hover:text-[hsl(var(--linkedin))] transition-colors">ver más</span></p>
