@@ -1424,7 +1424,7 @@ function App() {
       <StorySection t={t} />
 
       {/* Experience - Con preámbulo de competencias */}
-      <section id="experience" className="py-16 md:py-24 bg-muted/30" style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 2000px' }}>
+      <section id="experience" className="py-16 md:py-24 bg-muted/30">
         <div className="max-w-5xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="font-display text-2xl font-semibold mb-8 flex items-center gap-3">
@@ -1743,7 +1743,7 @@ function App() {
       </section>
 
       {/* Projects & Claude Code */}
-      <section id="projects" className="py-16 md:py-24" style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 1500px' }}>
+      <section id="projects" className="py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
           <AnimatedSection>
             <div className="flex items-center justify-between mb-12">
@@ -1865,7 +1865,7 @@ function App() {
       </section>
 
       {/* Sharing — Teaching + LinkedIn */}
-      <section id="speaking" className="py-16 md:py-24 bg-muted/30" style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 800px' }}>
+      <section id="speaking" className="py-16 md:py-24 bg-muted/30">
         <div className="max-w-5xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="font-display text-2xl font-semibold mb-8 flex items-center gap-3">
@@ -2055,7 +2055,7 @@ function App() {
       </section>
 
       {/* Education & Certifications */}
-      <section id="education" className="py-16 md:py-24" style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 1000px' }}>
+      <section id="education" className="py-16 md:py-24">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Education */}
@@ -2167,7 +2167,7 @@ function App() {
       </section>
 
       {/* Skills */}
-      <section id="tech" className="py-16 md:py-24 bg-muted/30" style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 600px' }}>
+      <section id="tech" className="py-16 md:py-24 bg-muted/30">
         <div className="max-w-5xl mx-auto px-6">
           <AnimatedSection>
             <h2 className="font-display text-2xl font-semibold mb-12 flex items-center gap-3">
