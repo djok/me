@@ -1453,15 +1453,15 @@ function App() {
               className="relative"
             >
               <div className="relative w-40 h-40 md:w-48 md:h-48">
-                {/* Glow effect */}
-                <div className="absolute inset-0 rounded-full bg-gradient-theme-30 blur-xl" />
-                {/* Glassmorphism frame */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/20 to-white/5 md:backdrop-blur-sm border border-white/20 shadow-2xl" />
-                {/* Inner border */}
-                <div className="absolute inset-2 rounded-full bg-gradient-theme-50 p-[2px]">
-                  <div className="w-full h-full rounded-full overflow-hidden">
-                    <img src="/avatar.png" alt="Rosen Velikov" className="w-full h-full object-cover" width={192} height={192} fetchPriority="high" />
-                  </div>
+                {/* Glow effect behind avatar */}
+                <div className="absolute inset-[-8px] rounded-full bg-gradient-theme-30 blur-xl opacity-60" />
+                {/* Gradient ring border */}
+                <div className="absolute inset-0 rounded-full bg-gradient-theme p-[3px] shadow-2xl">
+                  <div className="w-full h-full rounded-full bg-background" />
+                </div>
+                {/* Photo — sits above the ring */}
+                <div className="absolute inset-[3px] rounded-full overflow-hidden">
+                  <img src="/avatar.png" alt="Rosen Velikov" className="w-full h-full object-cover" width={192} height={192} fetchPriority="high" />
                 </div>
               </div>
               <motion.div
