@@ -154,14 +154,6 @@ export const translations = {
           link: '',
         },
         {
-          title: 'Portfolio',
-          badge: 'This Portfolio',
-          badgeBuilding: '',
-          desc: 'Interactive CV with AI-augmented SDLC. SSR prerender, bilingual i18n, and automated SEO. Built with React 19, TypeScript, and Tailwind.',
-          tech: ['React 19', 'TypeScript', 'Tailwind', 'Vite', 'Motion', 'Vercel'],
-          link: 'github.com/djok/me',
-        },
-        {
           title: 'Self-Healing Chatbot',
           badge: 'clouWay OSS/BSS',
           badgeBuilding: '',
