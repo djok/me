@@ -411,29 +411,17 @@ function HomeToc({ lang }: { lang: Lang }) {
 function AnimatedSection({ children, className = '', delay = 0 }: { children: React.ReactNode, className?: string, delay?: number }) {
   const [ref, setRef] = useState<HTMLElement | null>(null)
   const [isInView, setIsInView] = useState(false)
-  const [detected, setDetected] = useState(false)
-  const hydrated = useHydrated()
-  const wasAboveFold = useRef(false)
 
   useEffect(() => {
     if (!ref) return
-
-    // IntersectionObserver instead of getBoundingClientRect (avoids forced reflow).
-    // First callback fires immediately for visible elements → above-fold detection.
-    let firstCallback = true
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (firstCallback) {
-          firstCallback = false
-          if (entry.isIntersecting) wasAboveFold.current = true
-          setDetected(true)
-        }
         if (entry.isIntersecting) {
           setIsInView(true)
           observer.disconnect()
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.05 }
     )
     observer.observe(ref)
     return () => observer.disconnect()
@@ -442,15 +430,9 @@ function AnimatedSection({ children, className = '', delay = 0 }: { children: Re
   return (
     <motion.div
       ref={setRef}
-      initial={false}
-      animate={
-        !hydrated || !detected
-          ? false  // Pre-hydration / pre-detection: preserve SSR DOM state
-          : isInView
-            ? { opacity: 1, y: 0 }
-            : { opacity: 0, y: 40 }
-      }
-      transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
+      initial={{ opacity: 0, y: 30 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+      transition={{ duration: 0.5, delay, ease: [0.22, 1, 0.36, 1] }}
       className={className}
     >
       {children}
