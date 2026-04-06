@@ -408,35 +408,11 @@ function HomeToc({ lang }: { lang: Lang }) {
   )
 }
 
-function AnimatedSection({ children, className = '', delay = 0 }: { children: React.ReactNode, className?: string, delay?: number }) {
-  const [ref, setRef] = useState<HTMLElement | null>(null)
-  const [isInView, setIsInView] = useState(false)
-
-  useEffect(() => {
-    if (!ref) return
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsInView(true)
-          observer.disconnect()
-        }
-      },
-      { threshold: 0.05 }
-    )
-    observer.observe(ref)
-    return () => observer.disconnect()
-  }, [ref])
-
+function AnimatedSection({ children, className = '' }: { children: React.ReactNode, className?: string, delay?: number }) {
   return (
-    <motion.div
-      ref={setRef}
-      initial={{ opacity: 0, y: 30 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-      transition={{ duration: 0.5, delay, ease: [0.22, 1, 0.36, 1] }}
-      className={className}
-    >
+    <div className={className}>
       {children}
-    </motion.div>
+    </div>
   )
 }
 
