@@ -2011,7 +2011,7 @@ function App() {
             const contentDigest = allProjects.find(p => p.title === 'Content Digest')!
             const lifeOS = allProjects.find(p => p.title === 'Life OS')!
             const careerOps = allProjects.find(p => p.title === 'Career Ops')!
-            const santiferIo = allProjects.find(p => p.title === 'santifer.io')!
+            const santiferIo = allProjects.find(p => p.title === 'Portfolio')!
             const selfHealingChatbot = allProjects.find(p => p.title === 'Self-Healing Chatbot')!
             // Tools que dependen de santifer.io
             const claudeEye = allProjects.find(p => p.title === 'Claude Eye')!

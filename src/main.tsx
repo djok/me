@@ -1,5 +1,5 @@
 import { StrictMode, lazy, Suspense, useState, useEffect, useRef, Component, type ReactNode, type ComponentType } from 'react'
-import { hydrateRoot, createRoot } from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route, useLocation, Link } from 'react-router-dom'
 import { Analytics } from '@vercel/analytics/react'
 import './index.css'
@@ -193,9 +193,5 @@ const app = (
   </StrictMode>
 )
 
-// Hydrate if pre-rendered content exists, createRoot for dev mode
-if (root.hasChildNodes()) {
-  hydrateRoot(root, app)
-} else {
-  createRoot(root).render(app)
-}
+// Always use createRoot (no pre-rendered content on GitHub Pages)
+createRoot(root).render(app)
