@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback, useMemo, useReducer, useRef } from 'react'
 import { useLocation, Link } from 'react-router-dom'
-import { motion, AnimatePresence } from 'motion/react'
 import { Mail, ExternalLink, Briefcase, GraduationCap, Award, Code, Users, Globe, Bot, Zap, Database, Layout, BadgeCheck, FolderGit2, Sparkles, Download, Github, Package, MessageSquare, Receipt, CalendarCheck, Shield, FileText, GitBranch, Terminal, Lock, Network, Calendar, Percent, UserCheck, Image, TrendingUp, Timer, SkipForward, ThumbsUp, MessageCircle, Share2, ChevronRight, List, ArrowUp } from 'lucide-react'
 import { translations, seo, type Lang } from './i18n'
 import { useHomeSeo } from './articles/use-article-seo'
@@ -328,12 +327,9 @@ function HomeToc({ lang }: { lang: Lang }) {
       {/* Vertical track — spans from first dot center to last dot center */}
       <div className="absolute left-[5.5px] top-[14px] w-px bg-border" style={{ height: 'calc(100% - 28px)' }} />
       {/* Animated progress fill */}
-      <motion.div
+      <div
         className="absolute left-[5.5px] top-[14px] w-px bg-primary origin-top"
-        initial={{ scaleY: 0 }}
-        animate={{ scaleY: progressFrac }}
-        style={{ height: 'calc(100% - 28px)' }}
-        transition={{ duration: 0.3, ease: 'easeOut' }}
+        style={{ height: 'calc(100% - 28px)', transform: `scaleY(${progressFrac})`, transition: 'transform 0.3s ease-out' }}
       />
       <ul className="relative space-y-1">
         {HOME_TOC_SECTIONS.map((section, i) => {
@@ -341,14 +337,12 @@ function HomeToc({ lang }: { lang: Lang }) {
           const isPast = i <= activeIdx
           return (
             <li key={section.id} className="flex items-center gap-3">
-              <motion.span
+              <span
                 className={`relative z-10 w-3 h-3 rounded-full border-2 shrink-0 transition-colors duration-300 ${
                   isActive ? 'border-primary bg-primary shadow-[0_0_8px_rgba(var(--primary-rgb),0.4)]'
                   : isPast ? 'border-primary/50 bg-card'
                   : 'border-border bg-card'
                 }`}
-                animate={isActive ? { scale: [1, 1.3, 1] } : { scale: 1 }}
-                transition={{ duration: 0.3 }}
               />
               <button
                 onClick={() => scrollTo(section.id)}
@@ -368,32 +362,24 @@ function HomeToc({ lang }: { lang: Lang }) {
   )
 
   return (
-    <AnimatePresence>
+    <>
       {visible && (
         <>
           {/* Desktop: sticky sidebar */}
-          <motion.div
-            initial={hasRevealed ? { opacity: 0, x: -12 } : false}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -12 }}
-            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+          <div
             className="hidden 2xl:block fixed top-24 left-[max(1rem,calc(50%-46rem))] w-48 max-h-[calc(100vh-8rem)] overflow-visible z-30"
           >
             {tocNav}
-          </motion.div>
+          </div>
 
           {/* Mobile / narrow desktop: floating button + drawer */}
-          <motion.button
-            initial={hasRevealed ? { opacity: 0, scale: 0.8 } : false}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.3 }}
+          <button
             onClick={() => setTocOpen(o => !o)}
             className="2xl:hidden fixed bottom-6 right-6 z-40 w-11 h-11 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center"
             aria-label="Toggle table of contents"
           >
             <List className="w-5 h-5" />
-          </motion.button>
+          </button>
           {tocOpen && (
             <>
               <div className="2xl:hidden fixed inset-0 bg-background/60 backdrop-blur-sm z-40" onClick={() => setTocOpen(false)} />
@@ -404,7 +390,7 @@ function HomeToc({ lang }: { lang: Lang }) {
           )}
         </>
       )}
-    </AnimatePresence>
+    </>
   )
 }
 
@@ -1219,47 +1205,26 @@ function StorySection({ t }: { t: (typeof translations)[Lang] }) {
           />
 
           {/* Botón skip — posición absoluta debajo del texto, en el padding reservado */}
-          <AnimatePresence>
-            {animationStarted && !typewriterComplete && (
-              <motion.button
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
+          {animationStarted && !typewriterComplete && (
+              <button
                 onClick={() => skipRef.current?.()}
                 className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm text-muted-foreground border border-border/50 bg-card backdrop-blur-sm cursor-pointer hover:bg-primary/10 hover:border-primary/30 hover:text-foreground transition-colors duration-200"
               >
                 <SkipForward className="w-3.5 h-3.5" />
                 {t.story.skipButton}
-              </motion.button>
+              </button>
             )}
-          </AnimatePresence>
         </div>
 
         {/* Contenido que aparece después del typewriter - expansión suave (instantánea si scroll-skip) */}
-        <motion.div
-          initial={{ height: 0, opacity: 0 }}
-          animate={typewriterComplete
-            ? { height: 'auto', opacity: 1 }
-            : { height: 0, opacity: 0 }
-          }
-          transition={scrollSkipped
-            ? { duration: 0 }
-            : {
-                height: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] },
-                opacity: { duration: 0.4, delay: 0.1 }
-              }
-          }
-          style={{ overflow: 'hidden' }}
+        <div
+          style={{ overflow: 'hidden', height: typewriterComplete ? 'auto' : 0, opacity: typewriterComplete ? 1 : 0, transition: scrollSkipped ? 'none' : 'height 0.6s ease, opacity 0.4s ease 0.1s' }}
         >
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={typewriterComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-            transition={{ duration: 0.6, delay: typewriterComplete ? 0.1 : 0, ease: [0.25, 0.46, 0.45, 0.94] }}
-          >
+          <div>
             <p className={`text-base md:text-lg text-muted-foreground leading-relaxed text-center max-w-3xl mx-auto transition-opacity duration-[2500ms] ease-in-out ${textDimmed ? (textRevealed ? 'opacity-50' : 'opacity-15') : 'opacity-100'}`}>
               {t.story.why}
             </p>
-          </motion.div>
+          </div>
 
           <div className="mt-6 text-center max-w-3xl mx-auto">
             {t.story.seeking.map((line, i) => {
@@ -1270,11 +1235,8 @@ function StorySection({ t }: { t: (typeof translations)[Lang] }) {
                 : 'opacity-100'
 
               return (
-                <motion.p
+                <p
                   key={i}
-                  initial={{ opacity: 0, y: 15 }}
-                  animate={typewriterComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-                  transition={{ duration: 0.6, delay: typewriterComplete ? 0.3 + i * 0.2 : 0, ease: [0.25, 0.46, 0.45, 0.94] }}
                   className={`transition-opacity duration-[2500ms] ease-in-out ${dimOpacity} ${
                     i === 2
                       ? 'font-display text-lg md:text-2xl font-bold text-gradient-theme leading-snug'
@@ -1284,16 +1246,13 @@ function StorySection({ t }: { t: (typeof translations)[Lang] }) {
                   }`}
                 >
                   {line}
-                </motion.p>
+                </p>
               )
             })}
           </div>
 
           {/* Burbujas de navegación - delays sincronizados */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={typewriterComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
-            transition={{ duration: 0.6, delay: typewriterComplete ? 0.9 : 0, ease: [0.25, 0.46, 0.45, 0.94] }}
+          <div
             className={`flex flex-wrap justify-center gap-3 mt-10 mb-12 transition-opacity duration-[2500ms] ease-in-out ${textDimmed && !textRevealed ? 'opacity-15' : 'opacity-100'}`}
           >
           {t.story.nav.map((item) => {
@@ -1325,8 +1284,8 @@ function StorySection({ t }: { t: (typeof translations)[Lang] }) {
               </a>
             )
           })}
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </section>
   )
@@ -1404,10 +1363,7 @@ function App() {
         <div className="relative max-w-5xl mx-auto px-6 py-20 md:py-32">
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             {/* Photo */}
-            <motion.div
-              initial={hydrated ? { opacity: 0, scale: 0.8 } : false}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            <div
               className="relative"
             >
               <div className="relative w-40 h-40 md:w-48 md:h-48">
@@ -1422,20 +1378,14 @@ function App() {
                   <img src={`${import.meta.env.BASE_URL}avatar.png`} alt="Rosen Velikov" className="w-full h-full object-cover" width={192} height={192} fetchPriority="high" />
                 </div>
               </div>
-              <motion.div
-                initial={hydrated ? { scale: 0 } : false}
-                animate={{ scale: 1 }}
-                transition={{ delay: 0.4, type: "spring", stiffness: 200 }}
+              <div
                 className="absolute -bottom-1 -right-1 w-10 h-10 rounded-full bg-gradient-theme flex items-center justify-center shadow-lg border-2 border-background"
               >
                 <BadgeCheck className="w-6 h-6 text-white" />
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
 
-            <motion.div
-              initial={hydrated ? { opacity: 0, x: -20 } : false}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+            <div
               className="text-center md:text-left"
             >
               <p className="text-lg text-muted-foreground mb-2">
@@ -1464,7 +1414,7 @@ function App() {
                   </span>
                 ))}
               </div>
-            </motion.div>
+            </div>
           </div>
 
         </div>
