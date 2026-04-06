@@ -1,27 +1,18 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { MapPin, Mail, ExternalLink, Award, GraduationCap, Briefcase, ChevronRight, Clock, Newspaper, HelpCircle, Users } from 'lucide-react'
+import { MapPin, Mail, ExternalLink, Award, GraduationCap, Briefcase, ChevronRight, Clock, HelpCircle } from 'lucide-react'
 import { aboutContent, type AboutLang } from './about-i18n'
 
 const SOCIAL_LINKS = [
-  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/santifer' },
-  { name: 'GitHub', url: 'https://github.com/santifer' },
-  { name: 'YouTube', url: 'https://www.youtube.com/@santifer_io' },
-  { name: 'X / Twitter', url: 'https://x.com/santifer' },
-  { name: 'Dev.to', url: 'https://dev.to/santifer' },
-  { name: 'Substack', url: 'https://santifer.substack.com' },
-  { name: 'Stack Overflow', url: 'https://stackoverflow.com/users/32541743' },
-  { name: 'ORCID', url: 'https://orcid.org/0009-0006-2192-7210' },
-  { name: 'Crunchbase', url: 'https://www.crunchbase.com/person/santiago-fernandez-de-valderrama' },
-  { name: 'Wikidata', url: 'https://www.wikidata.org/wiki/Q138710224' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/rosenvelikov' },
+  { name: 'GitHub', url: 'https://github.com/djok' },
 ]
 
-export default function AboutPage({ lang = 'bg' }: { lang?: AboutLang }) {
+export default function AboutPage({ lang = 'en' }: { lang?: AboutLang }) {
   const t = aboutContent[lang]
-  const altSlug = t.altSlug
 
   useEffect(() => {
-    document.documentElement.lang = lang
+    document.documentElement.lang = 'en'
     document.title = t.seo.title
 
     let desc = document.querySelector('meta[name="description"]') as HTMLMetaElement
@@ -30,94 +21,37 @@ export default function AboutPage({ lang = 'bg' }: { lang?: AboutLang }) {
 
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement
     if (!canonical) { canonical = document.createElement('link'); canonical.rel = 'canonical'; document.head.appendChild(canonical) }
-    canonical.href = `https://santifer.io/${t.slug}`
+    canonical.href = 'https://djok.github.io/me/about'
 
-    const hreflangs = [
-      { lang: 'es', href: 'https://santifer.io/sobre-mi' },
-      { lang: 'en', href: 'https://santifer.io/about' },
-      { lang: 'x-default', href: 'https://santifer.io/sobre-mi' },
-    ]
+    // Clean up old hreflangs
     document.querySelectorAll('link[hreflang]').forEach(el => el.remove())
-    for (const hl of hreflangs) {
-      const link = document.createElement('link')
-      link.rel = 'alternate'
-      link.hreflang = hl.lang
-      link.href = hl.href
-      document.head.appendChild(link)
-    }
 
     let script = document.querySelector('script[data-about-jsonld]') as HTMLScriptElement
     if (!script) { script = document.createElement('script'); script.type = 'application/ld+json'; script.dataset.aboutJsonld = ''; document.head.appendChild(script) }
     script.textContent = JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'ProfilePage',
-      dateModified: '2026-03-27',
+      dateModified: '2026-04-06',
       mainEntity: {
         '@type': 'Person',
-        '@id': 'https://santifer.io/#person',
-        name: 'Santiago Fernández de Valderrama Aparicio',
-        alternateName: ['Santiago Fernández de Valderrama', 'santifer', 'Santi'],
-        url: 'https://santifer.io',
-        image: 'https://santifer.io/foto-avatar.png',
-        email: 'hola@santifer.io',
-        jobTitle: ['AI Product Manager', 'Solutions Architect (No/Low-Code & AI)', 'AI Forward Deployed Engineer'],
+        '@id': 'https://djok.github.io/me/#person',
+        name: 'Rosen Velikov',
+        url: 'https://djok.github.io/me',
+        image: 'https://djok.github.io/me/avatar.png',
+        email: 'rosen.st.velikov@gmail.com',
+        jobTitle: ['AI Infrastructure Engineer', 'Distributed Systems Architect', 'Full-Stack Platform Engineer'],
         knowsAbout: [
-          { '@type': 'Thing', name: 'Artificial Intelligence', url: 'https://en.wikipedia.org/wiki/Artificial_intelligence' },
-          { '@type': 'Thing', name: 'Machine Learning', url: 'https://en.wikipedia.org/wiki/Machine_learning' },
-          { '@type': 'Thing', name: 'Multi-Agent System', url: 'https://en.wikipedia.org/wiki/Multi-agent_system' },
-          { '@type': 'Thing', name: 'Retrieval-Augmented Generation', url: 'https://en.wikipedia.org/wiki/Retrieval-augmented_generation' },
-          { '@type': 'Thing', name: 'No-code development platform', url: 'https://en.wikipedia.org/wiki/No-code_development_platform' },
-          { '@type': 'Thing', name: 'Prompt Engineering' },
-          { '@type': 'SoftwareApplication', name: 'Airtable', url: 'https://airtable.com' },
-          { '@type': 'SoftwareApplication', name: 'n8n', url: 'https://n8n.io' },
-          { '@type': 'SoftwareApplication', name: 'Claude API', url: 'https://docs.anthropic.com' },
+          { '@type': 'Thing', name: 'Distributed Systems' },
+          { '@type': 'Thing', name: 'AI Infrastructure' },
+          { '@type': 'Thing', name: 'Voice AI' },
+          { '@type': 'Thing', name: 'Telecom Infrastructure' },
+          { '@type': 'Thing', name: 'Zero-Trust Security' },
         ],
-        hasCredential: [
-          { '@type': 'EducationalOccupationalCredential', name: 'Introduction to Model Context Protocol', recognizedBy: { '@type': 'Organization', name: 'Anthropic' }, url: 'https://verify.skilljar.com/c/4pxam3irsioq' },
-          { '@type': 'EducationalOccupationalCredential', name: 'Claude Code in Action', recognizedBy: { '@type': 'Organization', name: 'Anthropic' }, url: 'https://verify.skilljar.com/c/eijx7hwc2x89' },
-          { '@type': 'EducationalOccupationalCredential', name: 'Advanced MCP Topics', recognizedBy: { '@type': 'Organization', name: 'Anthropic' }, url: 'https://verify.skilljar.com/c/eiovmq5qaeyd' },
-          { '@type': 'EducationalOccupationalCredential', name: 'Building with the Claude API', recognizedBy: { '@type': 'Organization', name: 'Anthropic' }, url: 'https://verify.skilljar.com/c/s4bu5znz53vm' },
-          { '@type': 'EducationalOccupationalCredential', name: 'AI Fluency: Framework & Foundations', recognizedBy: { '@type': 'Organization', name: 'Anthropic' }, url: 'https://verify.skilljar.com/c/d6rhfox7ktq6' },
-          { '@type': 'EducationalOccupationalCredential', name: 'Teaching AI Fluency', recognizedBy: { '@type': 'Organization', name: 'Anthropic' }, url: 'https://verify.skilljar.com/c/x3bzuoz99rq5' },
-          { '@type': 'EducationalOccupationalCredential', name: 'AI App Builder Certification', recognizedBy: { '@type': 'Organization', name: 'Airtable' }, url: 'https://verify.skilljar.com/c/gwg7ak9qgf7r' },
-          { '@type': 'EducationalOccupationalCredential', name: 'Airtable Builder Certification', recognizedBy: { '@type': 'Organization', name: 'Airtable' }, url: 'https://verify.skilljar.com/c/id2e4zgqtasv' },
-          { '@type': 'EducationalOccupationalCredential', name: 'Airtable Admin Certification', recognizedBy: { '@type': 'Organization', name: 'Airtable' }, url: 'https://verify.skilljar.com/c/u3r8kgn5wdit' },
-          { '@type': 'EducationalOccupationalCredential', name: 'Make Advanced', recognizedBy: { '@type': 'Organization', name: 'Make Academy' }, url: 'https://www.credly.com/badges/d27b8174-ef20-46bd-9d81-ee05e9c349e8' },
-        ],
-        alumniOf: [
-          { '@type': 'EducationalOrganization', name: 'Maven - AI Product Management Bootcamp' },
-          { '@type': 'EducationalOrganization', name: 'BIGSEO - Master en Inteligencia Artificial' },
-          { '@type': 'EducationalOrganization', name: 'ETSI - Universidad de Sevilla' },
-        ],
-        founder: {
-          '@type': 'Organization',
-          name: 'Santifer iRepair',
-          url: 'https://santiferirepair.es',
-          foundingDate: '2009',
-        },
         sameAs: [
-          'https://www.linkedin.com/in/santifer',
-          'https://github.com/santifer',
-          'https://x.com/santifer',
-          'https://dev.to/santifer',
-          'https://santifer.substack.com',
-          'https://contentdigest.santifer.io',
-          'https://www.youtube.com/@santifer_io',
-          'https://stackoverflow.com/users/32541743',
-          'https://orcid.org/0009-0006-2192-7210',
-          'https://www.crunchbase.com/person/santiago-fernandez-de-valderrama',
-          'https://huggingface.co/santifer',
-          'https://www.wikidata.org/wiki/Q138710224',
-          'https://www.facebook.com/santifer.io/',
+          'https://www.linkedin.com/in/rosenvelikov',
+          'https://github.com/djok',
         ],
-        subjectOf: {
-          '@type': 'NewsArticle',
-          headline: 'Salir de compras: Una solución exprés para el teléfono',
-          publisher: { '@type': 'NewsMediaOrganization', name: 'Diario de Sevilla' },
-          datePublished: '2014-06-19',
-          url: 'https://www.diariodesevilla.es/vivirensevilla/Salir-compras-solucion-expres-telefono_0_817718799.html',
-        },
-        address: { '@type': 'PostalAddress', addressLocality: 'Sevilla', addressCountry: 'ES' },
+        address: { '@type': 'PostalAddress', addressLocality: 'Veliko Tarnovo', addressCountry: 'BG' },
       },
     })
 
@@ -134,10 +68,8 @@ export default function AboutPage({ lang = 'bg' }: { lang?: AboutLang }) {
         {/* Header */}
         <header className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-10">
           <img
-            src="/foto-avatar-sm.webp"
-            srcSet="/foto-avatar-sm.webp 192w, /foto-avatar.webp 384w"
-            sizes="96px"
-            alt="Santiago Fernández de Valderrama"
+            src="/me/avatar.png"
+            alt="Rosen Velikov"
             className="w-24 h-24 rounded-full border-2 border-border shadow-lg"
             width={96}
             height={96}
@@ -224,24 +156,26 @@ export default function AboutPage({ lang = 'bg' }: { lang?: AboutLang }) {
         </section>
 
         {/* Certifications */}
-        <section className="mb-10">
-          <h2 className="font-display text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
-            <Award className="w-4 h-4 text-primary" />
-            {t.certificationsHeading}
-          </h2>
-          <div className="space-y-3">
-            {(t.certifications as unknown as any[]).map((cert) => (
-              <div key={cert.org} className="p-3 rounded-lg bg-card border border-border">
-                <p className="font-medium text-foreground text-sm mb-1">{cert.org}</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {cert.items.map((item: string) => (
-                    <span key={item} className="px-2 py-0.5 rounded text-xs bg-muted/30 text-muted-foreground">{item}</span>
-                  ))}
+        {(t.certifications as unknown as any[]).length > 0 && (
+          <section className="mb-10">
+            <h2 className="font-display text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
+              <Award className="w-4 h-4 text-primary" />
+              {t.certificationsHeading}
+            </h2>
+            <div className="space-y-3">
+              {(t.certifications as unknown as any[]).map((cert) => (
+                <div key={cert.org} className="p-3 rounded-lg bg-card border border-border">
+                  <p className="font-medium text-foreground text-sm mb-1">{cert.org}</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {cert.items.map((item: string) => (
+                      <span key={item} className="px-2 py-0.5 rounded text-xs bg-muted/30 text-muted-foreground">{item}</span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Education */}
         <section className="mb-10">
@@ -254,54 +188,6 @@ export default function AboutPage({ lang = 'bg' }: { lang?: AboutLang }) {
               <li key={item} className="text-sm text-muted-foreground">{item}</li>
             ))}
           </ul>
-        </section>
-
-        {/* Press */}
-        <section className="mb-10">
-          <h2 className="font-display text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
-            <Newspaper className="w-4 h-4 text-primary" />
-            {t.pressHeading}
-          </h2>
-          {(t.press as unknown as any[]).map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 p-3 rounded-lg bg-card border border-border hover:border-primary/30 transition-all group"
-            >
-              <div>
-                <p className="font-medium text-foreground text-sm group-hover:text-primary transition-colors">{item.title}</p>
-                <p className="text-xs text-muted-foreground">{item.publisher} · {item.date}</p>
-              </div>
-              <ExternalLink className="w-3.5 h-3.5 text-muted-foreground shrink-0" />
-            </a>
-          ))}
-        </section>
-
-        {/* Community */}
-        <section className="mb-10">
-          <h2 className="font-display text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
-            <Users className="w-4 h-4 text-primary" />
-            {t.communityHeading}
-          </h2>
-          <div className="space-y-2">
-            {(t.community as unknown as any[]).map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-between p-3 rounded-lg bg-card border border-border hover:border-primary/30 transition-all group"
-              >
-                <div>
-                  <p className="font-medium text-foreground text-sm group-hover:text-primary transition-colors">{item.title}</p>
-                  <p className="text-xs text-muted-foreground">{item.platform}</p>
-                </div>
-                <ExternalLink className="w-3.5 h-3.5 text-muted-foreground shrink-0" />
-              </a>
-            ))}
-          </div>
         </section>
 
         {/* FAQ */}
@@ -351,20 +237,10 @@ export default function AboutPage({ lang = 'bg' }: { lang?: AboutLang }) {
           </div>
         </section>
 
-        {/* Language toggle */}
-        <div className="text-center pt-6 border-t border-border">
-          <Link
-            to={`/${altSlug}`}
-            className="text-sm text-muted-foreground hover:text-primary transition-colors"
-          >
-            {lang === 'bg' ? 'Read in English →' : 'Read in Bulgarian →'}
-          </Link>
-        </div>
-
         {/* Footer */}
-        <footer className="mt-8 text-center">
+        <footer className="mt-8 pt-6 border-t border-border text-center">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Santiago Fernández de Valderrama. {lang === 'bg' ? 'Всички права запазени.' : 'All rights reserved.'}
+            &copy; {new Date().getFullYear()} Rosen Velikov. All rights reserved.
           </p>
         </footer>
       </main>
