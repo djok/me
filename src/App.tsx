@@ -1822,10 +1822,9 @@ function App() {
                     "{t.experience.lico.testimonial.quote}"
                   </p>
                   <footer className="flex items-center gap-3">
-                    <picture>
-                      <source srcSet="/juan-sabate.webp" type="image/webp" />
-                      <img src="/juan-sabate.jpeg" alt={t.experience.lico.testimonial.author} className="w-10 h-10 rounded-full object-cover" width={40} height={40} loading="lazy" decoding="async" />
-                    </picture>
+                    <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+                      <Briefcase className="w-5 h-5 text-primary" />
+                    </div>
                     <div className="flex-1">
                       <span className="text-sm font-medium text-foreground block">{t.experience.lico.testimonial.author}</span>
                       <span className="text-xs text-muted-foreground">{t.experience.lico.testimonial.role}</span>
@@ -1871,10 +1870,9 @@ function App() {
                   "{t.experience.everis.testimonial.quote}"
                 </p>
                 <footer className="flex items-center gap-3">
-                  <picture>
-                    <source srcSet="/manuel-lopez.webp" type="image/webp" />
-                    <img src="/manuel-lopez.jpeg" alt={t.experience.everis.testimonial.author} className="w-10 h-10 rounded-full object-cover" width={40} height={40} loading="lazy" decoding="async" />
-                  </picture>
+                  <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+                    <Briefcase className="w-5 h-5 text-primary" />
+                  </div>
                   <div className="flex-1">
                     <span className="text-sm font-medium text-foreground block">{t.experience.everis.testimonial.author}</span>
                     <span className="text-xs text-muted-foreground">{t.experience.everis.testimonial.role}</span>
