@@ -171,7 +171,7 @@ const app = (
             <Route path="/" element={<App />} />
             <Route path="/en" element={<App />} />
             <Route path="/ops" element={<OpsDashboard />} />
-            <Route path="/sobre-mi" element={<AboutPage lang="es" />} />
+            <Route path="/sobre-mi" element={<AboutPage lang="bg" />} />
             <Route path="/about" element={<AboutPage lang="en" />} />
             <Route path="/privacidad" element={<PrivacyPolicy lang="es" />} />
             <Route path="/privacy" element={<PrivacyPolicy lang="en" />} />

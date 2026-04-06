@@ -1,10 +1,8 @@
-# santifer.io
+# Rosen Velikov — Portfolio
 
-**[:gb: English](#the-problem)** | **[:es: Español](#es-versión-en-español)**
+> Interactive portfolio with AI chatbot (text + voice), agentic RAG, 71 automated evals, LLMOps dashboard, and 6-layer prompt injection defense. Forked from [santifer/cv-santiago](https://github.com/santifer/cv-santiago).
 
-> Interactive portfolio with AI chatbot (text + voice), agentic RAG, 71 automated evals, LLMOps dashboard, and 6-layer prompt injection defense
-
-[![Live Demo](https://img.shields.io/badge/demo-santifer.io-blue?style=flat-square)](https://santifer.io)
+[![Live Demo](https://img.shields.io/badge/demo-djok.github.io/me-blue?style=flat-square)](https://djok.github.io/me)
 [![Built with Claude Code](https://img.shields.io/badge/built%20with-Claude%20Code-blueviolet?style=flat-square)](https://claude.ai/code)
 
 ---
@@ -18,7 +16,7 @@ Static CVs don't show what you can actually build. A PDF lists skills — it doe
 A production-grade interactive portfolio that **demonstrates the skills it describes**: dual-mode AI chatbot (text + voice) with agentic RAG, full LLMOps observability with custom dashboard, 71 automated evals as CI gate, prompt versioning, and a closed-loop that generates tests from production failures.
 
 **Key Features:**
-- **AI Chatbot "Santi"** — Text (Claude Sonnet) + Voice (OpenAI Realtime API). Responds in first person as Santiago. Agentic RAG with hybrid search (pgvector + BM25) and Haiku reranking
+- **AI Chatbot "Rosen"** — Text (Claude Sonnet) + Voice (OpenAI Realtime API). Responds in first person as Rosen. Agentic RAG with hybrid search (pgvector + BM25) and Haiku reranking
 - **6-Layer Defense** — Keyword detection, canary tokens, fingerprinting, anti-extraction, online safety scoring, adversarial red team. Real-time jailbreak email alerts
 - **71 Automated Evals** — 10 categories: factual accuracy, persona, boundaries, quality, safety, language, RAG quality, multi-turn, source badges, voice quality. CI gate on every push
 - **LLMOps Dashboard** — Private `/ops` with 8 tabs: Overview, Conversations, Costs, RAG, Security, Evals, Voice, System. Real data from Langfuse + Supabase
@@ -174,8 +172,8 @@ All scripts live in `scripts/` and run via `npm run`:
 ## Quick Start
 
 ```bash
-git clone https://github.com/santifer/cv-santiago.git
-cd cv-santiago
+git clone https://github.com/djok/me-portfolio.git
+cd me-portfolio
 npm install
 npm run dev
 ```
@@ -311,7 +309,7 @@ Los CVs estáticos no demuestran lo que realmente sabes construir. Un PDF lista 
 Un portfolio interactivo de nivel producción que **demuestra las habilidades que describe**: chatbot IA dual (texto + voz) con RAG agéntico, observabilidad LLMOps completa con dashboard custom, 71 evals automatizados como CI gate, versionado de prompts, y un closed-loop que genera tests de fallos en producción.
 
 **Funcionalidades:**
-- **Chatbot IA "Santi"** — Texto (Claude Sonnet) + Voz (OpenAI Realtime API). Responde en primera persona como Santiago. RAG agéntico con búsqueda híbrida (pgvector + BM25) y reranking con Haiku
+- **Chatbot IA "Rosen"** — Texto (Claude Sonnet) + Voz (OpenAI Realtime API). Responde en primera persona como Rosen. RAG agéntico con búsqueda híbrida (pgvector + BM25) y reranking con Haiku
 - **Defensa en 6 capas** — Keyword detection, canary tokens, fingerprinting, anti-extraction, online safety scoring, adversarial red team. Alertas de jailbreak por email en tiempo real
 - **71 Evals automatizados** — 10 categorías: factual, persona, boundaries, quality, safety, language, RAG, multi-turn, source badges, voice. CI gate en cada push
 - **Dashboard LLMOps** — `/ops` privado con 8 pestañas: Overview, Conversations, Costs, RAG, Security, Evals, Voice, System. Datos reales de Langfuse + Supabase
@@ -444,8 +442,8 @@ Todos los scripts están en `scripts/` y se ejecutan con `npm run`:
 ## Inicio Rápido
 
 ```bash
-git clone https://github.com/santifer/cv-santiago.git
-cd cv-santiago
+git clone https://github.com/djok/me-portfolio.git
+cd me-portfolio
 npm install
 npm run dev
 ```
@@ -559,6 +557,6 @@ MIT
 
 ## Let's Connect
 
-[![Website](https://img.shields.io/badge/santifer.io-000?style=for-the-badge&logo=safari&logoColor=white)](https://santifer.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/santifer)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hola@santifer.io)
+[![Website](https://img.shields.io/badge/djok.github.io/me-000?style=for-the-badge&logo=safari&logoColor=white)](https://djok.github.io/me)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rosenvelikov)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rosen.st.velikov@gmail.com)

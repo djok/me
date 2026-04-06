@@ -16,7 +16,7 @@ const SOCIAL_LINKS = [
   { name: 'Wikidata', url: 'https://www.wikidata.org/wiki/Q138710224' },
 ]
 
-export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
+export default function AboutPage({ lang = 'bg' }: { lang?: AboutLang }) {
   const t = aboutContent[lang]
   const altSlug = t.altSlug
 
@@ -230,11 +230,11 @@ export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
             {t.certificationsHeading}
           </h2>
           <div className="space-y-3">
-            {t.certifications.map((cert) => (
+            {(t.certifications as unknown as any[]).map((cert) => (
               <div key={cert.org} className="p-3 rounded-lg bg-card border border-border">
                 <p className="font-medium text-foreground text-sm mb-1">{cert.org}</p>
                 <div className="flex flex-wrap gap-1.5">
-                  {cert.items.map((item) => (
+                  {cert.items.map((item: string) => (
                     <span key={item} className="px-2 py-0.5 rounded text-xs bg-muted/30 text-muted-foreground">{item}</span>
                   ))}
                 </div>
@@ -262,7 +262,7 @@ export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
             <Newspaper className="w-4 h-4 text-primary" />
             {t.pressHeading}
           </h2>
-          {t.press.map((item) => (
+          {(t.press as unknown as any[]).map((item) => (
             <a
               key={item.href}
               href={item.href}
@@ -286,7 +286,7 @@ export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
             {t.communityHeading}
           </h2>
           <div className="space-y-2">
-            {t.community.map((item) => (
+            {(t.community as unknown as any[]).map((item) => (
               <a
                 key={item.href}
                 href={item.href}
@@ -357,14 +357,14 @@ export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
             to={`/${altSlug}`}
             className="text-sm text-muted-foreground hover:text-primary transition-colors"
           >
-            {lang === 'es' ? 'Read in English →' : 'Leer en Español →'}
+            {lang === 'bg' ? 'Read in English →' : 'Read in Bulgarian →'}
           </Link>
         </div>
 
         {/* Footer */}
         <footer className="mt-8 text-center">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Santiago Fernández de Valderrama. {lang === 'es' ? 'Todos los derechos reservados.' : 'All rights reserved.'}
+            &copy; {new Date().getFullYear()} Santiago Fernández de Valderrama. {lang === 'bg' ? 'Всички права запазени.' : 'All rights reserved.'}
           </p>
         </footer>
       </main>

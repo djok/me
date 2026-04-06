@@ -1,11 +1,11 @@
 /* TEAM */
-Builder: Santiago Fernandez de Valderrama Aparicio
-Role: AI Product Manager · Solutions Architect · Forward Deployed Engineer
-Contact: hi@santifer.io
-Site: https://santifer.io
-Location: Seville, Spain
-LinkedIn: https://linkedin.com/in/santifer
-GitHub: https://github.com/santifer
+Builder: Rosen Velikov
+Role: AI Infrastructure Engineer · Voice AI · Distributed Systems
+Contact: rosen.st.velikov@gmail.com
+Site: https://djok.github.io/me
+Location: Veliko Tarnovo, Bulgaria
+LinkedIn: https://linkedin.com/in/rosenvelikov
+GitHub: https://github.com/djok
 
 /* THANKS */
 AI Pair: Claude Code (Anthropic)

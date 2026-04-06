@@ -1,9 +1,9 @@
-# Security Policy for santifer.io
+# Security Policy for djok.github.io/me
 # https://securitytxt.org/ — RFC 9116
 
-Contact: mailto:hi@santifer.io
-Preferred-Languages: en, es
-Canonical: https://santifer.io/.well-known/security.txt
+Contact: mailto:rosen.st.velikov@gmail.com
+Preferred-Languages: en, bg
+Canonical: https://djok.github.io/me/.well-known/security.txt
 Expires: 2027-02-19T00:00:00.000Z
 
 # Security measures implemented:

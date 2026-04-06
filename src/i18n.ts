@@ -1,15 +1,15 @@
 export const seo = {
   es: {
     title:
-      'santifer | AI PM · Solutions Architect · Sistemas que se curan solos',
+      'Rosen Velikov | AI Infrastructure Engineer · Voice AI · Distributed Systems',
     description:
-      'AI Product Manager & Solutions Architect. 16 años construyendo sistemas que funcionan solos. LLMOps, agentes IA, observabilidad agéntica, no-code enterprise.',
+      'AI Infrastructure Engineer — 25 years building carrier-grade systems. Production Voice AI, Distributed Systems, Carrier-Grade Security. Rust, Python, Go.',
   },
   en: {
     title:
-      'santifer | AI PM · Solutions Architect · Self-Healing Systems',
+      'Rosen Velikov | AI Infrastructure Engineer · Voice AI · Distributed Systems',
     description:
-      'AI Product Manager & Solutions Architect. 16 years building systems that run themselves. LLMOps, agentic observability, AI agents, no-code enterprise.',
+      'AI Infrastructure Engineer — 25 years building carrier-grade systems. Production Voice AI, Distributed Systems, Carrier-Grade Security. Rust, Python, Go.',
   },
 };
 
@@ -17,7 +17,7 @@ export const translations = {
   es: {
     greeting: 'que construye sistemas',
     greetingRoles: ['AI Product Manager', 'AI Solutions Architect', 'Forward Deployed Engineer'],
-    email: 'hola@santifer.io',
+    email: 'rosen.st.velikov@gmail.com',
     role: 'LLMOps que se curan solos.',
     story: {
       context: '+15 años construyendo+ todo desde cero.',
@@ -52,7 +52,7 @@ export const translations = {
       skipButton: 'Saltar intro',
     },
     taglines: [] as readonly string[],
-    location: 'Sevilla, ES · EU / USA remoto',
+    location: 'Veliko Tarnovo, BG · EU remote',
     roles: [
       'AI Product Manager',
       'Solutions Architect (No / Low-Code & AI)',
@@ -148,7 +148,7 @@ export const translations = {
     },
     projects: {
       title: 'Proyectos',
-      githubLink: 'github.com/santifer',
+      githubLink: 'github.com/djok',
       viewCode: 'Ver código',
       viewPrototype: 'Ver prototipo',
       items: [
@@ -179,12 +179,12 @@ export const translations = {
           caseStudyLabel: 'Leer: AI Job Search multi-agente',
         },
         {
-          title: 'santifer.io',
+          title: 'Portfolio',
           badge: 'Este Portfolio',
           badgeBuilding: '',
           desc: 'CV interactivo con SDLC aumentado con IA. Construido con **Claudeable**, monitorizado con **Claude Pulse**, animaciones debuggeadas con **Claude Eye**. Prerender SSR, i18n bilingüe y SEO automatizado.',
           tech: ['React 19', 'TypeScript', 'Tailwind', 'Vite', 'Motion', 'Vercel'],
-          link: 'github.com/santifer/cv-santiago',
+          link: 'github.com/djok/cv-santiago',
         },
         {
           title: 'Self-Healing Chatbot',
@@ -202,7 +202,7 @@ export const translations = {
           badgeBuilding: '',
           desc: 'Plugin SwiftBar para monitorización en tiempo real del uso de Claude Code en macOS. Métricas de consumo, predicción de rate limits, y consejos contextuales.',
           tech: ['Bash', 'SwiftBar', 'Anthropic API', 'jq'],
-          link: 'github.com/santifer/claude-pulse',
+          link: 'github.com/djok/claude-pulse',
           isDependency: true,
           dependencyRole: 'monitoring',
         },
@@ -212,7 +212,7 @@ export const translations = {
           badgeBuilding: '',
           desc: 'CLI que analiza videos de animaciones web frame por frame con Claude Vision. Detecta desyncs en transiciones CSS y genera reportes con timestamps exactos.',
           tech: ['Node.js', 'TypeScript', 'Claude Vision', 'FFmpeg'],
-          link: 'github.com/santifer/claude-eye',
+          link: 'github.com/djok/claude-eye',
           isDependency: true,
           dependencyRole: 'animations',
         },
@@ -222,7 +222,7 @@ export const translations = {
           badgeBuilding: '',
           desc: 'Metaproyecto de Claude Code para desarrollo web profesional. Skills personalizados, templates y MCPs preconfigurados para crear webs al nivel de Lovable.',
           tech: ['Claude Code', 'React', 'Tailwind', 'shadcn/ui', 'MCP'],
-          link: 'github.com/santifer/claudeable',
+          link: 'github.com/djok/claudeable',
           isDependency: true,
           dependencyRole: 'framework',
         },
@@ -489,16 +489,16 @@ export const translations = {
     redditPosts: [
       {
         hook: 'Automaticé mi búsqueda de empleo con agentes IA — 516 evaluaciones, 66 aplicaciones, zero screening manual.',
-        upvotes: '536',
-        comments: '306',
+        upvotes: '543',
+        comments: '341',
         subreddit: 'r/SideProject',
         cta: 'Leer en Reddit',
         url: 'https://www.reddit.com/r/SideProject/comments/1rw1lg4/i_automated_my_job_search_with_ai_agents_516/',
       },
       {
         hook: 'Construí un agente IA con WhatsApp + voz en n8n que gestiona el 90% de la atención al cliente. Vendí el negocio y el comprador lo mantuvo sin mí.',
-        upvotes: '102',
-        comments: '20',
+        upvotes: '211',
+        comments: '34',
         subreddit: 'r/n8n',
         cta: 'Leer en Reddit',
         url: 'https://www.reddit.com/r/n8n/comments/1sc3i30/i_built_a_whatsapp_voice_ai_agent_in_n8n_that/',
@@ -718,41 +718,41 @@ export const translations = {
       languageBannerSwitchPrefix: 'Switch to',
       languageBannerSwitchLang: 'EN',
       languageToggle: 'ES',
-      typingIndicator: 'santifer está escribiendo...',
+      typingIndicator: 'Rosen is typing...',
     },
     chat: {
       placeholder: 'Escribe tu pregunta...',
-      title: 'santifer',
-      subtitle: 'Pregúntame sobre mi experiencia',
+      title: 'Rosen',
+      subtitle: 'Ask me about my experience',
       greeting:
-        '¡Hola! Soy **@santifer**. Pregúntame lo que quieras: experiencia, proyectos, lo que me mueve.',
+        'Hi! I\'m **Rosen**. Ask me anything: experience, projects, what drives me.',
       error: 'Error al enviar. Inténtalo de nuevo.',
       offline: 'Parece que no hay conexión a internet. Comprueba tu red e inténtalo de nuevo.',
       prompts: [
         {
           icon: 'briefcase',
-          label: 'Experiencia con IA',
-          query: '¿Cuál es la experiencia de Santiago con IA y automatización?',
+          label: 'AI experience',
+          query: 'What is Rosen\'s experience with AI and distributed systems?',
         },
         {
           icon: 'rocket',
-          label: 'Proyectos destacados',
-          query: '¿Cuáles son los proyectos más destacados de Santiago?',
+          label: 'Key projects',
+          query: 'What are Rosen\'s most notable projects?',
         },
         {
           icon: 'help',
-          label: '¿Por qué contratarle?',
-          query: '¿Por qué debería contratar a Santiago?',
+          label: 'Why hire him?',
+          query: 'Why should I hire Rosen?',
         },
         {
           icon: 'mail',
-          label: 'Contactar',
-          query: '¿Cómo puedo contactar a Santiago?',
+          label: 'Contact',
+          query: 'How can I contact Rosen?',
         },
       ],
       contactCtaTitle: '¿Te gustaría hablar directamente?',
       voice: {
-        start: 'Hablar con Santi',
+        start: 'Talk to Rosen',
         stop: 'Terminar',
         connecting: 'Conectando...',
         listening: 'Te escucho...',
@@ -772,7 +772,7 @@ export const translations = {
   en: {
     greeting: 'who builds',
     greetingRoles: ['AI Product Manager', 'AI Solutions Architect', 'Forward Deployed Engineer'],
-    email: 'hi@santifer.io',
+    email: 'rosen.st.velikov@gmail.com',
     role: 'LLMOps systems.',
     story: {
       context: '+15 years building+ everything from scratch.',
@@ -807,7 +807,7 @@ export const translations = {
       skipButton: 'Skip intro',
     },
     taglines: [] as readonly string[],
-    location: 'Seville, ES · EU / USA remote',
+    location: 'Veliko Tarnovo, BG · EU remote',
     roles: [
       'AI Product Manager',
       'Solutions Architect (No / Low-Code & AI)',
@@ -903,7 +903,7 @@ export const translations = {
     },
     projects: {
       title: 'Projects',
-      githubLink: 'github.com/santifer',
+      githubLink: 'github.com/djok',
       viewCode: 'View code',
       viewPrototype: 'View prototype',
       items: [
@@ -934,12 +934,12 @@ export const translations = {
           caseStudyLabel: 'Case Study: AI Job Search',
         },
         {
-          title: 'santifer.io',
+          title: 'Portfolio',
           badge: 'This Portfolio',
           badgeBuilding: '',
           desc: 'Interactive CV with AI-augmented SDLC. Built with **Claudeable**, monitored with **Claude Pulse**, animations debugged with **Claude Eye**. SSR prerender, bilingual i18n, and automated SEO.',
           tech: ['React 19', 'TypeScript', 'Tailwind', 'Vite', 'Motion', 'Vercel'],
-          link: 'github.com/santifer/cv-santiago',
+          link: 'github.com/djok/cv-santiago',
         },
         {
           title: 'Self-Healing Chatbot',
@@ -957,7 +957,7 @@ export const translations = {
           badgeBuilding: '',
           desc: 'SwiftBar plugin for real-time Claude Code usage monitoring on macOS. Consumption metrics, rate limit predictions, and context-aware tips.',
           tech: ['Bash', 'SwiftBar', 'Anthropic API', 'jq'],
-          link: 'github.com/santifer/claude-pulse',
+          link: 'github.com/djok/claude-pulse',
           isDependency: true,
           dependencyRole: 'monitoring',
         },
@@ -967,7 +967,7 @@ export const translations = {
           badgeBuilding: '',
           desc: 'CLI that analyzes web animation videos frame-by-frame using Claude Vision. Detects CSS transition desyncs and generates reports with exact timestamps.',
           tech: ['Node.js', 'TypeScript', 'Claude Vision', 'FFmpeg'],
-          link: 'github.com/santifer/claude-eye',
+          link: 'github.com/djok/claude-eye',
           isDependency: true,
           dependencyRole: 'animations',
         },
@@ -977,7 +977,7 @@ export const translations = {
           badgeBuilding: '',
           desc: 'Claude Code meta-project for professional web development. Custom skills, templates and pre-configured MCPs to build Lovable-quality websites.',
           tech: ['Claude Code', 'React', 'Tailwind', 'shadcn/ui', 'MCP'],
-          link: 'github.com/santifer/claudeable',
+          link: 'github.com/djok/claudeable',
           isDependency: true,
           dependencyRole: 'framework',
         },
@@ -1240,16 +1240,16 @@ export const translations = {
     redditPosts: [
       {
         hook: 'I automated my job search with AI agents — 516 evaluations, 66 applications, zero manual screening.',
-        upvotes: '536',
-        comments: '306',
+        upvotes: '543',
+        comments: '341',
         subreddit: 'r/SideProject',
         cta: 'Read on Reddit',
         url: 'https://www.reddit.com/r/SideProject/comments/1rw1lg4/i_automated_my_job_search_with_ai_agents_516/',
       },
       {
         hook: 'I built a WhatsApp + voice AI agent in n8n that handles 90% of customer service. Sold the business, the buyer kept it running without me.',
-        upvotes: '102',
-        comments: '20',
+        upvotes: '211',
+        comments: '34',
         subreddit: 'r/n8n',
         cta: 'Read on Reddit',
         url: 'https://www.reddit.com/r/n8n/comments/1sc3i30/i_built_a_whatsapp_voice_ai_agent_in_n8n_that/',
@@ -1469,41 +1469,41 @@ export const translations = {
       languageBannerSwitchPrefix: 'Cambiar a',
       languageBannerSwitchLang: 'ES',
       languageToggle: 'EN',
-      typingIndicator: 'santifer is typing...',
+      typingIndicator: 'Rosen is typing...',
     },
     chat: {
       placeholder: 'Type your question...',
-      title: 'santifer',
+      title: 'Rosen',
       subtitle: 'Ask me about my experience',
       greeting:
-        "Hi! I'm **@santifer**. Ask me anything: experience, projects, what drives me.",
+        "Hi! I'm **Rosen**. Ask me anything: experience, projects, what drives me.",
       error: 'Error sending. Please try again.',
       offline: 'Looks like you\'re offline. Check your connection and try again.',
       prompts: [
         {
           icon: 'briefcase',
           label: 'AI Experience',
-          query: "What is Santiago's experience with AI and automation?",
+          query: "What is Rosen's experience with AI and distributed systems?",
         },
         {
           icon: 'rocket',
           label: 'Top Projects',
-          query: "What are Santiago's most notable projects?",
+          query: "What are Rosen's most notable projects?",
         },
         {
           icon: 'help',
           label: 'Why hire him?',
-          query: 'Why should I hire Santiago?',
+          query: 'Why should I hire Rosen?',
         },
         {
           icon: 'mail',
           label: 'Contact',
-          query: 'How can I contact Santiago?',
+          query: 'How can I contact Rosen?',
         },
       ],
       contactCtaTitle: 'Want to talk directly?',
       voice: {
-        start: 'Talk to Santi',
+        start: 'Talk to Rosen',
         stop: 'End',
         connecting: 'Connecting...',
         listening: 'Listening...',
