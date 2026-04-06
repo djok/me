@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo, useReducer, useRef } from 'react'
 import { useLocation, Link } from 'react-router-dom'
-import { Mail, ExternalLink, Briefcase, GraduationCap, Award, Code, Users, Globe, Bot, Zap, Database, Layout, BadgeCheck, FolderGit2, Sparkles, Download, Github, Package, MessageSquare, Receipt, CalendarCheck, Shield, FileText, GitBranch, Terminal, Lock, Network, Calendar, Percent, UserCheck, Image, TrendingUp, Timer, SkipForward, ThumbsUp, MessageCircle, Share2, ChevronRight, List, ArrowUp } from 'lucide-react'
+import { Mail, ExternalLink, Briefcase, GraduationCap, Award, Code, Users, Globe, Bot, Zap, Database, Layout, BadgeCheck, FolderGit2, Sparkles, Download, Github, Package, MessageSquare, Receipt, CalendarCheck, FileText, GitBranch, Lock, Network, Calendar, Percent, UserCheck, Image, TrendingUp, Timer, SkipForward, ThumbsUp, MessageCircle, Share2, ChevronRight, List, ArrowUp } from 'lucide-react'
 import { translations, seo, type Lang } from './i18n'
 import { useHomeSeo } from './articles/use-article-seo'
 import { getTechIcon } from './tech-icons'
@@ -1818,68 +1818,7 @@ function App() {
             </div>
           </AnimatedSection>
 
-          {/* SA Playbook - Premium Card */}
-          <AnimatedSection delay={0.05} className="mb-8">
-            <div className="p-8 rounded-2xl bg-gradient-to-br from-gold/15 via-gold/5 to-transparent border border-gold/30 hover:border-gold/50 transition-colors duration-200 group relative overflow-hidden">
-              {/* Subtle glow effect */}
-              <div className="absolute -top-24 -right-24 w-48 h-48 bg-gold/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 relative">
-                <div className="flex-1 flex flex-col">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="w-12 h-12 rounded-xl bg-gold/20 flex items-center justify-center shrink-0">
-                      <Terminal className="w-6 h-6 text-gold" />
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Lock className="w-3 h-3 text-gold" />
-                      <span className="badge px-3 py-1 bg-gold/20 text-gold">{t.projects.saPlaybook.badge}</span>
-                    </div>
-                  </div>
-                  <h3 className="font-display text-2xl font-bold mb-1">{t.projects.saPlaybook.title}</h3>
-                  <p className="text-sm text-gold font-medium mb-4">{t.projects.saPlaybook.tagline}</p>
-                  <p className="text-muted-foreground mb-6">{t.projects.saPlaybook.desc}</p>
-
-                  {/* Tech badges */}
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {['Claude Code', 'Airtable', 'Shopify', 'Make.com', 'Bash', 'MCP'].map((tech) => (
-                      <span key={tech} className="px-2 py-1 rounded-md text-xs bg-gold/10 text-gold border border-gold/20">{tech}</span>
-                    ))}
-                  </div>
-
-                  <ul className="text-sm text-muted-foreground space-y-2">
-                    {t.projects.saPlaybook.features.map((item, i) => {
-                      const icons: Record<string, React.ReactNode> = {
-                        zap: <Zap className="w-4 h-4" />,
-                        shield: <Shield className="w-4 h-4" />,
-                        fileText: <FileText className="w-4 h-4" />,
-                        git: <GitBranch className="w-4 h-4" />
-                      }
-                      return (
-                        <li key={i} className="flex items-start gap-3">
-                          <span className="text-gold mt-0.5">{icons[item.icon]}</span>
-                          <span>{item.text}</span>
-                        </li>
-                      )
-                    })}
-                  </ul>
-                  <a href="#contact" className="inline-flex items-center gap-2 text-xs font-medium italic mt-auto pt-6 text-gold hover:underline transition-colors duration-200">
-                    <Lock className="w-3 h-3" />
-                    {t.projects.saPlaybook.footer}
-                  </a>
-                </div>
-
-                {/* Right side - visual element */}
-                <div className="hidden lg:flex flex-col items-center justify-center p-6 rounded-xl bg-gold/5 border border-gold/10 min-w-[180px]">
-                  <div className="text-4xl mb-3 opacity-80">
-                    <svg viewBox="0 0 24 24" className="w-16 h-16 text-gold" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-                      <path d="M4 17l6-6-6-6M12 19h8" />
-                    </svg>
-                  </div>
-                  <span className="text-xs text-gold font-medium text-center">Systems Thinking<br/>for SAs</span>
-                </div>
-              </div>
-            </div>
-          </AnimatedSection>
+          {/* SA Playbook removed */}
 
           {/* Projects Grid with Dependency Lines */}
           {(() => {
