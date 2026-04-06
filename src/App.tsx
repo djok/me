@@ -2749,10 +2749,26 @@ function App() {
                 LinkedIn
                 <ExternalLink className="w-3 h-3" aria-hidden="true" />
               </a>
+              <a
+                href="https://github.com/djok"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:border-primary/50 transition-colors duration-200 hover:bg-primary/5"
+              >
+                <Github className="w-4 h-4" />
+                GitHub
+                <ExternalLink className="w-3 h-3" aria-hidden="true" />
+              </a>
             </div>
           </AnimatedSection>
           <p className="mt-12 text-xs text-muted-foreground">
             &copy; {new Date().getFullYear()} Rosen Velikov
+            <span className="mx-2 text-border">|</span>
+            <a href="mailto:rosen.st.velikov@gmail.com" className="hover:text-primary transition-colors">rosen.st.velikov@gmail.com</a>
+            <span className="mx-2 text-border">|</span>
+            <a href="https://linkedin.com/in/rosenvelikov" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a>
+            <span className="mx-2 text-border">|</span>
+            <a href="https://github.com/djok" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">GitHub</a>
             <span className="mx-2 text-border">|</span>
             <Link to="/privacy" className="hover:text-primary transition-colors">
               Privacy
