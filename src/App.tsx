@@ -1093,7 +1093,7 @@ function ReflectiveTypewriter({
 
 // Sección de historia con typewriter y animaciones
 function StorySection({ t }: { t: (typeof translations)[Lang] }) {
-  const [typewriterComplete, setTypewriterComplete] = useState(false)
+  const [typewriterComplete, setTypewriterComplete] = useState(true)
   const [textDimmed, setTextDimmed] = useState(false)
   const [finalReveal, setFinalReveal] = useState(false)  // Tipo C se enciende con gradiente
   const [textRevealed, setTextRevealed] = useState(false) // Resto del texto se enciende
